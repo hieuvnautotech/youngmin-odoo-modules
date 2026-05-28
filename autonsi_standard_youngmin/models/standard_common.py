@@ -1,26 +1,35 @@
-from odoo import models, fields
+# -*- coding: utf-8 -*-
+
+from odoo import fields, models
 
 
 class StandardCommon(models.Model):
-    _name = "standard.common"
-    _description = "Standard Common"
+    _name = 'standard.common'
+    _description = 'Common Master Data'
+    _order = 'name'
 
-    name = fields.Char(string="Name", required=True)
-    code = fields.Char(string="Code")
-    active = fields.Boolean(string="Active", default=True)
+    name = fields.Char(string='Name', required=True)
+    code = fields.Char(string='Code')
+    active = fields.Boolean(string='Active', default=True)
     detail_ids = fields.One2many(
-        comodel_name="standard.common.detail",
-        inverse_name="common_id",
-        string="Details",
+        'standard.common.detail',
+        'common_id',
+        string='Details',
     )
 
 
 class StandardCommonDetail(models.Model):
-    _name = "standard.common.detail"
-    _description = "Standard Common Detail"
+    _name = 'standard.common.detail'
+    _description = 'Common Detail'
+    _order = 'sequence, id'
 
-    common_id = fields.Many2one(comodel_name="standard.common", string="Common", required=True, ondelete="cascade")
-    name = fields.Char(string="Name", required=True)
-    code = fields.Char(string="Code")
-    sequence = fields.Integer(string="Sequence", default=10)
-    active = fields.Boolean(string="Active", default=True)
+    common_id = fields.Many2one(
+        'standard.common',
+        string='Common',
+        required=True,
+        ondelete='cascade',
+    )
+    name = fields.Char(string='Name', required=True)
+    code = fields.Char(string='Code')
+    sequence = fields.Integer(string='Sequence', default=10)
+    active = fields.Boolean(string='Active', default=True)

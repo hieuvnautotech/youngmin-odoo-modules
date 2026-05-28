@@ -1,26 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <menuitem id="menu_standard_root" name="Standard" sequence="10"/>
+    <menuitem id="menu_standard_information_root" name="Standard Information" sequence="10"/>
 
-    <menuitem id="menu_standard_project" name="Project" parent="menu_standard_root" action="action_standard_project"/>
-    <menuitem id="menu_standard_process" name="Process" parent="menu_standard_root" action="action_standard_process"/>
-    <menuitem id="menu_standard_common" name="Common" parent="menu_standard_root" action="action_standard_common"/>
-
-    <record id="action_standard_project" model="ir.actions.act_window">
-        <field name="name">Projects</field>
-        <field name="res_model">standard.project</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <record id="action_standard_process" model="ir.actions.act_window">
-        <field name="name">Processes</field>
-        <field name="res_model">standard.process</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <record id="action_standard_common" model="ir.actions.act_window">
-        <field name="name">Commons</field>
-        <field name="res_model">standard.common</field>
-        <field name="view_mode">tree,form</field>
-    </record>
+    <menuitem id="menu_standard_project" name="Projects" parent="menu_standard_information_root" action="action_standard_project" sequence="10"/>
+    <menuitem id="menu_standard_process" name="Processes" parent="menu_standard_information_root" action="action_standard_process" sequence="20"/>
+    <menuitem id="menu_standard_common" name="Commons" parent="menu_standard_information_root" action="action_standard_common" sequence="30"/>
 </odoo>

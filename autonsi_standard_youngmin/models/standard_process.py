@@ -1,29 +1,41 @@
-from odoo import models, fields
+# -*- coding: utf-8 -*-
+
+from odoo import fields, models
 
 
 class StandardProcess(models.Model):
-    _name = "standard.process"
-    _description = "Standard Process"
-    _inherit = ["mail.thread"]
+    _name = 'standard.process'
+    _description = 'Standard Process'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _order = 'sequence, name'
+    _sql_constraints = [
+        ('code_uniq', 'unique(code)', 'Process Code must be unique!'),
+    ]
 
-    name = fields.Char(string="Name", required=True)
-    code = fields.Char(string="Code", required=True)
-    sequence = fields.Integer(string="Sequence", default=10)
+    name = fields.Char(string='Process Name', required=True, tracking=True)
+    code = fields.Char(string='Process Code', required=True, tracking=True)
+    sequence = fields.Integer(string='Sequence', default=10)
+    active = fields.Boolean(string='Active', default=True)
     line_ids = fields.One2many(
-        comodel_name="standard.process.line",
-        inverse_name="process_id",
-        string="Process Lines",
+        'standard.process.line',
+        'process_id',
+        string='Process Lines',
     )
 
 
 class StandardProcessLine(models.Model):
-    _name = "standard.process.line"
-    _description = "Standard Process Line"
+    _name = 'standard.process.line'
+    _description = 'Process Line'
+    _order = 'sequence, id'
 
-    process_id = fields.Many2one(comodel_name="standard.process", string="Process", required=True, ondelete="cascade")
-    project_id = fields.Many2one(comodel_name="standard.project", string="Project", ondelete="set null")
-    sequence = fields.Integer(string="Sequence", default=10)
-    name = fields.Char(string="Name", required=True)
-    workcenter_id = fields.Many2one(comodel_name="mrp.workcenter", string="Workcenter")
-    duration = fields.Float(string="Duration (hours)")
-    note = fields.Text(string="Note")
+    process_id = fields.Many2one(
+        'standard.process',
+        string='Process',
+        required=True,
+        ondelete='cascade',
+    )
+    sequence = fields.Integer(string='Sequence', default=10)
+    name = fields.Char(string='Line Name', required=True)
+    workcenter_id = fields.Many2one('mrp.workcenter', string='Work Center')
+    duration = fields.Float(string='Duration (hours)')
+    note = fields.Text(string='Note')
