@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+
+        <record id="view_qms_report" model="ir.ui.view">
+            <field name="name">view_qms_report</field>
+            <field name="model">mes.qc_form.history</field>
+            <field name="arch" type="xml">
+                <graph string="QMS Report" type="bar">
+                    <field name="check_date" type="row" interval="day"/>
+                    <field name="form_type" type="col"/>
+                </graph>
+            </field>
+        </record>
+
+        <record id="action_qms_report" model="ir.actions.act_window">
+            <field name="name">QMS Report</field>
+            <field name="res_model">mes.qc_form.history</field>
+            <field name="view_mode">graph,pivot,tree</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem id="menu_qms_report" name="QMS Report" parent="autonsi_qms.menu_qms_history" action="action_qms_report"/>
+
+    </data>
+</odoo>

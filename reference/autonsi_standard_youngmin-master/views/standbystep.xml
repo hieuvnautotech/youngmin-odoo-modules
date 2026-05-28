@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Type -->
+    <record id="autonsi_standard_standby_type_tree" model="ir.ui.view">
+        <field name="name">Type List</field>
+        <field name="model">standard.standbytype</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="type" string="Standard Code"/>
+                <field name="name" string="Type Name"/>
+                <field name="create_uid"/>
+                <field name="create_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_standbytype_action' model='ir.actions.act_window'>
+        <field name="name">Type</field>
+        <field name="res_model">standard.standbytype</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Standby Setting -->
+    <record id="autonsi_standard_standby_step_tree" model="ir.ui.view">
+        <field name="name">Standby Setting List</field>
+        <field name="model">standard.standbysetting</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="process_id"/>
+                <field name="step"/>
+                <field name="level"/>
+                <field name="type"/>
+                <field name="create_uid"/>
+                <field name="create_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="autonsi_standard_standby_step_form" model="ir.ui.view">
+        <field name="name">Standby Setting Form</field>
+        <field name="model">standard.standbysetting</field>
+        <field name="arch" type="xml">
+            <form>
+                <header invisible="create_uid==False">
+                    <button icon="fa-check" string="Confirm" class="btn btn-primary" type="object" name="confirm_registration" invisible="confirm_is==True" readonly="confirm_is==True"/>
+                    <button icon="fa-undo" string="Un Confirm" class="btn btn-primary" type="object" name="confirm_registration" invisible="confirm_is==False" readonly="confirm_is==False"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name" on_change="1"/>
+                        <field name="process_id"/>
+                        <field name="create_date"/>
+                        <field name="confirm_is" invisible="1"/>
+                        <field name="create_uid" invisible="1"/>
+                    </group>
+                    <notebook>
+                        <page string='Step'>
+                            <field name="step_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle" />
+                                    <field name="level" />
+                                    <field name="name"/>
+                                    <field name="default_is"/>
+                                    <field name="check_report_is"/>
+                                    <field name="check_disposal_is"/>
+                                    <field name="description" />
+                                    <field name="create_date"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string='Type'>
+                            <field name="type_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle" />
+                                    <field name="name"/>
+                                    <field name="default_is"/>
+                                    <field name="create_date"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_standbysetting_action' model='ir.actions.act_window'>
+        <field name="name">Standby Setting</field>
+        <field name="res_model">standard.standbysetting</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

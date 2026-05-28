@@ -1,0 +1,58 @@
+.one2many_search_container {
+    width: 20%;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Search box nằm inline với các nút nhấn */
+.one2many_search_container_inline {
+    flex: 0 0 auto !important;
+    min-width: 250px;
+    max-width: 350px;
+    width: auto !important;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+/* Override flex cho div chứa các nút để không bị kéo giãn */
+.o_form_view .o_row>div.d-flex.justify-content-end {
+    flex: 0 0 auto !important;
+    width: auto !important;
+}
+
+/* Hoặc dùng class cụ thể hơn */
+.o_form_view .o_row>div.d-flex.flex-1.justify-content-end.gap-2 {
+    flex: 0 0 auto !important;
+    width: auto !important;
+}
+
+/* Giữ lại styles cũ nếu cần dùng ở chỗ khác */
+.one2many_search_container_checkbox {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.one2many_search_container_checkbox_v2 {
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 22px;
+}
+
+.oe_search_value {
+    width: 100%;
+    height: 20px;
+    color: #495057;
+    font-size: 13px;
+    z-index: 1;
+}
+
+.no-col {
+    width: 65px !important;
+}

@@ -1,0 +1,141 @@
+<odoo>
+    <record id="autonsi_standard_bom_tree" model="ir.ui.view">
+        <field name="name">mrp.bom.tree.inherit</field>
+        <field name="model">mrp.bom</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="model_id"/>
+                <field name="product_tmpl_id"/>
+                <field name="spec_no"/>
+                <field name="state" widget="badge" decoration-success="state == 'confirmed'" decoration-info="state not in ('confirmed','draft')" decoration-muted="state == 'draft'"/>
+                <field name="create_uid"/>
+                <field name="create_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="autonsi_standard_mrp_bom_tree_view_inherit">
+        <field name="name">mrp.bom.tree.inherit</field>
+        <field name="model">mrp.bom</field>
+        <field name="inherit_id" ref="mrp.mrp_bom_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='product_tmpl_id']" position="replace">
+                <field name="project_code"/>
+                <field name="product_tmpl_id" string="Product Code"/>
+                <field name="default_name"/>
+                <field name="name"/>
+                <field name="bom_version"/>
+                <field name="description"/>
+                <field name="state" widget="badge" decoration-success="state == 'confirmed'"
+                       decoration-info="state == 'draft'" decoration-primary="state == 'confirmed'"
+                       decoration-danger="state == 'confirmed'"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_date" string="Last Updated On"/>
+            </xpath>
+            <xpath expr="//field[@name='code']" position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='type']" position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="autonsi_standard_bom_form_inherit">
+        <field name="name">mrp.bom.form.inherit</field>
+        <field name="model">mrp.bom</field>
+        <field name="inherit_id" ref="mrp.mrp_bom_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="/form/*" position="before">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed" />
+                </header>
+            </xpath>
+            <xpath expr="//div[hasclass('oe_chatter')]" position="replace">
+                <div style="display: none;"></div>
+            </xpath>
+            <xpath expr="//field[@name='product_tmpl_id']" position="before">
+                <field name="model_id" options="{'no_create': True}" readonly="state=='confirmed'"/>
+            </xpath>
+            <xpath expr="//field[@name='product_tmpl_id']" position="attributes">
+                <attribute name="domain">[ '|', ('product_type', '=', 'fg product'), '&amp;', ('product_type', '=', 'semi product'), ('product_sub_type', '=', 'manual')]</attribute>
+                <attribute name="options">{'no_create': True}</attribute>
+                <attribute name="readonly">state=='confirmed'</attribute>
+            </xpath>
+            <xpath expr="//field[@name='product_qty']" position="attributes">
+                <attribute name="readonly">state=='confirmed'</attribute>
+            </xpath>
+            <xpath expr="//field[@name='code']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='product_tmpl_id']" position="after">
+                <field name="spec_no"/>
+                <field name="description"/>
+            </xpath>
+            <xpath expr="//field[@name='company_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='type']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//group[2]" position="inside">
+                <field name="create_uid"/>
+                <field name="create_date"/>
+                <field name="write_uid"/>
+                <field name="write_date"/>
+                <field name="material_status"/>
+                <field name="fg_bom_is" invisible="1"/>
+            </xpath>
+            <xpath expr="//notebook//page[@name='miscellaneous']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//notebook//page[@name='operations']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//notebook//page[@name='components']" position="attributes">
+                <attribute name="invisible">0</attribute>
+            </xpath>
+            <xpath expr="//notebook//page[@name='components']" position="before">
+                <page string='Process' name='process'>
+                    <field name="process_ids" readonly="state=='confirmed'">
+                        <tree editable="bottom">
+                            <field name="sequence" widget="handle" />
+                            <field name="level" string="Level"/>
+                            <field name="process_code" string="Process Code"/>
+                            <field name="name" string="Process Name"/>
+                            <field name="source_location_id"/>
+                            <field name="destination_location_id"/>
+                            <field name="create_uid"/>
+                            <field name="create_date"/>
+                            <field name="material_ids" widget="many2many_tags" string="Material list" readonly="1"/>
+                            <button string="add" type="object" name="action_open_material_popup" class="btn-primary" icon="fa-plus"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="autonsi_standard_bom_search_panel" model="ir.ui.view">
+        <field name="name">mrp.bom.search.panel</field>
+        <field name="model">mrp.bom</field>
+        <field name="arch" type="xml">
+            <search position="inside">
+                <field name="product_tmpl_id" string="Product"/>
+                <field name="model_id" string="Model"/>
+                <field name="spec_no" string="Spec No"/>
+                <searchpanel>
+                    <field name="model_id" enable_counters="1"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <record id="autonsi_standard_bom_action" model="ir.actions.act_window">
+        <field name="name">BOM</field>
+        <field name="res_model">mrp.bom</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('fg_bom_is', '=', True)]</field>
+    </record>
+</odoo>

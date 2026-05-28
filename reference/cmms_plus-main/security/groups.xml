@@ -1,0 +1,47 @@
+<odoo>
+
+<data noupdate="1">
+ <!-- <record id="make_invisible" model="res.groups">
+        <field name="name">Invisible</field>
+    </record> -->
+
+<!-- User -->
+<record id="module_category_cmms_plus_regular" model="ir.module.category">
+    <field name="name">CMMS+ User </field>
+    <field name="sequence">20</field>
+</record>
+
+<record id="group_cmms_plus_user" model="res.groups">
+    <field name="name">Yes</field>
+    <field name="category_id" ref="module_category_cmms_plus_regular"/>
+</record>
+
+<!-- Approver -->
+
+ <record id="module_category_cmms_plus_approver" model="ir.module.category">
+    <field name="name">CMMS+  Approver </field>
+    <field name="sequence">20</field>
+</record>
+
+<record id="group_cmms_plus_approver" model="res.groups">
+    <field name="name">Yes</field>
+    <field name="category_id" ref="module_category_cmms_plus_approver"/>
+   
+</record>
+
+<!-- manager -->
+ <record id="module_category_cmms_plus_magaer" model="ir.module.category">
+    <field name="name">CMMS+  Manager  </field>
+    <field name="sequence">20</field>
+</record>
+
+
+<record id="group_cmms_plus_manager" model="res.groups">
+    <field name="name">Yes</field>
+    <field name="category_id" ref="module_category_cmms_plus_magaer"/>
+   
+</record>
+
+
+</data>
+</odoo>

@@ -1,0 +1,20 @@
+{
+    "name": "Standard Information",
+    "summary": "Standard project/process/common records for Youngmin",
+    "version": "17.0.1.0.0",
+    "category": "Manufacturing",
+    "author": "Youngmin Hi-Tech Vina",
+    "website": "https://youngmin.example",
+    "license": "OPL-1",
+    "depends": ["base", "mail", "product", "mrp", "stock"],
+    "data": [
+        "security/security.xml",
+        "security/ir.model.access.csv",
+        "views/standard_project_views.xml",
+        "views/standard_process_views.xml",
+        "views/standard_common_views.xml",
+        "views/menu_views.xml",
+    ],
+    "installable": True,
+    "application": False,
+}

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<!-- Area -->
+		<record id="area_material" model="stock.location">
+			<field name="name">Material</field>
+			<field name="location_type">area</field>
+			<field name="description">Material Warehouse</field>
+		</record>
+
+		<record id="area_wip" model="stock.location">
+			<field name="name">WIP</field>
+			<field name="location_type">area</field>
+			<field name="description">Work in progress Warehouse</field>
+		</record>
+		<record id="area_wip_1" model="stock.location">
+			<field name="name">WIP 1</field>
+			<field name="location_type">area</field>
+			<field name="description">Work in progress Warehouse</field>
+			<field name="check_type">wip_1</field>
+
+		</record>
+			<record id="area_wip_2" model="stock.location">
+			<field name="name">WIP 2</field>
+			<field name="location_type">area</field>
+			<field name="description">Work in progress Warehouse</field>
+			<field name="check_type">wip_2</field>
+
+		</record>
+
+		<record id="area_fg" model="stock.location">
+			<field name="name">FG</field>
+			<field name="location_type">area</field>
+			<field name="description">Finish Goods Warehouse</field>
+		</record>
+
+		<!-- Location -->
+
+
+		<record id="location_material_stock_1" model="stock.location">
+			<field name="name">Material Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">m_stock</field>
+            <field name="description">Material Warehouse </field>
+			<field name="location_id" ref="area_material"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+        <record id="location_material_stock_2" model="stock.location">
+			<field name="name">Material Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">m_stock_2</field>
+            <field name="description">Material Warehouse</field>
+			<field name="location_id" ref="area_material"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+
+
+        <record id="location_ng_stock_1" model="stock.location">
+			<field name="name">Material NG Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">m_ng</field>
+            <field name="description">NG Material Warehouse </field>
+			<field name="location_id" ref="area_material"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.common_detail_product_category_swh')), (4, ref('autonsi_standard_youngmin.common_detail_product_category_arh'))]"/>
+		</record>
+
+
+
+
+        <record id="location_ng_stock_2" model="stock.location">
+			<field name="name">Material NG Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">m_ng_2</field>
+            <field name="description">NG Material Warehouse </field>
+			<field name="location_id" ref="area_material"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.common_detail_product_category_swh')), (4, ref('autonsi_standard_youngmin.common_detail_product_category_arh'))]"/>
+		</record>
+
+
+
+
+        <record id="location_wip_fabric_cutting_stock_1" model="stock.location">
+            <field name="name">Fabric Cutting Stock 1</field>
+            <field name="location_type">location</field>
+            <field name="check_type">wip_stock</field>
+            <field name="description">Work in progress cut stock </field>
+            <field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+        </record>
+        <record id="location_wip_emb_stock_1" model="stock.location">
+            <field name="name">EMB(SW.H) Stock 1</field>
+            <field name="location_type">location</field>
+            <field name="check_type">wip_stock</field>
+            <field name="description">Work in progress EMB stock </field>
+            <field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+        </record>
+
+
+
+		<record id="location_fg_stock_1" model="stock.location">
+			<field name="name">FG Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">fg_stock</field>
+			<field name="location_id" ref="area_fg"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<!-- Additional records added from provided JSON -->
+		<record id="location_emb_inspection_stock_1" model="stock.location">
+			<field name="name">EMB Inspection Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress inspec EMB stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_hole_stock_1" model="stock.location">
+			<field name="name">Hole Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress hole stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_tape_stock_1" model="stock.location">
+			<field name="name">Tape Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Tape stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_forming_stock_1" model="stock.location">
+			<field name="name">Forming Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress forming stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_wire_sensor_soldering_ntc_stock_1" model="stock.location">
+			<field name="name">Wire &amp; Sensor Soldering NTC  Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress wire &amp; sensor soldering NTC stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_wire_fuse_soldering_stock_1" model="stock.location">
+			<field name="name">Wire &amp; Fuse Soldering Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress soldering jack stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_taping_stock_1" model="stock.location">
+			<field name="name">Taping Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress taping stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_vision_inspection_stock_1" model="stock.location">
+			<field name="name">Vision Inspection Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Vision Inspection stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_structure_inspection_stock_1" model="stock.location">
+			<field name="name">Structure Inspection Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Structure Inspection stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_circuit_insp_packing_stock_1" model="stock.location">
+			<field name="name">Circuit Insp+Packing Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Circuit Insp+Packing Stock stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_double_insp_packing_stock_1" model="stock.location">
+			<field name="name">Double Insp + Packing Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress OQC stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<!-- / second site records -->
+		<record id="location_emb_stock_2" model="stock.location">
+			<field name="name">EMB(S.H) Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress EMB stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_emb_cutting_stock_2" model="stock.location">
+			<field name="name">EMB Cutting Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress EMB Cutting  stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_emb_cutting_inspection_stock_2" model="stock.location">
+			<field name="name">EMB Cutting Inspection Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress EMB Cutting Inspection  stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_hole_stock_2" model="stock.location">
+			<field name="name">Hole Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress hole stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_cut_thread_stock_2" model="stock.location">
+			<field name="name">Cut Thread Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress cut thread stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_tape_stock_2" model="stock.location">
+			<field name="name">Tape Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Tape stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_forming_stock_2" model="stock.location">
+			<field name="name">Forming Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Froming stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_folding_patch_stock_2" model="stock.location">
+			<field name="name">Folding+Patch Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Folding+Patchstock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_heat_wire_stripping_stock_2" model="stock.location">
+			<field name="name">Heat Wire Stripping Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Heat wire stripping stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_stamp_ntc_stock_2" model="stock.location">
+			<field name="name">Stamp NTC Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress stamp NTC stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_soldering_ntc_stock_2" model="stock.location">
+			<field name="name">Soldering NTC Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Soldering NTC stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_sensor_shrink_tube_stock_2" model="stock.location">
+			<field name="name">Sensor Shrink Tube Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Sensor Tube Shrink stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_stamp_jack_stock_2" model="stock.location">
+			<field name="name">Stamp Jack Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress stamp jack stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_soldering_jack_stock_2" model="stock.location">
+			<field name="name">Soldering Jack Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress soldering jack stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_heat_shrink_tube_stock_2" model="stock.location">
+			<field name="name">Heat Shrink Tube Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress heat shink tube stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_routing_stock_2" model="stock.location">
+			<field name="name">Routing Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress routing stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_vision_inspection_stock_2" model="stock.location">
+			<field name="name">Vision Inspection Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Vision Inspection stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_visual_inspection_stock_2" model="stock.location">
+			<field name="name">Visual Inspection Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Visual Inspection stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_structure_inspection_stock_2" model="stock.location">
+			<field name="name">Structure Inspection Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Structure Inspection stock</field>
+			<field name="location_id" ref="area_wip_2" />
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_circuit_insp_packing_stock_2" model="stock.location">
+			<field name="name">Circuit Insp+Packing Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Circuit Insp+Packing Stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_double_insp_packing_stock_2" model="stock.location">
+			<field name="name">Double Insp + Packing Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress OQC stock</field>
+			<field name="location_id" ref="area_wip_2"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_ng_semi_stock_2" model="stock.location">
+			<field name="name">NG Semi 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">w_ng_1</field>
+			<field name="description">NG Semi</field>
+			<field name="location_id" ref="area_wip_1"/>
+			<field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+		<record id="location_ng_semi_2_stock_2" model="stock.location">
+			<field name="name">NG Semi 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">w_ng_2</field>
+			<field name="description">NG Semi</field>
+			<field name="location_id" ref="area_wip_2"/>
+			<field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_fg_stock_2" model="stock.location">
+			<field name="name">FG Stock 2</field>
+			<field name="location_type">location</field>
+			<field name="check_type">fg_stock</field>
+			<field name="description">Finish Goods Warehouse</field>
+			<field name="location_id" ref="area_fg"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_hm'))]"/>
+		</record>
+
+		<record id="location_wip_winding_stock_1" model="stock.location"> 
+			<field name="name">Winding Stock 1</field>
+			<field name="location_type">location</field>
+			<field name="check_type">wip_stock</field>
+			<field name="description">Work in progress Winding stock </field>
+			<field name="location_id" ref="area_wip_1"/>
+            <field name="product_category_ids" eval="[(4, ref('autonsi_standard_youngmin.product_category_swh')), (4, ref('autonsi_standard_youngmin.product_category_arh'))]"/>
+		</record>
+
+
+		</data>
+</odoo>

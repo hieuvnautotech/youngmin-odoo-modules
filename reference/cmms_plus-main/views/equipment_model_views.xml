@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_equipment_model_tree" model="ir.ui.view">
+        <field name="name">equipment.model.tree</field>
+        <field name="model">equipment.model</field>
+        <field name="arch" type="xml">
+            <tree string="Equipment Models">
+                <field name="name"/>
+                <field name="equip_category_id"/>
+                <field name="model_type"/>
+                <field name="remark"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_equipment_model_form" model="ir.ui.view">
+        <field name="name">equipment.model.form</field>
+        <field name="model">equipment.model</field>
+        <field name="arch" type="xml">
+            <form string="Equipment Model">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="equip_category_id"/>
+                        <field name="model_type"/>
+                        <field name="remark"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_equipment_model" model="ir.actions.act_window">
+        <field name="name">Equipment Models</field>
+        <field name="res_model">equipment.model</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Equipment Model
+            </p>
+        </field>
+    </record>
+
+
+  
+</odoo>

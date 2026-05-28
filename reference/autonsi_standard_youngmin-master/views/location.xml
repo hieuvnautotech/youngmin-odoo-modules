@@ -1,0 +1,199 @@
+<odoo>
+    <!-- Area -->
+    <record id="autonsi_standard_area_view_tree" model="ir.ui.view">
+        <field name="name">Area List</field>
+        <field name="model">stock.location</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="complete_name" string="Area #"/>
+                <field name="description" string="Description"/>
+                <field name="comment" string="Remark"/>
+<!--                <field name="check_type" string="Check Type"/>-->
+                <field name="create_uid" string="Created By"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_uid" string="Last Updated By"/>
+                <field name="write_date" string="Last Updated On"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="autonsi_standard_area_view_form" model="ir.ui.view">
+        <field name="name">Area Form</field>
+        <field name="model">stock.location</field>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <form duplicate="0">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button string="Current Stock" class="oe_stat_button" icon="fa-cubes"
+                                name="%(stock.location_open_quants)d" type="action"/>
+                    </div>
+                    <group>
+                        <field name="location_type" invisible="1"/>
+                        <field name="company_id" invisible="1"/>
+                        <field name="location_id" string="Root" readonly="1" force_save="1"/>
+                        <field name="name" string="Area #"/>
+                        <field name="description" string="Description"/>
+                        <field name="comment" string="Remark" placeholder=""/>
+                        <field name="check_type" string="Check Type"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_area_action' model='ir.actions.act_window'>
+        <field name="name">Area</field>
+        <field name="res_model">stock.location</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('location_type', '=', 'area')]</field>
+        <field name="context">{'default_location_type': 'area'}</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0,0,{'sequence': 1, 'view_mode':'tree', 'view_id': ref('autonsi_standard_area_view_tree')}),
+            (0,0,{'sequence': 2, 'view_mode':'form', 'view_id': ref('autonsi_standard_area_view_form')}),
+        ]"/>
+    </record>
+
+    <!-- Location -->
+    <record id="autonsi_standard_location_view_tree" model="ir.ui.view">
+        <field name="name">Location List</field>
+        <field name="model">stock.location</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="location_id" string="Area #"/>
+                <field name="name" string="Location #"/>
+                <field name="product_category_ids" widget="many2many_tags"  options="{'no_open': True, 'no_create': True}" readonly="1" />
+                <field name="description" string="Description"/>
+<!--                <field name="location_type" string="Type"/>-->
+<!--                <field name="check_type" string="Check Type"/>-->
+                <field name="comment" string="Remark"/>
+                <field name="create_uid" string="Created By"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_uid" string="Last Updated By"/>
+                <field name="write_date" string="Last Updated On"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="autonsi_standard_location_view_form" model="ir.ui.view">
+        <field name="name">Location Form</field>
+        <field name="model">stock.location</field>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <form duplicate="0">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button string="Current Stock" class="oe_stat_button" icon="fa-cubes"
+                                name="%(stock.location_open_quants)d" type="action"/>
+                    </div>
+                    <group>
+                        <field name="company_id" invisible="1"/>
+                        <field name="location_id" string="Area #" required="1"
+                               domain="['|',('location_type','=', 'area'),('location_type','=', 'location')]"
+                               options="{'no_create': True}"/>
+                        <field name="name" string="Location #"/>
+                        <field name="product_category_ids" widget="many2many_tags"  options="{'no_open': True, 'no_create': True}" readonly="0" />
+                        <field name="description" string="Description"/>
+                        <field name="comment" string="Remark" placeholder=""/>
+                        <field name="check_type" string="Check Type"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_location_action' model='ir.actions.act_window'>
+        <field name="name">Location</field>
+        <field name="res_model">stock.location</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('location_type', '=', 'location')]</field>
+        <field name="context">{'default_location_type': 'location'}</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0,0,{'sequence': 1, 'view_mode':'tree', 'view_id': ref('autonsi_standard_location_view_tree')}),
+            (0,0,{'sequence': 2, 'view_mode':'form', 'view_id': ref('autonsi_standard_location_view_form')}),
+        ]"/>
+    </record>
+
+    <!-- Bin -->
+    <record id="autonsi_standard_bin_view_tree" model="ir.ui.view">
+        <field name="name">Bin List</field>
+        <field name="model">stock.location</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="location_id" string="Area # / Location #"/>
+                <field name="name" string="Bin #"/>
+                <field name="description" string="Description"/>
+                <field name="comment" string="Remark"/>
+<!--                <field name="check_type" string="Check Type"/>-->
+                <field name="create_uid" string="Created By"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_uid" string="Last Updated By"/>
+                <field name="write_date" string="Last Updated On"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="autonsi_standard_bin_view_form" model="ir.ui.view">
+        <field name="name">Location Form</field>
+        <field name="model">stock.location</field>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <form duplicate="0">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button string="Current Stock" class="oe_stat_button" icon="fa-cubes"
+                                name="%(stock.location_open_quants)d" type="action"/>
+                    </div>
+                    <group>
+                        <field name="create_uid" invisible="1"/>
+                        <field name="location_type" invisible="1"/>
+                        <field name="company_id" invisible="1"/>
+                        <field name="location_id" string="Area # / Location #" required="1"
+                               domain="[('location_type','=', 'location')]" options="{'no_create': True}"/>
+                        <field name="name" string="Bin #" required="0"/>
+                        <!-- <field name="row" invisible="create_uid!=False"/>
+                        <field name="column" invisible="create_uid!=False"/> -->
+                        <field name="description" string="Description"/>
+                        <field name="comment" string="Remark" placeholder=""/>
+                        <field name="check_type" string="Check Type"/>
+                    </group>
+                    <!-- <field name="bin_ids" invisible="create_uid!=False">
+                        <tree create='false' delete='false' limit="10">
+                            <field name="stt" readonly="1"/>
+                            <field name="row" readonly="1"/>
+                            <field name="column" readonly='1'/>
+                            <field name="bin_code" readonly="1"/>
+                        </tree>
+                    </field> -->
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_bin_action' model='ir.actions.act_window'>
+        <field name="name">Bin</field>
+        <field name="res_model">stock.location</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('location_type', '=', 'bin')]</field>
+        <field name="context">{'default_location_type': 'bin', 'default_row': 1, 'default_column': 1}</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0,0,{'sequence': 1, 'view_mode':'tree', 'view_id': ref('autonsi_standard_bin_view_tree')}),
+            (0,0,{'sequence': 2, 'view_mode':'form', 'view_id': ref('autonsi_standard_bin_view_form')}),
+        ]"/>
+    </record>
+
+    <!-- origin stock.location -->
+    <record model="ir.ui.view" id="autonsi_standard_stock_location_form_inherit">
+        <field name="name">stock.location.form.inherit</field>
+        <field name="model">stock.location</field>
+        <field name="inherit_id" ref="stock.view_location_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='next_inventory_date']" position="after">
+                <field name="location_type"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="cmms.CMMSKanbanRenderer" t-inherit="web.KanbanRenderer" t-inherit-mode="primary" owl="1">
+        <xpath expr="//div[hasclass('o_kanban_renderer')]" position="before">
+            <CMMSNavigation t-props="getCMMSNavigationProps()"/>
+        </xpath>
+        <!-- <xpath expr="//div[hasclass('o_kanban_renderer')]" position="after">
+            <KnowSystemManager t-props="getCMMSFormProps()"/>
+        </xpath> -->
+    </t>
+
+</templates>

@@ -1,0 +1,2151 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* autonsi_standard_youngmin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-30 07:21+0000\n"
+"PO-Revision-Date: 2026-01-30 07:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_youngmin_partner_form_inherit
+msgid "--&gt;"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__uom_id2
+msgid "2nd Unit of Measure"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_project_form
+msgid "<span>~</span>"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,help:autonsi_standard_youngmin.field_product_product__detailed_type
+#: model:ir.model.fields,help:autonsi_standard_youngmin.field_product_template__detailed_type
+msgid ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+"Sản phẩm lưu kho là sản phẩm bạn cần quản lý tồn kho. Bạn sẽ cần cài đặt thêm ứng dụng Tồn kho.\n"
+"Sản phẩm tiêu thụ là sản phẩm bạn không cần quản lý tồn kho.\n"
+"Dịch vụ là sản phẩm phi vật chất mà bạn cung cấp."
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__accumulated
+msgid "Accumulated"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_category__active
+msgid "Active"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#. odoo-python
+#: code:addons/autonsi_standard_youngmin/models/bom.py:0
+#, python-format
+msgid "Add Material List"
+msgstr "Thêm vào DS"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_hr_employee__address
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_youngmin_partner_form_inherit
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_partner__alias
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_users__alias
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+msgid "Alias"
+msgstr "Mật danh"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__a_return
+msgid "Alloy Return"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_area_action
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_area_menu
+msgid "Area"
+msgstr "Khu vực"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_area_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_area_view_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_location_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_location_view_tree
+msgid "Area #"
+msgstr "Khu vực"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bin_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bin_view_tree
+msgid "Area # / Location #"
+msgstr "Khu vực / Vị trí"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_template__product_sub_type__auto
+msgid "Auto"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_bom_action
+msgid "BOM"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_bom_inherit_action
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_bom_menu
+msgid "BOM & Routing"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__name
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_search_panel
+msgid "BOM Name"
+msgstr "Tên BOM"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__bom_type
+msgid "BOM Type"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__bom_version
+msgid "BOM Ver"
+msgstr "Phiên bản BOM"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_search_panel
+msgid "BOM Version"
+msgstr "Phiên bản BOM"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__mrp_bom__bom_type__basic
+msgid "Basic"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__big_packing
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__ym_type__big
+msgid "Big Packing"
+msgstr "Thùng giấy"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Danh mục vật tư"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_mrp_bom_line
+msgid "Bill of Material Line"
+msgstr "Dòng danh mục vật tư"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_bin_action
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_bin_menu
+msgid "Bin"
+msgstr "Mã kệ"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__bin_code
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bin_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bin_view_tree
+msgid "Bin #"
+msgstr "Mã kệ"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_mrp_bom_process
+msgid "Bom Process"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_mrp_bom_process_material
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__bom_process_material_ids
+msgid "Bom Process Material"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_partner__business_category
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_users__business_category
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+msgid "Business Category"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_partner__business_reg_number
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_users__business_reg_number
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+msgid "Business Reg. Number"
+msgstr "Mã ĐK kinh doanh"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_partner__business_type
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_users__business_type
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+msgid "Business Type"
+msgstr "Loại kinh doanh"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_buyer_action
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_buyer_menu
+msgid "Buyer"
+msgstr "Khách hàng"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_template__tracking__lot
+msgid "By Lots"
+msgstr "Theo lô"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_template__tracking__serial
+msgid "By Unique Serial Number"
+msgstr "Theo số sê-ri duy nhất"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_autonsi_standard_bom_import_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_material_import_korea_id_form
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__mrp_bom__state__cancel
+msgid "Cancelled"
+msgstr "Hủy"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__check_disposal_is
+msgid "Check Disposal"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__check_drawing_consistency
+msgid "Check Drawing Consistency"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__check_report_is
+msgid "Check Report"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_location__check_type
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_area_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bin_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_location_view_form
+msgid "Check Type"
+msgstr "Phân loại"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_form
+msgid "Close"
+msgstr "Đóng"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_hr_department__code
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_hr_employee__staff_code
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_category__code
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_partner__code
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_users__code
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__code
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_model__code
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__code
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__code
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_common_detail_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_common_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_material_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_semi_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_template_fg_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_template_search_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_project_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_youngmin_partner_form_inherit
+msgid "Code"
+msgstr "Mã"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_location__column
+msgid "Columns"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__column
+msgid "Columns no"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_common_action
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_common
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_common_menu
+msgid "Common"
+msgstr "Cấu hình chung"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_common_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_common_tree
+msgid "Common #"
+msgstr "Cấu hình chung"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_common_detail_action
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_common_detail_menu
+msgid "Common Detail"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_common_detail_tree
+msgid "Common Master#"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_common_detail
+msgid "CommonDetail"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_project__project_status__completed
+msgid "Completed"
+msgstr "Đã hoàn thành"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+msgid "Components"
+msgstr "Thành phần"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__confirm_is
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_standby_step_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_material_import_korea_id_form
+msgid "Confirm"
+msgstr "Xác nhận"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__mrp_bom__state__confirmed
+msgid "Confirmed"
+msgstr "Xác nhận"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_res_partner
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_jig__type__contour
+msgid "Contour"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+msgid "Country"
+msgstr "Quốc gia"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_autonsi_standard_bom_import_form
+msgid "Create BOM"
+msgstr "Tạo BOM"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__create_by_bom_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_template__create_by_bom_id
+msgid "Create By Bom"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_picking_type__create_lot
+msgid "Create Lot"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.actions.act_window,help:autonsi_standard_youngmin.autonsi_standard_product_fg_action
+msgid "Create new product"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_tree_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_pallet_tree
+msgid "Created By"
+msgstr "Người tạo"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__create_by_bom_id
+msgid "Created By BOM"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_tree_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_jig_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_jig_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_mrp_bom_tree_view_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_pallet_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_material_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_semi_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_template_fg_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_project_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_project_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_youngmin_partner_form_inherit
+msgid "Created On"
+msgstr "Ngày tạo"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_material_import_korea_id_wizard__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_packaging_qty__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_model__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_pallet__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_type__create_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbytype__create_uid
+msgid "Created by"
+msgstr "Người tạo"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_material_import_korea_id_wizard__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_packaging_qty__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_model__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_pallet__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_type__create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbytype__create_date
+msgid "Created on"
+msgstr "Ngày tạo"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_area_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bin_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_location_view_form
+msgid "Current Stock"
+msgstr "Tồn kho hiện tại"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_base_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_form
+msgid "Custom Popup"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__default_is
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_type__default_is
+msgid "Default"
+msgstr "Mặc định"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,help:autonsi_standard_youngmin.field_product_packaging_qty__uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_department_action
+#: model:ir.model,name:autonsi_standard_youngmin.model_hr_department
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_department_menu
+msgid "Department"
+msgstr "Bộ phận"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_hr_department__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_partner__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_users__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_model__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_pallet__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_location__description
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_picking_type__description
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_area_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_area_view_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bin_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bin_view_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_location_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_location_view_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_pallet_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_pallet_tree
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_line__destination_location_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__destination_location_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__destination_location_id
+msgid "Destination Location"
+msgstr "Đến vị trí"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__detail
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_location__bin_ids
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_common_form
+msgid "Detail"
+msgstr "Chi tiết"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__developer_charger
+msgid "Developer Charger"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__development_status
+msgid "Developer Status"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__die_lifetime
+msgid "Die Lifetime"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_material_import_korea_id_wizard__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_packaging_qty__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_model__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_pallet__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_type__display_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbytype__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__is_double_inspection_and_packing
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__is_double_inspection_and_packing
+msgid "Double Insp"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__is_double_inspection_and_packing
+msgid "Double Insp & Packing"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__douzone_erp_create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_partner__douzone_erp_create_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_users__douzone_erp_create_date
+msgid "Douzone ERP Create Date"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__douzone_erp_update_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_partner__douzone_erp_update_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_users__douzone_erp_update_date
+msgid "Douzone ERP Update Date"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__mrp_bom__state__draft
+msgid "Draft"
+msgstr "Nháp"
+
+#. module: autonsi_standard_youngmin
+#. odoo-python
+#: code:addons/autonsi_standard_youngmin/models/res_partner.py:0
+#, python-format
+msgid "Duplicate Buyer Code"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#. odoo-python
+#: code:addons/autonsi_standard_youngmin/models/model.py:0
+#, python-format
+msgid "Duplicate Name"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#. odoo-python
+#: code:addons/autonsi_standard_youngmin/models/bom.py:0
+#, python-format
+msgid "Duplicate Spec no"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#. odoo-python
+#: code:addons/autonsi_standard_youngmin/models/res_partner.py:0
+#, python-format
+msgid "Duplicate Supplier Code"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.constraint,message:autonsi_standard_youngmin.constraint_standard_common_unique_common_code
+msgid "Duplicated Common Code"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.constraint,message:autonsi_standard_youngmin.constraint_standard_common_detail_unique_commondetail_code
+msgid "Duplicated Detail Code"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.constraint,message:autonsi_standard_youngmin.constraint_standard_standbysetting_unique_model_code
+msgid "Duplicated Operation Type and Process"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.constraint,message:autonsi_standard_youngmin.constraint_standard_process_unique_model_code
+msgid "Duplicated Process"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.constraint,message:autonsi_standard_youngmin.constraint_standard_standbytype_unique_standbytype_name
+msgid "Duplicated Type Name"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__duration_ids
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__duration
+msgid "Duration"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__durationComputation
+msgid "Duration Computation"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_youngmin_partner_form_inherit
+msgid "Email"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_employee_action
+#: model:ir.model,name:autonsi_standard_youngmin.model_hr_employee
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_employee_menu
+msgid "Employee"
+msgstr "Nhân viên"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_tree_inherit
+msgid "Employee Code"
+msgstr "Mã NV"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__project_end
+msgid "End Date"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,help:autonsi_standard_youngmin.field_product_product__tracking
+#: model:ir.model.fields,help:autonsi_standard_youngmin.field_product_template__tracking
+msgid "Ensure the traceability of a storable product in your warehouse."
+msgstr ""
+"Đảm bảo truy xuất nguồn gốc của một sản phẩm lưu kho trong kho hàng của bạn."
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_template__product_type__fg_product
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_category__fg
+msgid "FG"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__fg_bom_is
+msgid "FG Bom"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__fg_input
+msgid "FG Input"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__fg_ng
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__f_ng
+msgid "FG NG"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__f_oqc
+msgid "FG OQC"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__f_oqc_ng
+msgid "FG OQC NG"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__f_packing
+msgid "FG Packing"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__f_receiving
+msgid "FG Receiving"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__f_repair
+msgid "FG Repair"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__f_return
+msgid "FG Return"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__f_shipping
+msgid "FG Shipping"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__fg_stock
+msgid "FG Stock"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_workcenter__factory
+msgid "Factory"
+msgstr "Xưởng"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__mrp_workcenter__factory__fac1
+msgid "Factory 1"
+msgstr "Xưởng 1"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__mrp_workcenter__factory__fac2
+msgid "Factory 2"
+msgstr "Xưởng 2"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_partner__fax
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_users__fax
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_youngmin_partner_form_inherit
+msgid "Fax"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__file
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_material_import_korea_id_wizard__file
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__file
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__file_upload
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_tree
+msgid "File"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__file_imported
+msgid "File Imported"
+msgstr "Nạp file"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__file_upload_name
+msgid "File Name"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__filename
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_material_import_korea_id_wizard__filename
+msgid "Filename"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__filename_imported
+msgid "Filename Imported"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_jig__type__film
+msgid "Film"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_material_import_korea_id_wizard__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_packaging_qty__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_model__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_pallet__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_type__id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbytype__id
+msgid "ID"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__id_in_korea
+msgid "ID In KOREA"
+msgstr "Mã Hàn"
+
+#. module: autonsi_standard_youngmin
+#. odoo-python
+#: code:addons/autonsi_standard_youngmin/models/product.py:0
+#, python-format
+msgid "ID In Korea \"%s\" already exists! Please use a different value."
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__image
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_material_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_material_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_semi_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_tree
+msgid "Image"
+msgstr "Hình ảnh"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_open_bom_import_action
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_autonsi_standard_bom_import_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_material_import_korea_id_form
+msgid "Import BOM"
+msgstr "Nạp BOM"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_autonsi_standard_bom_import_wizard
+msgid "Import BOM Wizard"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_project__project_status__in_progress
+msgid "In Progress"
+msgstr "Trong tiến trình"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_jig__status__in_use
+msgid "In Use"
+msgstr "Đang dùng"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_information_menu
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_form_inherit
+msgid "Information"
+msgstr "Kho thông tin"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_stock_location
+msgid "Inventory Locations"
+msgstr "Vị trí kiểm kho"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_location__is_line
+msgid "Is Line"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__is_packing
+msgid "Is Packing"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_picking_type__is_qc
+msgid "Is QC"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__product_type
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__product_type
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__product_type
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_template__product_type
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+msgid "Item Group"
+msgstr "Phân loại"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__item_use
+msgid "Item Use"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_jig_action
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_jig
+msgid "Jig"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__code
+msgid "Jig Code"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__name
+msgid "Jig Name"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__label_cost
+msgid "Labor Cost"
+msgstr "Giá nhân công"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_jig__type__lamination
+msgid "Lamination"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_tree_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_pallet_tree
+msgid "Last Updated By"
+msgstr "Người đổi"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_tree_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_jig_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_jig_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_mrp_bom_tree_view_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_pallet_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_material_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_semi_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_template_fg_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_project_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_project_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_youngmin_partner_form_inherit
+msgid "Last Updated On"
+msgstr "Ngày đổi"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_material_import_korea_id_wizard__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_packaging_qty__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_model__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_pallet__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_type__write_uid
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbytype__write_uid
+msgid "Last Updated by"
+msgstr "Người đổi"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_material_import_korea_id_wizard__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_packaging_qty__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_model__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_pallet__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_type__write_date
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbytype__write_date
+msgid "Last Updated on"
+msgstr "Ngày đổi"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_line__level
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__level
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__level
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__level
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_form_inherit
+msgid "Level"
+msgstr "Cấp"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__expire
+msgid "Life Day(s)"
+msgstr "HSD"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__name
+msgid "Line #"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.action_standard_process_line
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.menu_standard_process_line
+msgid "Lines"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_location_action
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__location_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__location_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__location_id
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_location_menu
+msgid "Location"
+msgstr "Vị trí"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_location_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_location_view_tree
+msgid "Location #"
+msgstr "Vị trí"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__location_ids
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__location_ids
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_stock_picking_type_form
+msgid "Locations"
+msgstr "Vị trí"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_line__loss
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__loss_percent
+msgid "Loss %"
+msgstr "Hao hụt %"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_template__product_type__material
+msgid "MATERIAL"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_category__mps_factory
+msgid "MPS Factory"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_template__product_sub_type__manual
+msgid "Manual"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__mrp_bom__bom_type__manufacturing
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_category__maf
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__manufacturing
+msgid "Manufacturing"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_material_action
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_product_material_action
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__material_ids
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__name
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_template__product_type_label__material
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_category__material
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_product_material_menu
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_base_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_form
+msgid "Material"
+msgstr "NL"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__material_category_id
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_material_tree
+msgid "Material Category"
+msgstr "Category NL"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__material_category_name
+msgid "Material Category Name"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__m_input
+msgid "Material Input"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__m_ng
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__m_ng
+msgid "Material NG"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__m_ng_2
+msgid "Material NG 2"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__m_putaway
+msgid "Material Put Away"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__m_rec
+msgid "Material Receiving"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__m_repair
+msgid "Material Repair"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__m_return
+msgid "Material Return"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__m_stock
+msgid "Material Stock 1"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__m_stock_2
+msgid "Material Stock 2"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_form_inherit
+msgid "Material list"
+msgstr "DS NL"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__material_status
+msgid "Materials"
+msgstr "NL"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_packaging_qty__max_qty
+msgid "Max Qty"
+msgstr "SL tối đa"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_model_action
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__model_id
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_search_panel
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_tree
+msgid "Model"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_category__mold
+msgid "Mold"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_jig__qc_status__ng
+msgid "NG"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_model__name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbytype__name
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_common_detail_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_common_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_employee_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_package_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_product_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_search_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_template_search_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_stock_picking_type_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_stock_picking_type_tree
+msgid "Name"
+msgstr "Tên"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__is_need_jig
+msgid "Need Jig"
+msgstr "Dùng Jig"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+msgid "Net Qty"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_template__tracking__none
+msgid "No Tracking"
+msgstr "Không theo dõi"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_project__project_status__not_used
+msgid "Not Used"
+msgstr "Chưa dùng"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__packing_state__not_yet
+msgid "Not yet Packing"
+msgstr "Chưa đóng gói"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__number_of_lines
+msgid "Number of Lines"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_jig__qc_status__ok
+msgid "OK"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__oqc
+msgid "OQC"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_operation_type_action
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_picking_type__operation_category
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_picking_type__operation_type
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_operation_type_menu
+msgid "Operation Type"
+msgstr "Vận hành"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__outsourcing_cost
+msgid "Outsourcing Cost"
+msgstr "Giá gia công bên ngoài"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_package_action
+msgid "Package"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_package_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_package_tree_inherit
+msgid "Package Type"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_stock_quant_package
+msgid "Packages"
+msgstr "Kiện hàng"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__packing_state__packed
+msgid "Packed"
+msgstr "Đã đóng gói"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_form_inherit
+msgid "Packing"
+msgstr "Đóng gói"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__packing_qty_ids
+msgid "Packing Quantities"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_quant_package__packing_state
+msgid "Packing State"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__product_packing_id
+msgid "Packing Step"
+msgstr "Bước đóng gói"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_packaging_qty__packing_type
+msgid "Packing Type"
+msgstr "Loại đóng gói"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_pallet_action
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_pallet
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__ym_type__pallet
+msgid "Pallet"
+msgstr "Mã Pallet"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_pallet__name
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__ym_type__pallet_no_1
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__ym_type__pallet_no_2
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__ym_type__pallet_no_3
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_pallet_menu
+msgid "Pallet No"
+msgstr "Mã Pallet"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__pallet_packing
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__ym_type__pallet_1
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__ym_type__pallet_2
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__ym_type__pallet_3
+msgid "Pallet Packing"
+msgstr "Đóng pallet"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__parent_id
+msgid "Parent Code"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_youngmin_partner_form_inherit
+msgid "Phone"
+msgstr "SĐT"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_stock_picking_type
+msgid "Picking Type"
+msgstr "Kiểu lấy hàng"
+
+#. module: autonsi_standard_youngmin
+#. odoo-python
+#: code:addons/autonsi_standard_youngmin/models/bom.py:0
+#, python-format
+msgid "Please add material for process %s"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__pre_manufacturing
+msgid "Pre-Manufacturing"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_jig__type__press
+msgid "Press"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__material_price
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__price
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__semi_price
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_material_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_semi_tree
+msgid "Price"
+msgstr "Giá"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,help:autonsi_standard_youngmin.field_product_product__material_price
+#: model:ir.model.fields,help:autonsi_standard_youngmin.field_product_product__semi_price
+msgid "Price at which the product is sold to customers."
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_process_action
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__process_ids
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__process_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_workcenter__process_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__process_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__process_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__process_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__process_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_location__process_id
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_process_menu
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+msgid "Process"
+msgstr "Công đoạn"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_line__process_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__process_code
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_base_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_form
+msgid "Process Code"
+msgstr "Mã công đoạn"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_process_line
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_standard_process_line_form
+msgid "Process Line"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_standard_process_line_tree
+msgid "Process Lines"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_process
+msgid "Process Model"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__name
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_form_inherit
+msgid "Process Name"
+msgstr "Tên công đoạn"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_product_action
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_product_fg_action
+#: model:ir.model,name:autonsi_standard_youngmin.model_product_template
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_packaging_qty__product_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__product_id
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_product_fg_menu
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_search_panel
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_category__display_name2
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_product_categories_menu
+msgid "Product Categories"
+msgstr "Category SP"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_product_category
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__product_category_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__product_category_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_location__product_category_ids
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_tree
+msgid "Product Category"
+msgstr "Danh mục sản phẩm"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__product_category_domain
+msgid "Product Category Domain"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_search_panel
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_mrp_bom_tree_view_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_form
+msgid "Product Code"
+msgstr "Mã sản phẩm"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_model
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__product_model_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_template__product_model_id
+msgid "Product Model"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__product_model_category
+msgid "Product Model Category"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__default_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__product_name
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_search_panel
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_form
+msgid "Product Name"
+msgstr "Tên sản phẩm"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_line__product_type
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__detailed_type
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_template__detailed_type
+msgid "Product Type"
+msgstr "Loại sản phẩm"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__product_type_label
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_template__product_type_label
+msgid "Product Type Label"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_product_product
+msgid "Product Variant"
+msgstr "Biến thể sản phẩm"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_project_action
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_project
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__project_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_template__project_id
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_project_menu
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_search_panel
+msgid "Project"
+msgstr "Dự án"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__project_alias
+msgid "Project Alias"
+msgstr "Mật danh"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__project_code
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_tree
+msgid "Project Code"
+msgstr "Mã dự án"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__project_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__project_name
+msgid "Project Name"
+msgstr "Tên dự án"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__project_period
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_project_form
+msgid "Project Period"
+msgstr "Thời gian dự án"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__project_status
+msgid "Project Status"
+msgstr "Trạng thái dự án"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__qc_status
+msgid "QC Status"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_line__qty_no_loss
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__quantity
+msgid "Quantity"
+msgstr "SL"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__REV
+msgid "REV"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__remaining_strokes
+msgid "Remaining Strokes"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_hr_employee__remark
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__remark
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__remark
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__remark
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__remark
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_model__remark
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_pallet__remark
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__remark
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process_line__remark
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__remark
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_quant_package__remark
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_area_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_area_view_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bin_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bin_view_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_department_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_department_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_location_view_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_location_view_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_material_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_pallet_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_pallet_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_tree
+msgid "Remark"
+msgstr "Ghi chú"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__repair
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_category__repair
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__repair
+msgid "Repair"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__repair_ng
+msgid "Repair NG"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_partner__representative_name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_res_users__representative_name
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_youngmin_partner_form_inherit
+msgid "Representative Name"
+msgstr "Tên đại diện"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__required_qty
+msgid "Required Quantity"
+msgstr "SL yêu cầu"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__m_return_remain
+msgid "Return Remain"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_area_view_form
+msgid "Root"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_location__row
+msgid "Rows"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__row
+msgid "Rows no"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_category__mps_factory__sh
+msgid "S.H"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_template__product_type__semi_product
+msgid "SEMI"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_category__mps_factory__swh
+msgid "SW.H"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__is_sample
+msgid "Sample"
+msgstr "Hàng mẫu"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_form
+msgid "Save"
+msgstr "Lưu"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_jig__status__scrap
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__scrap
+msgid "Scrap"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__product_template__product_type_label__semi_product
+msgid "Semi Product"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_product_semi_action
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_product_semi_menu
+msgid "Semi-Product"
+msgstr "BTP"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__stt
+msgid "Seq"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_hr_department__sequence
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_hr_employee__sequence
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__sequence
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__sequence
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_process__sequence
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__sequence
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_type__sequence
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_location__sequence
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_quant_package__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_quant_package__packing_state__shipped
+msgid "Shipped"
+msgstr "Đã xuất"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__shipping_country_ids
+msgid "Shipping Country"
+msgstr "Xuất đi nước"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_stock_picking_type_form
+msgid "Short name"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_category__silver
+msgid "Silver"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__small_packing
+msgid "Small Packing"
+msgstr "Túi bóng"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__sorting_qc
+msgid "Sorting QC"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_line__source_location_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__source_location_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__source_location_id
+msgid "Source Location"
+msgstr "Từ vị trí"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__product_spec
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__spec
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_form
+msgid "Spec"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__spec_no
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_search_panel
+msgid "Spec No"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_standard_menu
+msgid "Standard"
+msgstr "Kho thông tin"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_standby_type_tree
+msgid "Standard Code"
+msgstr "Mã tiêu chuẩn"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__standard_qty
+msgid "Standard Qty"
+msgstr "Quy cách đóng gói"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_standby_menu
+msgid "Standby"
+msgstr "Thiết lập"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_standbysetting_action
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_standbysetting_menu
+msgid "Standby Setting"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_standbysetting
+msgid "Standby Setting Model"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_standbysetting_step
+msgid "Standby Step Model"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_standbytype_menu
+msgid "Standby Type"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_standbysetting_type
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_standbytype
+msgid "Standby Type Model"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_project__project_start
+msgid "Start Date"
+msgstr "Ngày bắt đầu"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__state
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__state
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__step
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__step_ids
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__name
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_standby_step_form
+msgid "Step"
+msgstr "Bước"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_jig__status__stock
+msgid "Stock"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__product_sub_type
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_template__product_sub_type
+msgid "Sub Type"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_supplier_action
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__supplier_material
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__supplier
+#: model:ir.ui.menu,name:autonsi_standard_youngmin.autonsi_standard_supplier_menu
+msgid "Supplier"
+msgstr "NCC"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__supplier_material_ids
+msgid "Supplier Material"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__target_image
+msgid "Target Image"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__target_image_name
+msgid "Target Image Name"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__target_product_id
+msgid "Target Product"
+msgstr "Chỉ tiêu sản phẩm"
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_partner_form_inherit
+msgid "Tax"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__tool_ids
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__tool_ids
+msgid "Tool"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_quant_package__total_qty
+msgid "Total Qty"
+msgstr "Tổng SL"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__tracking
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_template__tracking
+msgid "Tracking"
+msgstr "Theo dõi"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.autonsi_standard_standbytype_action
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__type
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting__type_ids
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_type__name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbytype__type
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_location__location_type
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_standby_step_form
+msgid "Type"
+msgstr "Loại"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__type
+msgid "Type Jig"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_standby_type_tree
+msgid "Type Name"
+msgstr "Tên loại"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_jig__status
+msgid "Type Status"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_standby_step_form
+msgid "Un Confirm"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__unit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_form_inherit
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_fg_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_material_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_semi_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_template_fg_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_base_form
+msgid "Unit"
+msgstr "Đơn vị"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_packaging_qty__uom_id
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_inherit_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_bom_material_popup_form
+msgid "UoM"
+msgstr "Đơn vị"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.actions.act_window,name:autonsi_standard_youngmin.material_import_korea_id_action
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_product_material_tree
+msgid "Update ID & Qty"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_autonsi_standard_bom_import_form
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.view_material_import_korea_id_form
+msgid "Upload File"
+msgstr "Tải lên"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__virtual_reserve_material
+msgid "Virtual reserve material"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom__is_vision_inspection
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__is_vision_inspection
+msgid "Vision Insp"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_autonsi_standard_bom_import_wizard__is_vision_inspection
+msgid "Vision Inspection"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_category__wip
+msgid "WIP"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__wip_1
+msgid "WIP 1"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__wip_2
+msgid "WIP 2"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__wip_input
+msgid "WIP Input"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__wip_input_2
+msgid "WIP Input 2"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__wip_ng
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__w_ng
+msgid "WIP NG"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__w_ng_1
+msgid "WIP NG 1"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__w_ng_2
+msgid "WIP NG 2"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__w_receiving
+msgid "WIP Receiving"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__w_repair
+msgid "WIP Repair"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__wip_stock
+msgid "WIP Stock 1"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__check_type__wip_stock_2
+msgid "WIP Stock 2"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_youngmin_partner_form_inherit
+msgid "Website"
+msgstr "Trang web"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__weight_value
+msgid "Weight Value"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_product_product__wire_strand
+msgid "Wire Strand"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_jig__type__wood
+msgid "Wood"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_mrp_workcenter
+msgid "Work Center"
+msgstr "Khu vực sản xuất"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_stock_quant_package__ym_type
+msgid "YM Package Type"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__m_receiving
+msgid "YM: Material Receiving"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__m_shipping
+msgid "YM: Material Shipping"
+msgstr "Xuất NL"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__w_return
+msgid "YM: WIP Return"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_picking_type__operation_type__w_shipping
+msgid "YM: WIP Shipping"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_standard_youngmin.autonsi_standard_bom_form_inherit
+msgid "add"
+msgstr "Thêm"
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__location_type__area
+msgid "area"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__location_type__bin
+msgid "bin"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process__bom_id
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__bom_id
+msgid "bom"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_mrp_bom_process_material__bomprocess_id
+msgid "bomprocess"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_binview__location_id
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__stock_location__location_type__location
+msgid "location"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_standbytype__type__machine
+msgid "machine"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_standbytype__type__man
+msgid "man"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__master
+msgid "master"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_material_import_korea_id_wizard
+msgid "material.import.korea.id.wizard"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields.selection,name:autonsi_standard_youngmin.selection__standard_standbytype__type__mold
+msgid "mold"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common__name
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_common_detail__name
+msgid "name"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_product_packaging_qty
+msgid "product.packaging.qty"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model,name:autonsi_standard_youngmin.model_standard_binview
+msgid "standard.binview"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_step__standbysetting_id
+msgid "step"
+msgstr ""
+
+#. module: autonsi_standard_youngmin
+#: model:ir.model.fields,field_description:autonsi_standard_youngmin.field_standard_standbysetting_type__standbysetting_id
+msgid "type"
+msgstr ""

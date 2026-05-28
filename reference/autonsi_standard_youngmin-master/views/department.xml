@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree(list) View -->
+    <record id="autonsi_standard_department_tree" model="ir.ui.view">
+        <field name="name">Department List</field>
+        <field name="model">hr.department</field>
+        <field name="arch" type="xml">
+            <tree>
+<!--                <field name="sequence" widget="handle"/>-->
+                <field name="code"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="note" string="Remark"/>
+                <field name="create_uid" string="Created By"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_uid" string="Last Updated By"/>
+                <field name="write_date" string="Last Updated On"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="autonsi_standard_department_form" model="ir.ui.view">
+        <field name="name">Department Form</field>
+        <field name="model">hr.department</field>
+        <field name="arch" type="xml">
+            <form duplicate="0">
+                <sheet>
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="note" string="Remark"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_department_action' model='ir.actions.act_window'>
+        <field name="name">Department</field>
+        <field name="res_model">hr.department</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

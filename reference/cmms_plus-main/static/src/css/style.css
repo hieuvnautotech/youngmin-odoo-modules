@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Basote";
+  src:  url("/cmms_plus/static/src/css/Basote.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* tốt cho UX */
+}
+
+
+.fancytree-container {
+   height: 70vh;
+   border: none !important;
+    color: deeppink;
+    background: inherit !important;
+
+}
+.o_kanban_details {
+border: 0 !important;
+}
+.oe_kanban_card  {
+    cursor: pointer;
+}
+
+.w-432 {
+    width: 432px !important;
+}
+
+.cmms_quick_form .o_control_panel_navigation {
+    display: none !important;
+}
+.cmms_quick_form .o_control_panel  {
+    margin-left: 111px;
+}
+.cmms-content .o_control_panel  {
+    background: transparent !important;
+}
+
+
+.photo_warper {
+       margin-bottom: 15px;
+}
+.cmms_quick_form div[name="image_1920"]{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.o_search_panel_label  .o_datetime_input  {
+    border: 1px solid #ccc !important;
+}
+
+.cmms-content .o_view_nocontent {
+    display: none  !important;
+}
+
+/* Áp dụng background cho cả form và kanban */
+/* .cmms_quick_form .o_form_renderer::before,
+.cmms-content .o_kanban_renderer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+
+   
+    background-image: 
+        url('/cmms_plus/static/src/img/cmms_background.png'),
+        url('/cmms_plus/static/src/img/2_1.png');
+    
+    background-repeat: no-repeat, repeat-x;
+    background-size: 10%, 25%;
+    background-position: right bottom, center bottom;
+
+    z-index: 0;
+    opacity: 0.6;
+    filter: sepia(1);
+} */
+
+/* Đảm bảo nội dung luôn nằm trên background */
+
+.cmms-content .o_kanban_renderer > * {
+    position: relative;
+    z-index: 1;
+}
+.cmms-form-status-badge {
+    position: absolute;
+    top: 18px;
+    right: -35px;
+    background: crimson;
+     width: 150px; 
+     text-align: center;
+    color: white;
+    padding: 5px 40px;
+    transform: rotate(45deg); /* xoay ngược lại để tạo góc chéo */
+    font-weight: bold;
+    z-index: 10;
+    pointer-events: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.cmms-form-status-badge.badge-ok {
+    background: green;
+}
+
+.cmms-form-status-badge.badge-ng {
+    background: red;
+}
+
+.cmms-form-status-badge.badge-not-yet {
+    background: orange;
+}
+
+
+.o_form_sheet  {
+    width: 100% !important;
+}
+.o_select_file_button {
+    color: white  !important;
+}
+
+
+.o_field_widget:not(.o_readonly_modifier,.o_field_float_time, .o_field_nh_daterange,.o_field_badge, .o_field_nh_float_link ) {
+    border: 1px solid #eeee;
+}
+
+
+
+.cmms-content .o_kanban_renderer  {
+        padding: 0 !important;
+}
+
+
+.my-hide {
+    display: none !important;
+}

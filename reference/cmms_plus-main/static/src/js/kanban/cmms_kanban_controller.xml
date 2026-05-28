@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="cmms_plus.CMMSKanbanView" t-inherit="web.KanbanView" t-inherit-mode="primary" owl="1">
+        <xpath expr="//Layout" position="attributes">
+            <attribute name="className">'cmms-content'</attribute>
+        </xpath>
+        <xpath expr="//t[@t-set-slot='control-panel-create-button']/t" position="after">
+             <button type="button" class="btn btn-primary " accesskey="c" t-on-click="() => this.createJigRecord()" data-bounce-button="">
+                            Create Jig
+                        </button>
+
+              <button type="button" class="btn" style="background-color: #2e5ba3; color:white;" accesskey="c" t-on-click="() => this.createMachineRecord()" data-bounce-button="">
+                            Create Machine
+                        </button>
+
+
+        </xpath>
+
+    
+    </t>
+
+</templates>

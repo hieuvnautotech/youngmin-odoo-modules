@@ -1,0 +1,34 @@
+.o_tree_editor_condition {
+    .o_tree_editor_editor {
+        input {
+            width: 10em;
+
+            &.o_datetime_input {
+                text-align: center;
+                width: 12em;
+            }
+        }
+    }
+}
+
+.o_tree_editor_editor.overflow-hidden {
+    max-width: 445px;
+
+    .o_input {
+        flex-direction: row-reverse;
+    }
+
+    .o_multi_record_selector:has(.o_badge) {
+        input {
+            width: 7em;
+        }
+    }
+}
+
+.u_field_filter {
+    .o_tree_editor_editor.overflow-hidden {
+        .o_dropdown_button {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<odoo>
+    <data noupdate="1">
+    
+        <record id="cmms_plus_jig_sequence" model="ir.sequence">
+            <field name="name">Jig Code</field>
+            <field name="code">jig.code.sequence</field>
+            <field name="prefix">J</field>
+            <field name="padding">4</field>
+            <field name="number_increment">1</field>
+        </record>
+
+          <record id="cmms_plus_machine_sequence" model="ir.sequence">
+            <field name="name">Machine Code</field>
+            <field name="code">machine.code.sequence</field>
+            <field name="prefix">M</field>
+            <field name="padding">4</field>
+            <field name="number_increment">1</field>
+        </record>
+
+
+       
+
+    </data>
+</odoo>

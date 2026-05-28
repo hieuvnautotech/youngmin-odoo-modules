@@ -1,0 +1,40 @@
+<odoo>
+    <menuitem name="Standard" id="autonsi_standard_standard_menu" sequence="90" web_icon="autonsi_standard_youngmin,static/description/icon.png"/>
+    <menuitem name="Information" id="autonsi_standard_information_menu" parent="autonsi_standard_standard_menu" sequence="1"/>
+    <menuitem name="Standby" id="autonsi_standard_standby_menu" parent="autonsi_standard_standard_menu" sequence="2"/>
+
+    <menuitem name="Buyer" id="autonsi_standard_buyer_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_buyer_action" sequence="1"/>
+    <menuitem name="Supplier" id="autonsi_standard_supplier_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_supplier_action" sequence="2"/>
+    <menuitem name="Project" id="autonsi_standard_project_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_project_action" sequence="3"/>
+    <menuitem name="Product" id="autonsi_standard_product_fg_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_product_fg_action" sequence="4"/>
+    <menuitem name="Semi-Product" id="autonsi_standard_product_semi_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_product_semi_action" sequence="5"/>
+    <menuitem name="Material" id="autonsi_standard_product_material_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_product_material_action" sequence="6"/>
+    <menuitem name="BOM &amp; Routing" id="autonsi_standard_bom_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_bom_inherit_action" sequence="7"/>
+    <menuitem name="Area" id="autonsi_standard_area_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_area_action" sequence="8"/>
+    <menuitem name="Location" id="autonsi_standard_location_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_location_action" sequence="9"/>
+    <menuitem name="Bin" id="autonsi_standard_bin_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_bin_action" sequence="10"/>
+    <menuitem name="Department" id="autonsi_standard_department_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_department_action" sequence="11"/>
+    <menuitem name="Employee" id="autonsi_standard_employee_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_employee_action" sequence="12" />
+    <menuitem name="Pallet" id="autonsi_standard_pallet_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_pallet_action" sequence="13"/>
+<!--    <menuitem name="Jig" id="autonsi_standard_jig_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_jig_action" sequence="14"/>-->
+
+
+<!--    <menuitem name="Model" id="autonsi_standard_model_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_model_action" sequence="1"/>-->
+<!--    <menuitem name="Product" id="autonsi_standard_product_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_product_action" sequence="3"/>-->
+<!--    <menuitem name="Material" id="autonsi_standard_material_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_material_action" sequence="3"/>-->
+    <menuitem name="Process" id="autonsi_standard_process_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_process_action" sequence="15"/>
+    <menuitem id="menu_standard_process_line" name="Lines"
+        parent="autonsi_standard_information_menu"
+        action="mrp.mrp_workcenter_action" sequence="16" />
+        <!-- action="mrp.mrp_workcenter_action" sequence="16" /> -->
+
+
+    <menuitem name="Common" id="autonsi_standard_common_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_common_action" sequence="17"/>
+    <menuitem name="Common Detail" id="autonsi_standard_common_detail_menu" parent="autonsi_standard_information_menu" action="autonsi_standard_common_detail_action" sequence="18" groups="base.group_no_one"/>
+    <menuitem name="Product Categories" id="autonsi_standard_product_categories_menu" parent="autonsi_standard_information_menu" action="product.product_category_action_form" sequence="19"/>
+
+
+    <menuitem name="Operation Type" id="autonsi_standard_operation_type_menu" parent="autonsi_standard_standby_menu" action="autonsi_standard_operation_type_action" sequence="1"/>
+    <menuitem name="Standby Type" id="autonsi_standard_standbytype_menu" parent="autonsi_standard_standby_menu" action="autonsi_standard_standbytype_action" sequence="2"/>
+    <menuitem name="Standby Setting" id="autonsi_standard_standbysetting_menu" parent="autonsi_standard_standby_menu" action="autonsi_standard_standbysetting_action" sequence="3"/>
+</odoo>

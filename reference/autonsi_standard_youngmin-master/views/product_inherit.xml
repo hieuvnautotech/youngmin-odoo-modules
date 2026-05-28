@@ -1,0 +1,296 @@
+<odoo>
+    <record model="ir.ui.view" id="autonsi_standard_product_template_fg_tree">
+        <field name="name">autonsi_standard_product_fg_tree</field>
+        <field name="model">product.template</field>
+        <field name="priority">1</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="product_type"/>
+                <field name="default_code" string="Code"/>
+                <field name="name"/>
+                <field name="uom_id" string="Unit"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_date" string="Last Updated On"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="autonsi_standard_product_fg_tree">
+        <field name="name">autonsi_standard_product_fg_tree</field>
+        <field name="model">product.product</field>
+        <field name="priority">1</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="product_type"/>
+                <field name="project_id" string="Project Code"/>
+                <field name="categ_id" string="Product Category" domain="[('parent_id.name', '=', 'Product')]"/>
+                <field name="default_code" string="Code"/>
+                <field name="name"/>
+                <field name="spec"/>
+                <field name="item_use"/>
+<!--                <field name="sorting_qc"/>-->
+                <field name="image_128" widget="image" class="standard-product-tree-image" options="{'image_preview': 'image_128'}" string="Image"/>
+                <field name="price" string="Price"/>
+                <field name="uom_id" string="Unit"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_date" string="Last Updated On"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="autonsi_standard_product_semi_tree">
+        <field name="name">autonsi_standard_product_semi_tree</field>
+        <field name="model">product.product</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="product_type"/>
+                <field name="default_code" string="Code"/>
+                <field name="name"/>
+                <field name="spec"/>
+                <field name="item_use"/>
+                <field name="image_128" widget="image" class="standard-product-tree-image" options="{'image_preview': 'image_128'}" string="Image"/>
+                <field name="semi_price" string="Price"/>
+                <field name="uom_id" string="Unit"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_date" string="Last Updated On"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="autonsi_standard_product_material_tree">
+        <field name="name">autonsi_standard_product_material_tree</field>
+        <field name="model">product.product</field>
+        <field name="arch" type="xml">
+            <tree>
+                <header>
+                    <button invisible="not context.get('show_import_korea_id_action', False)" string="Update ID &amp; Qty"  name="%(material_import_korea_id_action)d" type="action" class="btn btn-primary" display="always"/>
+                </header>
+                <field name="product_type"/>
+                <field name="categ_id" string="Material Category" domain="[('parent_id.name', '=', 'Material')]"/>
+                <field name="default_code" string="Code"/>
+                <field name="name"/>
+                <field name="spec"/>
+                <field name="id_in_korea"/>
+                <field name="item_use"/>
+                <field name="image_128" widget="image" class="standard-product-tree-image" options="{'image_preview': 'image_128'}" string="Image"/>
+                <field name="material_price" string="Price"/>
+                <field name="uom_id" string="Unit"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_date" string="Last Updated On"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="autonsi_standard_product_fg_form_inherit">
+        <field name="name">product.product.form.inherit</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view" />
+        <field name="priority">15</field>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="attributes">
+                <attribute name="groups">base.group_no_one</attribute>
+            </xpath>
+            <xpath expr="//field[@name='priority']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//h1" position="attributes">
+<!--                <attribute name="invisible">1</attribute>-->
+                <attribute name="style">display: none</attribute>
+            </xpath>
+            <xpath expr="//div[hasclass('oe_title')]//label" position="replace">
+                <h1 class="o_row align-items-center">
+                    <label for="name" string="Name" class="text-break" />
+                    <field name="name" class="oe_inline"/>
+                </h1>
+            </xpath>
+
+            <xpath expr="//h1[hasclass('o_row')]" position="after">
+                <h1 class="o_row align-items-center">
+                    <label for="default_code" string="Code" class="text-break" />
+                    <field name="default_code" class="oe_inline" readonly="0"/>
+                </h1>
+            </xpath>
+
+            <xpath expr="//div[hasclass('oe_chatter')]" position="attributes">
+                <attribute name="style">display: none</attribute>
+            </xpath>
+
+            <xpath expr="//notebook" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//sheet" position="inside">
+<!--                <field name="product_type"/>-->
+                <field name="product_type" invisible="1"/>
+                <field name="product_category_domain" invisible="1"/>
+            </xpath>
+
+            <xpath expr="//notebook" position="before">
+                <notebook>
+                    <page string="Information" id="information_fg" invisible="product_type != 'fg product'">
+                        <group>
+                            <group>
+                                <field name="spec"/>
+                                <field name="product_type"/>
+                                <field name="project_id"/>
+                                <field name="categ_id" options="{'no_create': True}" string="Product Category"  domain="[('parent_id.name', '=', 'Product')]"/>
+                                <field name="item_use"/>
+                                <field name="is_vision_inspection"/>
+                                <field name="is_double_inspection_and_packing"/>
+                                <field name="file_upload" filename="file_upload_name"/>
+                                <field name="file_upload_name" invisible="1"/>
+                            </group>
+
+                            <group>
+                                <field name="shipping_country_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                                <field name="expire"/>
+                                <field name="label_cost"/>
+                                <field name="outsourcing_cost"/>
+                                <field name="price"/>
+                                <field name="uom_id" string="Unit"/>
+                                <field name="remark"/>
+                                <field name="create_date" string="Created On"/>
+                                <field name="write_date" string="Last Updated On"/>
+                            </group>
+                        </group>
+
+                    </page>
+
+                    <page string="Information" id="information_semi" invisible="product_type != 'semi product'">
+                        <group>
+                            <group>
+                                <field name="spec"/>
+                                <field name="product_type"/>
+                                <field name="item_use"/>
+                                <field name="file_upload" filename="file_upload_name"/>
+                                <field name="file_upload_name" invisible="1"/>
+                                <field name="expire"/>
+                            </group>
+
+                            <group>
+                                <field name="semi_price"/>
+                                <field name="uom_id" string="Unit"/>
+                                <field name="remark"/>
+                                <field name="create_date" string="Created On"/>
+                                <field name="write_date" string="Last Updated On"/>
+                            </group>
+                        </group>
+                    </page>
+
+                    <page string="Information" id="information_material" invisible="product_type != 'material'">
+                        <group>
+                            <group>
+                                <field name="spec"/>
+                                <field name="product_type"/>
+                                <field name="categ_id" domain="[('parent_id.name', '=', 'Material')]" options="{'no_create': True}" string="Material Category"/>
+                                <field name="id_in_korea" required="product_type == 'material'"/>
+                                <field name="item_use"/>
+                                <field name="file_upload" filename="file_upload_name"/>
+                                <field name="file_upload_name" invisible="1"/>
+                                <field name="supplier_material"/>
+                                <field name="is_sample"/>
+                            </group>
+
+                            <group>
+                                <field name="standard_qty"/>
+                                <field name="material_category_name" invisible="1"/>
+                                <field name="wire_strand" invisible="material_category_name != 'HEATING WIRE'"/>
+                                <field name="expire"/>
+                                <field name="material_price"/>
+                                <field name="uom_id" string="Unit"/>
+                                <field name="remark"/>
+                                <field name="create_date" string="Created On"/>
+                                <field name="write_date" string="Last Updated On"/>
+                            </group>
+                        </group>
+                    </page>
+
+                    <!--packing-->
+                    <page string="Packing" id="packing_fg" invisible="product_type != 'fg product'">
+                        <group>
+                            <field name="product_packing_id"/>
+
+                        </group>
+                        <field name="packing_qty_ids">
+                            <tree editable="bottom" create="0" delete="0">
+                                <field name="packing_type" readonly="1" force_save="1"/>
+                                <field name="max_qty"/>
+                                <field name="uom_id"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </xpath>
+
+
+
+        </field>
+    </record>
+    
+
+
+    <record model="ir.ui.view" id="autonsi_standard_product_search_form_inherit">
+        <field name="name">product.product.search.inherit</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_search_form_view" />
+        <field name="priority">15</field>
+        <field name="arch" type="xml">
+            <field name="name" position="replace">
+                <field name="name" string="Name" filter_domain="[('name', 'ilike', self)]"/>
+            </field>
+            <!-- <field name="default_code" position="replace">
+                <field name="default_code" string="Code" filter_domain="[('default_code', 'ilike', self)]"/>
+            </field> -->
+        </field>
+    </record>
+
+
+    
+
+    <record model="ir.ui.view" id="autonsi_standard_product_template_search_form_inherit">
+        <field name="name">product.template.search.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view" />
+        <field name="priority">15</field>
+        <field name="arch" type="xml">
+            <field name="name" position="replace">
+                <field name="name" string="Name" filter_domain="[('name', 'ilike', self)]"/>
+            </field>
+            <field name="name" position="before">
+                <field name="default_code" string="Code" filter_domain="[('default_code', 'ilike', self)]"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="autonsi_standard_product_fg_action" model="ir.actions.act_window">
+        <field name="name">Product</field>
+        <field name="res_model">product.product</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="autonsi_standard_product_fg_tree"/>
+        <field name="domain">[('product_type', '=', 'fg product')]</field>
+        <field name="context">{'default_product_type': 'fg product'}</field>
+    </record>
+
+    <record id="autonsi_standard_product_semi_action" model="ir.actions.act_window">
+        <field name="name">Semi-Product</field>
+        <field name="res_model">product.product</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="autonsi_standard_product_semi_tree"/>
+        <field name="domain">[('product_type', '=', 'semi product')]</field>
+        <field name="context">{'default_product_type': 'semi product'}</field>
+    </record>
+
+    <record id="autonsi_standard_product_material_action" model="ir.actions.act_window">
+        <field name="name">Material</field>
+        <field name="res_model">product.product</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="autonsi_standard_product_material_tree"/>
+        <field name="domain">[('product_type', '=', 'material')]</field>
+        <field name="context">{'default_product_type': 'material','show_import_korea_id_action': True}</field>
+    </record>
+
+</odoo>

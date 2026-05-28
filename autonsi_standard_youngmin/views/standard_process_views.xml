@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_standard_process_tree" model="ir.ui.view">
+        <field name="name">standard.process.tree</field>
+        <field name="model">standard.process</field>
+        <field name="arch" type="xml">
+            <tree string="Processes">
+                <field name="sequence"/>
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_standard_process_form" model="ir.ui.view">
+        <field name="name">standard.process.form</field>
+        <field name="model">standard.process</field>
+        <field name="arch" type="xml">
+            <form string="Process">
+                <sheet>
+                    <group>
+                        <field name="sequence"/>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="line_ids">
+                            <tree editable="bottom">
+                                <field name="sequence"/>
+                                <field name="name"/>
+                                <field name="workcenter_id"/>
+                                <field name="duration"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_standard_process_search" model="ir.ui.view">
+        <field name="name">standard.process.search</field>
+        <field name="model">standard.process</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+</odoo>

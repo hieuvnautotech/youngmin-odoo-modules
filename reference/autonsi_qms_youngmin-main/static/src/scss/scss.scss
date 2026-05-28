@@ -1,0 +1,59 @@
+@media (min-width: 768px) {
+    .col-md-3-5 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+.table-qc-form {
+    border-collapse: initial;
+    border-spacing: 0;
+}
+
+.qms-table-container .th {
+    align-content: center;
+    text-align: center;
+}
+
+.body-dialog-hide-overlow {
+    overflow: hidden !important;
+}
+
+.header-dialog-class {
+    .modal-header .z-buttons {
+        display: flex !important;
+    }
+}
+
+.o_qms_iqc_confirm_wizard {
+    max-width: 200px;
+}
+
+.truncate-tooltip td {
+    max-width: 50ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+//
+//.truncate-tooltip td[title]:hover::after {
+//    content: attr(title);
+//    position: absolute;
+//    left: 0;
+//    top: 100%;
+//    z-index: 9999;
+//
+//    background: rgba(0, 0, 0, 0.85);
+//    color: #fff;
+//    padding: 4px 8px;
+//    border-radius: 4px;
+//    white-space: normal;
+//    max-width: 400px;
+//    font-size: 11px;
+//
+//    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+//}

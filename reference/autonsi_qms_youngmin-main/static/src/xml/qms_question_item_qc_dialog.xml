@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="qms_question_item_qc_dialog_template" owl="1">
+        <Dialog title="this.props.context.form_title" size="'xl'" bodyClass="'body-dialog-hide-overlow'" contentClass="'header-dialog-class'">
+            <div class="qms-preview-container">
+                <!-- Compact Material Information Header -->
+                <div class="qms-header" style="border-bottom: 1px solid #dee2e6;">
+                    <!-- Material Info - Single horizontal row with mini tables -->
+                    <div class="d-flex align-items-stretch gap-1 truncate-tooltip" style="min-height: 60px;">
+                        <!-- Block 1 -->
+                        <div class="flex-fill border-end" style="min-width: 200px;">
+                            <table class="table table-sm mb-0 o_table_with_borders" style="font-size: 11px;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 80px; padding-left: 0px !important; background-color:#f0f1f2;
+                                            padding-right: 0px !important; border: none; padding: 2px 6px; font-weight: bold;">Material Code</td>
+                                        <td style="width: 60%; border: none; padding: 2px 6px; text-align: left;" t-esc="state.material_code"/>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Block 2 -->
+                        <div class="flex-fill border-end" style="min-width: 200px;">
+                            <table class="table table-sm mb-0 o_table_with_borders" style="font-size: 11px;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 80px;  padding-left: 0px !important; background-color:#f0f1f2;
+                                            padding-right: 0px !important; border: none; padding: 2px 6px; font-weight: bold;">Material Name</td>
+                                        <td style="width: 60%; border: none; padding: 2px 6px; text-align: left;" t-esc="state.material_name"/>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Block 3 -->
+                        <div class="flex-fill border-end" style="min-width: 150px;">
+                            <table class="table table-sm mb-0 o_table_with_borders" style="font-size: 11px;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 190px;  padding-left: 0px !important; background-color:#f0f1f2;
+    padding-right: 0px !important; border: none; padding: 2px 6px; font-weight: bold;">Lot</td>
+                                        <td style="width: 70%; border: none; padding: 2px 6px; text-align: left;" t-esc="state.lot"/>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Block 3 -->
+                        <div class="flex-fill border-end" style="min-width: 150px;">
+                            <table class="table table-sm mb-0 o_table_with_borders" style="font-size: 11px;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 190px;  padding-left: 0px !important; background-color:#f0f1f2;
+    padding-right: 0px !important; border: none; padding: 2px 6px; font-weight: bold;">Spec</td>
+                                        <td style="width: 70%; border: none; padding: 2px 6px; text-align: left;" t-esc="state.spec"/>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex align-items-stretch">
+                        <table class="table table-sm mt-1 o_table_with_borders" style="font-size: 11px;">
+                            <tbody>
+                                <tr>
+                                    <td style="background-color:#f0f1f2; border: none; font-weight: bold; width: 10%;">Doc: </td>
+                                    <t t-foreach="[0,1,2,3,4]" t-as="i" t-key="i">
+                                        <td t-if="i &lt; state.doc_list.length" style="text-align: center; width: 18%;">
+                                            <span class="text-info" style="text-decoration: underline;" t-esc="state.doc_list[i].name" t-on-click="action_view_file" t-att-data-id="state.doc_list[i].id"/>
+                                        </td>
+                                        <td t-else="" style="text-align: center;"/>
+                                    </t>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Control Fields Row -->
+                    <div class="d-flex align-items-center justify-content-end" style="min-height: 40px;">
+<!--                        <div class="d-flex align-items-center justify-content-start" style="min-height: 40px;">-->
+<!--                            <div class="d-flex align-items-center me-3" style="min-width: 140px;">-->
+<!--                                <strong class="me-2" style="font-size: 13px; white-space: nowrap;">Type:</strong>-->
+<!--                                <span t-if="state.isHistory" class="me-2" style="font-size: 13px; white-space: nowrap;" t-att-title="state.type_roll" t-esc="state.type_roll"/>-->
+<!--                                <select t-else="" class="form-control form-control-sm" style="font-size: 12px; height: 30px;" t-model="state.type_roll">-->
+<!--                                    <option value="first">First of roll</option>-->
+<!--                                    <option value="mid">Middle of roll</option>-->
+<!--                                    <option value="final">Final of roll</option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+                        <div class="d-flex align-items-center justify-content-end" style="min-height: 40px;">
+                            <div class="d-flex align-items-center me-3" style="min-width: 140px;">
+                                <strong class="me-2" style="font-size: 13px; white-space: nowrap;">QC Staff:</strong>
+                                <span t-if="state.isHistory" class="me-2" style="font-size: 13px; white-space: nowrap;" t-att-title="state.staff_name" t-esc="state.staff_name"/>
+                                <span t-elif="state.shop_floor" class="me-2" style="font-size: 13px; white-space: nowrap;" t-att-title="state.staff_name" t-esc="state.staff_name"/>
+                                <select t-else="" class="form-control form-control-sm" style="font-size: 12px; height: 30px;" t-model="state.staff_id" t-on-change="onStaffChange">
+                                    <t t-foreach="this.props.context.employee_list" t-as="employee" t-key="employee.id">
+                                        <option t-att-value="employee.id" t-esc="employee.name"/>
+                                    </t>
+                                </select>
+                            </div>
+
+                            <div class="d-flex align-items-center me-3" style="min-width: 120px;">
+                                <strong class="me-2" style="font-size: 13px; white-space: nowrap;">Date:</strong>
+                                <span t-if="state.isHistory" class="me-2" style="font-size: 13px; white-space: nowrap;" t-esc="state.check_date"/>
+                                <input t-else="" disabled="true" type="datetime" class="form-control form-control-sm" style="font-size: 12px; height: 30px;" t-model="state.check_date" />
+                            </div>
+
+
+                            <div class="d-flex align-items-center me-3" style="min-width: 120px;">
+                                <strong class="me-2" style="font-size: 13px; white-space: nowrap;">Final Result:</strong>
+                                <span  t-if="state.isHistory" class="me-2" style="font-size: 13px; white-space: nowrap;" t-esc="state.final_result"/>
+                                <select t-else="" class="form-control form-control-sm" style="font-size: 12px; height: 30px;" t-model="state.final_result">
+    <!--                                <option value="NOT">NOT SET</option>-->
+                                    <option value="OK">OK</option>
+                                    <option value="NG">NG</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Main Table -->
+            <div class="qms-table-container" style="max-height: 600px; overflow-y: auto;">
+                <table class="table table-sm table-striped table-hover table-qc-form" t-ref="qmsTable">
+                    <thead class="thead-dark sticky-top" style="background-color:#f0f1f2">
+                        <tr>
+                            <t t-foreach="state.columns" t-as="column" t-key="column.field">
+                                <th t-if="column.visible"  t-att-style="'align-content: center; text-align: center;width: ' + column.width" t-att-class="column.sortable ? 'sortable' : ''">
+                                    <t t-esc="column.title"/>
+                                    <i t-if="column.sortable and state.sortColumn === column.field" t-att-class="'fa fa-sort-' + (state.sortDirection === 'asc' ? 'up' : 'down')"/>
+                                </th>
+                            </t>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="state.check_list" t-as="item" t-key="item.id">
+
+                            <tr>
+                                <t t-foreach="state.columns" t-as="column" t-key="column.field">
+                                    <td t-if="column.visible" t-att-style="'width: ' + column.width">
+                                        <t t-if="['result'].includes(column.field)">
+                                            <!-- Editable Select Field -->
+                                            <select t-if="!state.isHistory and item.input_type === 'ok_ng'" class="form-control form-control-sm" t-model="item[column.field]" t-on-change="(ev) => this.onCellChange(item_index, column.field, ev.target.value)">
+                                                <option value="OK">OK</option>
+                                                <option value="NG">NG</option>
+<!--                                                <t t-foreach="column.options" t-as="option" t-key="option.value">-->
+<!--                                                    <option t-att-value="option.value" t-esc="option.label"/>-->
+<!--                                                </t>-->
+                                            </select>
+
+                                            <!-- Editable Number Field -->
+                                            <input t-elif="!state.isHistory and item.input_type === 'number'" type="number" class="form-control form-control-sm" step="column.step" t-model="item[column.field]" t-on-change="(ev) => this.onCellChange(item_index, column.field, ev.target.value)"/>
+
+                                            <!-- Editable Text Field -->
+                                            <input t-elif="!state.isHistory and item.input_type === 'text'" type="text" class="form-control form-control-sm" t-model="item[column.field]" t-on-change="(ev) => this.onCellChange(item_index, column.field, ev.target.value)"/>
+
+                                            <!-- Read-only Field -->
+                                            <span t-else="" class="text-truncate" t-att-title="item[column.field] || ''" t-esc="item[column.field] || ''"/>
+                                        </t>
+                                        <t t-else="">
+                                            <!-- Editable Select Field -->
+                                            <select t-if="!state.isHistory and column.type === 'select'" class="form-control form-control-sm" t-model="item[column.field]" t-on-change="(ev) => this.onCellChange(item_index, column.field, ev.target.value)">
+                                                <option value="OK">OK</option>
+                                                <option value="NG">NG</option>
+                                            </select>
+
+                                            <!-- Editable Number Field -->
+                                            <input t-elif="!state.isHistory and column.type === 'number'" type="number" class="form-control form-control-sm" step="column.step" t-model="item[column.field]" t-on-change="(ev) => this.onCellChange(item_index, column.field, ev.target.value)"/>
+
+                                            <!-- Editable Text Field -->
+                                            <input t-elif="!state.isHistory and column.type === 'text'" type="text" class="form-control form-control-sm" t-model="item[column.field]" t-on-change="(ev) => this.onCellChange(item_index, column.field, ev.target.value)"/>
+
+                                            <!-- Read-only Field -->
+                                            <span t-else="" class="text-truncate" t-att-title="item[column.field] || ''" t-esc="item[column.field] || ''"/>
+                                        </t>
+
+                                    </td>
+                                </t>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+
+            <t t-set-slot="footer">
+                <button t-if="!state.isHistory" class="btn btn-primary" t-on-click="saveData">Apply</button>
+                <button class="btn " t-on-click="data.close">Close</button>
+            </t>
+            <t t-set-slot="header">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <h4 class="text-center flex-grow-1">
+                        <span style="left: 20px;position: absolute;">
+                            <t t-esc="this.props.context.form_type_lable"/>
+                            <!-- Excel Download Button -->
+                            <button t-if="state.isHistory" class="btn btn-info btn-sm ms-2" t-on-click="downloadExcel" title="Download Excel">
+                                <i class="fa fa-download"/>
+                            </button>
+                        </span>
+                        <t t-esc="this.props.context.title"/>
+                    </h4>
+                </div>
+            </t>
+        </Dialog>
+    </t>
+</templates>

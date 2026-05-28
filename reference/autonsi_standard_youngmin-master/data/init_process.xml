@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="common_record_process_010_winding" model="standard.process">
+            <field name="name">Winding</field>
+            <field name="code">010</field>
+            <field name="remark">열선권취</field>
+        </record>
+
+        <record id="common_record_process_020_fabric_cutting" model="standard.process">
+            <field name="name">Fabric Cutting</field>
+            <field name="code">020</field>
+            <field name="remark">원단재단</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_wip_fabric_cutting_stock_1'))]" />
+        </record>
+
+        <record id="common_record_process_040_emb_hm" model="standard.process">
+            <field name="name">EMB (SH)</field>
+            <field name="code">040</field>
+            <field name="remark">자동열선배열</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_emb_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_050_emb_inspection" model="standard.process">
+            <field name="name">EMB Inspection</field>
+            <field name="code">050</field>
+            <field name="remark">자수품 검사</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_emb_inspection_stock_1'))]" />
+        </record>
+
+        <record id="common_record_process_060_hole" model="standard.process">
+            <field name="name">Hole</field>
+            <field name="code">060</field>
+            <field name="remark">타공</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_hole_stock_1')), (4, ref('autonsi_standard_youngmin.location_hole_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_080_tape" model="standard.process">
+            <field name="name">Tape</field>
+            <field name="code">080</field>
+            <field name="remark">합포</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_tape_stock_1')), (4, ref('autonsi_standard_youngmin.location_tape_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_090_forming" model="standard.process">
+            <field name="name">Forming</field>
+            <field name="code">090</field>
+            <field name="remark">포밍</field>
+            <field name="is_need_jig" eval="True" />
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_forming_stock_1')), (4, ref('autonsi_standard_youngmin.location_forming_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_110_wire_sensor_soldering_ntc" model="standard.process">
+            <field name="name">Wire &amp; Sensor Soldering NTC</field>
+            <field name="code">110</field>
+            <field name="remark">솔더-NTC</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_wire_sensor_soldering_ntc_stock_1'))]" />
+        </record>
+
+        <record id="common_record_process_120_wire_fuse_soldering" model="standard.process">
+            <field name="name">Wire &amp; Fuse Soldering</field>
+            <field name="code">120</field>
+            <field name="remark">솔더-WIRE+FUSE</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_wire_fuse_soldering_stock_1'))]" />
+        </record>
+
+        <record id="common_record_process_130_taping" model="standard.process">
+            <field name="name">Taping</field>
+            <field name="code">130</field>
+            <field name="remark">테이핑</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_taping_stock_1'))]" />
+        </record>
+
+        <record id="common_record_process_210_emb_cutting" model="standard.process">
+            <field name="name">EMB Cutting</field>
+            <field name="code">210</field>
+            <field name="remark">자수품재단</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_emb_cutting_stock_2'))]" />
+        </record>
+        <record id="common_record_process_220_emb_cutting_inspection" model="standard.process">
+            <field name="name">EMB Cutting Inspection</field>
+            <field name="code">220</field>
+<!--            <field name="remark"></field>-->
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_emb_cutting_inspection_stock_2'))]" />
+        </record>
+
+
+
+        <record id="common_record_process_230_cut_thread" model="standard.process">
+            <field name="name">Cut Thread</field>
+            <field name="code">230</field>
+            <field name="remark">실/열선정리</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_cut_thread_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_260_folding_patch" model="standard.process">
+            <field name="name">Folding &amp; Patch</field>
+            <field name="code">260</field>
+            <field name="remark">열선정리</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_folding_patch_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_300_heat_wire_stripping" model="standard.process">
+            <field name="name">Heat Wire Stripping</field>
+            <field name="code">300</field>
+            <field name="remark">열선디핑탈피</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_heat_wire_stripping_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_340_stamp_ntc" model="standard.process">
+            <field name="name">Stamp NTC</field>
+            <field name="code">340</field>
+            <field name="remark">센서+배선 압착</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_stamp_ntc_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_350_soldering_ntc" model="standard.process">
+            <field name="name">Soldering NTC</field>
+            <field name="code">350</field>
+            <field name="remark">센서 압착부 디핑</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_soldering_ntc_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_360_sensor_shrink_tube" model="standard.process">
+            <field name="name">Sensor Shrink Tube</field>
+            <field name="code">360</field>
+            <field name="remark">센서 압착부 수축튜브 삽입/수축</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_sensor_shrink_tube_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_370_stamp_jack" model="standard.process">
+            <field name="name">Stamp Jack</field>
+            <field name="code">370</field>
+            <field name="remark">열선+배선압착</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_stamp_jack_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_380_soldering_jack" model="standard.process">
+            <field name="name">Soldering Jack</field>
+            <field name="code">380</field>
+            <field name="remark">열선 압착부 디핑</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_soldering_jack_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_390_heat_shrink_tube" model="standard.process">
+            <field name="name">Heat Shrink Tube</field>
+            <field name="code">390</field>
+            <field name="remark">열선 압착부 수축튜브 삽입/수축</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_heat_shrink_tube_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_400_emb_swh" model="standard.process">
+            <field name="name">EMB (SW.H)</field>
+            <field name="code">400</field>
+            <field name="remark">벨크로 미싱</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_wip_emb_stock_1'))]" />
+        </record>
+
+        <record id="common_record_process_430_routing" model="standard.process">
+            <field name="name">Routing</field>
+            <field name="code">430</field>
+            <field name="remark">라우팅+패치부착</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_routing_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_480_vision_inspection" model="standard.process">
+            <field name="name">Vision Inspection</field>
+            <field name="code">480</field>
+            <field name="remark">비전검사</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_vision_inspection_stock_1')), (4, ref('autonsi_standard_youngmin.location_vision_inspection_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_490_structure_inspection" model="standard.process">
+            <field name="name">Structure Inspection</field>
+            <field name="code">490</field>
+            <field name="remark">구조검사</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_structure_inspection_stock_1')), (4, ref('autonsi_standard_youngmin.location_structure_inspection_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_500_circuit_insp_packing" model="standard.process">
+            <field name="name">Circuit Insp &amp; Packing</field>
+            <field name="code">500</field>
+            <field name="remark">회로검사 &amp; 패킹</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_circuit_insp_packing_stock_1')), (4, ref('autonsi_standard_youngmin.location_circuit_insp_packing_stock_2'))]" />
+        </record>
+
+        <record id="common_record_process_510_double_insp_packing" model="standard.process">
+            <field name="name">Double Insp &amp; Packing</field>
+            <field name="code">510</field>
+            <field name="remark">이중 재검사 &amp; 패킹</field>
+            <field name="location_ids" eval="[(4, ref('autonsi_standard_youngmin.location_double_insp_packing_stock_1')), (4, ref('autonsi_standard_youngmin.location_double_insp_packing_stock_2'))]" />
+        </record>
+
+    </data>
+</odoo>

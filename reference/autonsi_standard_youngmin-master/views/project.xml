@@ -1,0 +1,77 @@
+<odoo>
+    <record id="autonsi_standard_project_tree" model="ir.ui.view">
+        <field name="name">Project</field>
+        <field name="model">standard.project</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="code" readonly="1"/>
+                <field name="name"/>
+                <field name="project_alias"/>
+                <field name="project_status"/>
+                <field name="project_period" readonly="1"/>
+                <field name="project_start"/>
+                <field name="remark"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_date" string="Last Updated On"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record model="ir.ui.view" id="autonsi_standard_project_form">
+        <field name="name">Project</field>
+        <field name="model">standard.project</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="image" widget="image" class="oe_avatar" options="{'preview_image': 'image'}"/>
+                    <div class="oe_title">
+                        <h1 class="o_row align-items-center">
+                            <label for="code" string="Code"/>
+                            <field name="code" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="project_alias"/>
+                            <field name="project_status"/>
+                            <label for="project_start" string="Project Period"/>
+                            <div class="o_row">
+                                <span>
+                                    <field name="project_start"/>
+                                </span>
+                                <span>~</span>
+                                <span>
+                                    <field name="project_end" nolabel="1"/>
+                                </span>
+                            </div>
+    <!--                        <field name="project_start"/>-->
+    <!--                        <field name="project_end"/>-->
+                            <field name="project_start"/>
+                            <field name="remark"/>
+                            <field name="create_date" string="Created On"/>
+                            <field name="write_date" string="Last Updated On"/>
+                        </group>
+                        <group>
+                            <field name="developer_charger"/>
+                            <field name="check_drawing_consistency"/>
+                            <field name="development_status"/>
+
+                        </group>
+
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_project_action' model='ir.actions.act_window'>
+        <field name="name">Project</field>
+        <field name="res_model">standard.project</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="autonsi_standard_project_tree"/>
+    </record>
+
+</odoo>

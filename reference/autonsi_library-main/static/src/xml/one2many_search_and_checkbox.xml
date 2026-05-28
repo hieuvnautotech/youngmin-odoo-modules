@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="one2many_search.One2ManySearchAndCheckbox" t-inherit-mode="primary" t-inherit="web.X2ManyField">
+        <xpath expr="//div[@class='o_x2m_control_panel d-empty-none mb-4']" position="before">
+            <div class="one2many_search_container_checkbox">
+                <div class="oe_search_value o_cp_searchview d-flex input-group">
+                    <div class="o_searchview form-control d-print-contents d-flex align-items-center py-1">
+                        <i class="o_searchview_icon d-print-none oi oi-search me-2" role="img" aria-label="Search..."
+                           title="Search..."></i>
+                        <div class="o_searchview_input_container d-flex flex-grow-1 flex-wrap gap-1">
+                            <input type="text"
+                                   class="o_searchview_input o_input d-print-none flex-grow-1 w-auto border-0"
+                                   placeholder="Search..." t-on-keyup="onKeyUp"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+        <xpath expr="//div[@t-att-class='className']" position="attributes">
+            <attribute name="t-ref">rootOne2manySearch</attribute>
+        </xpath>
+    </t>
+
+    <t t-name="one2many_search.One2ManySearchAndCheckbox_v2" t-inherit-mode="primary" t-inherit="web.X2ManyField">
+        <xpath expr="//div[@class='o_x2m_control_panel d-empty-none mb-4']" position="before">
+            <div class="one2many_search_container_checkbox_v2">
+                <div class="oe_search_value o_cp_searchview d-flex input-group">
+                    <div class="o_searchview form-control d-print-contents d-flex align-items-center py-1">
+                        <i class="o_searchview_icon d-print-none oi oi-search me-2" role="img" aria-label="Search..."
+                           title="Search..."></i>
+                        <div class="o_searchview_input_container d-flex flex-grow-1 flex-wrap gap-1">
+                            <input type="text"
+                                   class="o_searchview_input o_input d-print-none flex-grow-1 w-auto border-0"
+                                   placeholder="Search..." t-on-keyup="onKeyUp"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+        <xpath expr="//div[@t-att-class='className']" position="attributes">
+            <attribute name="t-ref">rootOne2manySearch</attribute>
+        </xpath>
+    </t>
+</templates>

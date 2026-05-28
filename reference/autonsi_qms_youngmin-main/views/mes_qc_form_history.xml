@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<!--	Tree View -->
+	<record id="mes_qc_form_history_iqc_tree_view" model="ir.ui.view">
+		<field name="name">mes.qc_form.history.tree</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<tree sample="1" expand='0' create="0" delete="0" js_class="history_controller" editable="bottom">
+                <button name="action_open_iqc_form_history" type="object" icon="fa-external-link"  readonly="1"/>
+                <field name="category_id" string="Material Category" readonly="1"/>
+                <field name="name" string="Form Title" readonly="1"/>
+                <field name="lot_id" string="Lot" readonly="1"/>
+
+                <field name="po_name" string="PO" readonly="1"/>
+                <field name="picking_id" string="Receiving Order" readonly="1"/>
+
+                <field name="overall_result" string="Final Result" readonly="1"/>
+                <field name="qty" readonly="1"/>
+                <field name="staff_name" string="QC Staff" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+				<field name="uom_id" readonly="1"/>
+				<field name="form_type" string="Upload" column_invisible="1"/>
+				<field name="file_upload" string="Upload" filename="file_upload_name" widget="attachment"/>
+				<field name="file_upload_name" column_invisible="1"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="mes_qc_form_history_pqc_tree_view" model="ir.ui.view">
+		<field name="name">mes.qc_form.history.tree</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<tree sample="1" expand='0' create="0" delete="0" js_class="history_controller" editable="bottom">
+                <button name="action_open_pqc_form_history" type="object" icon="fa-external-link"  readonly="1"/>
+                <field name="name" string="Form Title" readonly="1"/>
+                <field name="process_id" string="Process" readonly="1"/>
+
+
+				<field name="pmo_id" string="PMO" readonly="1"/>
+<!--				<field name="pmo_id" string="PMO" readonly="1"/>-->
+				<field name="mrp_production_id" string="MO" readonly="1"/>
+
+				<field name="product_id" string="Semi Product" readonly="1"/>
+				<field name="lot_ok_id" readonly="1"/>
+				<field name="ok_qty" string="OK Qty" readonly="1"/>
+				<field name="lot_ng_id" readonly="1"/>
+                <field name="ng_qty" string="NG Qty" readonly="1"/>
+                <field name="staff_name" string="QC Staff" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+				<field name="uom_id" readonly="1"/>
+				<field name="form_type" column_invisible="1"/>
+				<field name="file_upload" filename="file_upload_name" widget="attachment"/>
+				<field name="file_upload_name" column_invisible="1"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="mes_qc_form_history_oqc_tree_view" model="ir.ui.view">
+		<field name="name">mes.qc_form.history.tree</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<tree sample="1" expand='0' create="0" delete="0" js_class="history_controller" editable="bottom">
+                <button name="action_open_pqc_form_history" type="object" icon="fa-external-link"  readonly="1"/>
+                <field name="name" string="Form Title" readonly="1"/>
+
+                <field name="product_id" string="Product Code" readonly="1"/>
+                <field name="product_name" string="Product Name" readonly="1"/>
+				<field name="lot_ok_id" readonly="1"/>
+				<field name="ok_qty" string="OK Qty" readonly="1"/>
+				<field name="lot_ng_id" readonly="1"/>
+                <field name="ng_qty" string="NG Qty" readonly="1"/>
+
+                <field name="staff_name" string="QC Staff" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+				<field name="uom_id" readonly="1"/>
+				<field name="form_type" column_invisible="1"/>
+				<field name="file_upload" filename="file_upload_name" widget="attachment"/>
+				<field name="file_upload_name" column_invisible="1"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="mes_qc_form_history_item_qc_tree_view" model="ir.ui.view">
+		<field name="name">mes.qc_form.history.tree</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<tree sample="1" expand='0' create="0" delete="0" js_class="history_controller" editable="bottom">
+                <button name="action_open_item_qc_form_history" type="object" icon="fa-external-link"  readonly="1"/>
+                <field name="category_id" string="Material Category" readonly="1"/>
+                <field name="name" string="Form Title" readonly="1"/>
+                <field name="lot_id" string="Lot" readonly="1"/>
+                <field name="overall_result" string="Final Result" readonly="1"/>
+                <field name="qty" readonly="1"/>
+                <field name="staff_name" string="QC Staff" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+				<field name="uom_id" readonly="1"/>
+				<field name="form_type" column_invisible="1"/>
+				<field name="file_upload" filename="file_upload_name" widget="attachment"/>
+				<field name="file_upload_name" column_invisible="1"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="mes_qc_form_history_pallet_qc_tree_view" model="ir.ui.view">
+		<field name="name">mes.qc_form.history.tree</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<tree sample="1" expand='0' create="0" delete="0" js_class="history_controller" editable="bottom">
+                <button name="action_open_pallet_qc_form_history" type="object" icon="fa-external-link"  readonly="1"/>
+<!--                <field name="category_id" string="Material Category" readonly="1"/>-->
+                <field name="name" string="Form Title" readonly="1"/>
+                <field name="pallet_no" string="Pallet No" readonly="1"/>
+                <field name="overall_result" string="Final Result" readonly="1"/>
+                <field name="qty" readonly="1"/>
+                <field name="staff_name" string="QC Staff" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+				<field name="qty_uom" readonly="1"/>
+				<field name="form_type" column_invisible="1"/>
+				<field name="file_upload" filename="file_upload_name" widget="attachment"/>
+				<field name="file_upload_name" column_invisible="1"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="mes_qc_form_history_re_use_material_tree_view" model="ir.ui.view">
+		<field name="name">mes.qc_form.history.tree</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<tree sample="1" expand='0' create="0" delete="0" js_class="history_controller" editable="bottom">
+                <button name="action_open_re_use_form_history" type="object" icon="fa-external-link"  readonly="1"/>
+                <field name="category_id" string="Material Category" readonly="1"/>
+				<field name="name" string="Form Title" readonly="1"/>
+<!--				<field name="product_id" string="Material Code" readonly="1"/>-->
+                <field name="lot_id" string="Lot" readonly="1"/>
+                <field name="overall_result" string="Final Result" readonly="1"/>
+                <field name="qty" readonly="1"/>
+                <field name="staff_name" string="QC Staff" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+				<field name="uom_id" readonly="1"/>
+				<field name="form_type" column_invisible="1"/>
+				<field name="file_upload" filename="file_upload_name" widget="attachment"/>
+				<field name="file_upload_name" column_invisible="1"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="mes_qc_form_history_re_use_semi_tree_view" model="ir.ui.view">
+		<field name="name">mes.qc_form.history.tree</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<tree sample="1" expand='0' create="0" delete="0" js_class="history_controller" editable="bottom">
+                <button name="action_open_re_use_form_history" type="object" icon="fa-external-link"  readonly="1"/>
+<!--                <field name="category_id" string="Category Material" readonly="1"/>-->
+				<field name="name" string="Form Title" readonly="1"/>
+<!--				<field name="product_id" string="Material Code" readonly="1"/>-->
+                <field name="lot_id" string="Lot" readonly="1"/>
+                <field name="overall_result" string="Final Result" readonly="1"/>
+                <field name="qty" readonly="1"/>
+                <field name="staff_name" string="QC Staff" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+				<field name="uom_id" readonly="1"/>
+				<field name="form_type" column_invisible="1"/>
+				<field name="file_upload" filename="file_upload_name" widget="attachment"/>
+				<field name="file_upload_name" column_invisible="1"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="mes_qc_form_history_re_use_fg_tree_view" model="ir.ui.view">
+		<field name="name">mes.qc_form.history.tree</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<tree sample="1" expand='0' create="0" delete="0" js_class="history_controller" editable="bottom">
+                <button name="action_open_re_use_form_history" type="object" icon="fa-external-link"  readonly="1"/>
+<!--                <field name="category_id" string="Category Material" readonly="1"/>-->
+				<field name="name" string="Form Title" readonly="1"/>
+<!--				<field name="product_id" string="Material Code" readonly="1"/>-->
+                <field name="lot_id" string="Lot" readonly="1"/>
+                <field name="overall_result" string="Final Result" readonly="1"/>
+                <field name="qty" readonly="1"/>
+                <field name="staff_name" string="QC Staff" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+				<field name="uom_id" readonly="1"/>
+				<field name="form_type" column_invisible="1"/>
+				<field name="file_upload" filename="file_upload_name" widget="attachment"/>
+				<field name="file_upload_name" column_invisible="1"/>
+			</tree>
+		</field>
+	</record>
+
+
+	<!--	Form View -->
+	<record id="view_mes_qc_form_history_form" model="ir.ui.view">
+		<field name="name">mes.qc_form.history.form</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<form create="0" edit="0" delete="0">
+                <header>
+                    <button name="action_open_iqc_form_history" type="object" string="Preview" class="oe_highlight" />
+                </header>
+				<group>
+					<group>
+						<field name="type_material"/>
+                        <field name="name" string="Title"/>
+                        <field name="lot_id" />
+                        <field name="overall_result"/>
+					</group>
+					<group>
+						<field name="staff_name"/>
+                        <field name="check_date"/>
+                        <field name="unit"/>
+					</group>
+				</group>
+				<notebook>
+					<page name="qc_list" string="QC List">
+						<field name="question_ids">
+							<tree editable="bottom">
+<!--								<field name="mes_qc_form_question_id" widget="many2one_tags"/>-->
+								<field name="X1"/>
+								<field name="X2"/>
+								<field name="X3"/>
+								<field name="X4"/>
+								<field name="X5"/>
+							</tree>
+						</field>
+					</page>
+				</notebook>
+			</form>
+		</field>
+	</record>
+
+	<record id="mes_qc_form_history_search_view" model="ir.ui.view">
+		<field name="name">mes.qc_form.history.search</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<search string="QC History">
+
+				<!-- Search fields -->
+				<field name="name"/>
+				<field name="mes_qc_form_id"/>
+				<field name="lot_id"/>
+				<field name="product_id"/>
+				<field name="material_code"/>
+				<field name="material_name"/>
+				<field name="staff_id"/>
+
+				<!-- Filters -->
+				<filter string="IQC" name="filter_iqc"
+					domain="[('form_type', '=', 'iqc')]"/>
+				<filter string="PQC" name="filter_pqc"
+					domain="[('form_type', '=', 'pqc')]"/>
+				<filter string="OQC" name="filter_oqc"
+					domain="[('form_type', '=', 'oqc')]"/>
+
+				<separator/>
+
+				<filter string="Holding" name="filter_hold"
+					domain="[('status', '=', 'hold')]"/>
+				<filter string="Release" name="filter_release"
+					domain="[('status', '=', 'release')]"/>
+
+				<separator/>
+
+				<filter string="Today" name="filter_today"
+					domain="[('check_date', '>=', context_today())]"/>
+
+				<!-- Group By -->
+				<group expand="0" string="Group By">
+					<filter string="Form Type" name="group_form_type"
+						context="{'group_by': 'form_type'}"/>
+					<filter string="Status" name="group_status"
+						context="{'group_by': 'status'}"/>
+					<filter string="Item Group" name="group_item_group"
+						context="{'group_by': 'item_group'}"/>
+					<filter string="Product" name="group_product"
+						context="{'group_by': 'product_id'}"/>
+					<filter string="Lot" name="group_lot"
+						context="{'group_by': 'lot_id'}"/>
+					<filter string="Check Date" name="group_check_date"
+						context="{'group_by': 'check_date'}"/>
+				</group>
+
+			</search>
+		</field>
+	</record>
+
+    	<!--	Action -->
+	<record id="action_mes_qc_form_history_iqc" model="ir.actions.act_window">
+		<field name="name">IQC History</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_id" ref="mes_qc_form_history_iqc_tree_view"/>
+        <field name="domain">[('form_type','=','iqc'), ('is_history','=',True)]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+    <record id="action_mes_qc_form_history_pqc" model="ir.actions.act_window">
+		<field name="name">PQC History</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_id" ref="mes_qc_form_history_pqc_tree_view"/>
+        <field name="domain">[('form_type','=','pqc')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+    <record id="action_mes_qc_form_history_oqc" model="ir.actions.act_window">
+		<field name="name">OQC History</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_id" ref="mes_qc_form_history_oqc_tree_view"/>
+        <field name="domain">[('form_type','=','oqc')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+    <record id="action_mes_qc_form_history_item_qc" model="ir.actions.act_window">
+		<field name="name">Item QC History</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_id" ref="mes_qc_form_history_item_qc_tree_view"/>
+        <field name="domain">[('form_type','=','item_qc')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+	<record id="action_mes_qc_form_history_re_use_material" model="ir.actions.act_window">
+		<field name="name">Re-Use Material History</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_id" ref="mes_qc_form_history_re_use_material_tree_view"/>
+        <field name="domain">[('form_type','=','re_use'), ('item_group_re_use','=','material')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+	<record id="action_mes_qc_form_history_re_use_semi" model="ir.actions.act_window">
+		<field name="name">Re-Use Semi History</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_id" ref="mes_qc_form_history_re_use_semi_tree_view"/>
+        <field name="domain">[('form_type','=','re_use'), ('item_group_re_use','=','semi')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+	<record id="action_mes_qc_form_history_re_use_fg" model="ir.actions.act_window">
+		<field name="name">Re-Use FG History</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_id" ref="mes_qc_form_history_re_use_fg_tree_view"/>
+        <field name="domain">[('form_type','=','re_use'), ('item_group_re_use','=','fg')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+	<record id="action_mes_qc_form_history_pallet_qc" model="ir.actions.act_window">
+		<field name="name">Pallet QC History</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_id" ref="mes_qc_form_history_pallet_qc_tree_view"/>
+        <field name="domain">[('form_type','=','pallet_qc')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+
+
+    <menuitem sequence="1" id="menu_mes_qc_form_history_iqc" name="IQC" action="action_mes_qc_form_history_iqc" parent="autonsi_qms.menu_qms_history"/>
+	<menuitem sequence="2" id="menu_mes_qc_form_history_item_qc" name="Item QC" action="action_mes_qc_form_history_item_qc" parent="autonsi_qms.menu_qms_history"/>
+	<menuitem sequence="3" id="menu_mes_qc_form_history_re_use_material" name="Re-Use Material QC" action="action_mes_qc_form_history_re_use_material" parent="autonsi_qms.menu_qms_history"/>
+	<menuitem sequence="4" id="menu_mes_qc_form_history_pqc" name="PQC" action="action_mes_qc_form_history_pqc" parent="autonsi_qms.menu_qms_history"/>
+	<menuitem sequence="5" id="menu_mes_qc_form_history_re_use_semi" name="Re-Use Semi QC" action="action_mes_qc_form_history_re_use_semi" parent="autonsi_qms.menu_qms_history"/>
+	<menuitem sequence="6" id="menu_mes_qc_form_history_oqc" name="OQC" action="action_mes_qc_form_history_oqc" parent="autonsi_qms.menu_qms_history"/>
+	<menuitem sequence="7" id="menu_mes_qc_form_history_pallet_qc" name="Pallet QC" action="action_mes_qc_form_history_pallet_qc" parent="autonsi_qms.menu_qms_history"/>
+	<menuitem sequence="8" id="menu_mes_qc_form_history_re_use_fg" name="Re-Use FG QC" action="action_mes_qc_form_history_re_use_fg" parent="autonsi_qms.menu_qms_history"/>
+</odoo>

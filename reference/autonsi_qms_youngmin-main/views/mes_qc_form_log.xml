@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<!--	Form View -->
+	<record id="view_mes_qc_form_log_form" model="ir.ui.view">
+		<field name="name">mes.qc_form.log.form</field>
+		<field name="model">mes.qc_form.log</field>
+		<field name="arch" type="xml">
+			<form delete="0">
+				<group>
+                    <field name="reason"/>
+                    <field name="file_upload" filename="file_upload_name"/>
+                    <field name="file_upload_name" invisible="1"/>
+				</group>
+
+<!--                <footer>-->
+<!--                    <button string="Confirm" type="object" class="btn-primary"/>-->
+<!--                    <button string="Cancel" class="btn-secondary" special="cancel"/>-->
+<!--                </footer>-->
+
+			</form>
+		</field>
+	</record>
+
+    <record id="view_mes_qc_form_log_tree" model="ir.ui.view">
+		<field name="name">mes.qc_form.log.tree</field>
+		<field name="model">mes.qc_form.log</field>
+		<field name="arch" type="xml">
+			<tree create="0" editable="top">
+                <field name="type_material" string="Material Category" readonly="1"/>
+                <field name="material_code" readonly="1"/>
+                <field name="material_name" readonly="1"/>
+                <field name="lot_id" string="Lot" readonly="1"/>
+                <field name="form_type" readonly="1"/>
+<!--                <field name="overall_result" readonly="1"/>-->
+                <field name="log_result" string="Final Result" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+                <field name="staff_name" readonly="1"/>
+                <field name="qty" readonly="1"/>
+                <field name="qty_uom" readonly="1"/>
+                <field name="reason" readonly="1"/>
+                <field name="file_upload" filename="file_upload_name" readonly="1" widget="download"/>
+                <field name="file_upload_name" column_invisible="1" readonly="1"/>
+
+			</tree>
+		</field>
+	</record>
+
+	<record id="mes_qc_form_log_search_view" model="ir.ui.view">
+		<field name="name">mes.qc_form.log.search</field>
+		<field name="model">mes.qc_form.log</field>
+		<field name="arch" type="xml">
+			<search string="QC Form Log">
+
+				<!-- Search fields -->
+				<field name="material_code"/>
+				<field name="material_name"/>
+				<field name="lot_id"/>
+				<field name="staff_name"/>
+				<field name="log_result"/>
+				<field name="reason"/>
+
+				<!-- Filters -->
+				<separator/>
+
+				<filter string="Passed"
+						name="filter_pass"
+						domain="[('log_result','=','PASS')]"/>
+
+				<filter string="Failed"
+						name="filter_fail"
+						domain="[('log_result','=','FAIL')]"/>
+
+				<filter string="Has Attachment"
+						name="filter_has_file"
+						domain="[('file_upload','!=',False)]"/>
+
+				<separator/>
+
+				<filter string="Today"
+						name="filter_today"
+						domain="[('check_date','&gt;=',context_today())]"/>
+
+				<filter string="This Month"
+						name="filter_this_month"
+						domain="[('check_date','&gt;=',(context_today().replace(day=1)))]"/>
+
+				<!-- Group By -->
+				<group expand="0" string="Group By">
+					<filter string="Material Code"
+							name="group_material_code"
+							context="{'group_by':'material_code'}"/>
+
+					<filter string="Lot"
+							name="group_lot"
+							context="{'group_by':'lot_id'}"/>
+
+					<filter string="Form Type"
+							name="group_form_type"
+							context="{'group_by':'form_type'}"/>
+
+					<filter string="Item Group"
+							name="group_item_group"
+							context="{'group_by':'item_group'}"/>
+
+					<filter string="Status"
+							name="group_status"
+							context="{'group_by':'status'}"/>
+
+					<filter string="Check Date"
+							name="group_check_date"
+							context="{'group_by':'check_date'}"/>
+				</group>
+
+			</search>
+		</field>
+	</record>
+
+
+     <record id="action_mes_qc_log_material" model="ir.actions.act_window">
+		<field name="name">Material</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.log</field>
+		<field name="view_mode">tree</field>
+        <field name="view_id" ref="view_mes_qc_form_log_tree"/>
+		<field name="domain">[('item_group','=','material')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+    <record id="action_mes_qc_log_semi" model="ir.actions.act_window">
+		<field name="name">Semi</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.log</field>
+		<field name="view_mode">tree</field>
+        <field name="view_id" ref="view_mes_qc_form_log_tree"/>
+		<field name="domain">[('item_group','=','semi')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+    <record id="action_mes_qc_log_fg" model="ir.actions.act_window">
+		<field name="name">FG</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.log</field>
+		<field name="view_mode">tree</field>
+        <field name="view_id" ref="view_mes_qc_form_log_tree"/>
+		<field name="domain">[('item_group','=','fg')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+
+
+<!--    <menuitem id="menu_mes_qc_log" name="Log" parent="autonsi_qms.menu_qms_main"/>-->
+
+    <menuitem sequence="3" id="menu_mes_qc_log_material" name="Log Material" parent="autonsi_qms.menu_mes_qc_form_hold_release" action="action_mes_qc_log_material"/>
+<!--    <menuitem id="menu_mes_qc_log_semi" name="Semi" parent="menu_mes_qc_log" action="action_mes_qc_log_semi"/>-->
+<!--    <menuitem id="menu_mes_qc_log_fg" name="FG" parent="menu_mes_qc_log" action="action_mes_qc_log_fg"/>-->
+
+
+
+
+</odoo>

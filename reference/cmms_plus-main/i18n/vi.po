@@ -1,0 +1,751 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cmms_plus
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 09:27+0000\n"
+"PO-Revision-Date: 2026-02-10 09:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_product_product_kanban_custom
+msgid ""
+"<span class=\"fw-bold title\"> Process </span>\n"
+"                                                            <br/>"
+msgstr ""
+"<span class=\"fw-bold title\"> Công đoạn </span>\n"
+"                                                            <br/>"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__accumulated
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__jig_accumulated
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_product_product_kanban_custom
+msgid "Accumulated"
+msgstr "Tích lũy"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__amount
+msgid "Amount"
+msgstr "Số lượng"
+
+#. module: cmms_plus
+#: model:ir.ui.menu,name:cmms_plus.menu_display_equipment_product
+msgid "Assets"
+msgstr "Tài sản"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_product_product_search_view
+msgid "Assets Search"
+msgstr ""
+
+#. module: cmms_plus
+#. odoo-javascript
+#: code:addons/cmms_plus/static/src/js/kanban/cmms_formview_container/cmms_formview_container.xml:0
+#, python-format
+msgid "Back"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.ui.menu,name:cmms_plus.menu_cmms_plus_root
+msgid "CMMS"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.module.category,name:cmms_plus.module_category_cmms_plus_approver
+msgid "CMMS+  Approver "
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.module.category,name:cmms_plus.module_category_cmms_plus_magaer
+msgid "CMMS+  Manager  "
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.module.category,name:cmms_plus.module_category_cmms_plus_regular
+msgid "CMMS+ User "
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_equipment_model__equip_category_id
+msgid "Category"
+msgstr ""
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree
+msgid "Check"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_process__code
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__asset_code
+msgid "Code"
+msgstr ""
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_product_product_search_view
+msgid "Code or Name"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__company_name
+msgid "Company"
+msgstr "Công ty"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__company_manufactor_id
+msgid "Company Name"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__seller_contact
+msgid "Contact​"
+msgstr "Liên hệ"
+
+#. module: cmms_plus
+#. odoo-javascript
+#: code:addons/cmms_plus/static/src/js/kanban/cmms_kanban_controller.xml:0
+#, python-format
+msgid "Create Jig"
+msgstr "Tạo Jig"
+
+#. module: cmms_plus
+#. odoo-javascript
+#: code:addons/cmms_plus/static/src/js/kanban/cmms_kanban_controller.xml:0
+#, python-format
+msgid "Create Machine"
+msgstr "Tạo máy"
+
+#. module: cmms_plus
+#: model_terms:ir.actions.act_window,help:cmms_plus.action_equipment_model
+msgid "Create your first Equipment Model"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_equipment_model__create_uid
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__create_uid
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_process__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_equipment_model__create_date
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__create_date
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_process__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__current_stroke_count
+msgid "Current Stroke Count"
+msgstr ""
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Current jig count"
+msgstr "Số lượng Jig hiện tại"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__asset_custom_declaration
+msgid "Custom Declaration"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__date_of_entry
+msgid "Date of Entry"
+msgstr "Ngày nhập liệu"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__date_of_manufacture
+msgid "Date of manufacture"
+msgstr "Ngày sản xuất"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__equip_department
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__machine_department_id
+msgid "Department"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__department_code_import
+msgid "Department Import"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__deputy_id
+msgid "Deputy"
+msgstr "Phó trưởng nhóm"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_machine_form
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree_machine
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__process_name
+msgid "Description2"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__die_lifetime
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__die_lifetime
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_product_product_kanban_custom
+msgid "Die Lifetime"
+msgstr "Tuổi thọ khuôn"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Die lifetime"
+msgstr "Tuổi thọ khuôn"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_equipment_model__display_name
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__display_name
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_process__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__equip_employee_id
+msgid "Employee"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__equip_active
+msgid "Equip Active"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__equip_lot_name
+msgid "Equip Lot Name"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.actions.act_window,name:cmms_plus.action_cmms_plus_equipment_category
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__equip_category_id
+msgid "Equipment Category"
+msgstr ""
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_equipment_model_form
+msgid "Equipment Model"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.actions.act_window,name:cmms_plus.action_equipment_model
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_equipment_model_tree
+msgid "Equipment Models"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__equip_name
+msgid "Equipment Name"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__factory_name
+msgid "Factory"
+msgstr "Xưởng"
+
+#. module: cmms_plus
+#. odoo-javascript
+#: code:addons/cmms_plus/static/src/js/kanban/cmms_search_model.js:0
+#, python-format
+msgid ""
+"Failed to evaluate the domain: %(domain)s.\n"
+"%(error)s"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_equipment_model__id
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__id
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_process__id
+msgid "ID"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__asset_inv_number
+msgid "INV Number"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__product_product__status__in_use
+msgid "In Use"
+msgstr "Đang sử dụng"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__is_jig
+#: model:ir.model.fields,field_description:cmms_plus.field_product_template__is_jig
+msgid "Is Jig"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__is_machine
+#: model:ir.model.fields,field_description:cmms_plus.field_product_template__is_machine
+msgid "Is Machine"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__is_machine_import
+msgid "Is Machine Import"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_maintenance_equipment_category__is_mold
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__is_equipment_mold
+msgid "Is Mold"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__is_jig_import
+msgid "Is jig Import"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__jig_id
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_form
+msgid "Jig"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__jig_code
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Jig Code"
+msgstr "Mã Jig"
+
+#. module: cmms_plus
+#: model:ir.actions.act_window,name:cmms_plus.action_jig_history
+#: model:ir.ui.menu,name:cmms_plus.menu_display_jig_history
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_form
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Jig History"
+msgstr "Lịch sử Jig"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_form
+msgid "Jig Info"
+msgstr "Thông tin Jig"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__jig_name
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Jig Name"
+msgstr "Tên Jig"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__jig_status
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree
+msgid "Jig Status"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__jig_status_qc
+msgid "Jig Status Qc"
+msgstr "Trạng thái QC Jig"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree
+msgid "Jig Tree"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__jig_type_import
+msgid "Jig Type Import"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__jig_used_in_location_name
+msgid "Jig Used In Location (Name)"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__jig_used_in_location_id_2
+msgid "Jig Used In Location Id 2"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_equipment_model__write_uid
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__write_uid
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_process__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_equipment_model__write_date
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__write_date
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_process__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__lead_id
+msgid "Lead"
+msgstr "Trưởng nhóm"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__line_id
+msgid "Line"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__factory_name_2
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__jig_used_in_location_id
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Location"
+msgstr "Vị trí"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__location_import
+msgid "Location Import"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__mo
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "MO"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__equipment_model__model_type__machine
+#: model:ir.model.fields.selection,name:cmms_plus.selection__maintenance_equipment_category__type__machine
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_machine_form
+msgid "Machine"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__machine_code
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_machine_form
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree_machine
+msgid "Machine Code"
+msgstr "Mã máy"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_machine_form
+msgid "Machine Info"
+msgstr "Thông tin máy"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__machine_name
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_machine_form
+msgid "Machine Name"
+msgstr "Tên máy"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree_machine
+msgid "Machine Tree"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model,name:cmms_plus.model_maintenance_equipment_category
+msgid "Maintenance Equipment Category"
+msgstr "Danh mục thiết bị"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_machine_form
+msgid "Management Person in Charge​"
+msgstr "Người quản lý phụ trách"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_machine_form
+msgid "Manufacturing Company​​"
+msgstr "Công ty sản xuất"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_equipment_model__model_type
+msgid "Model Type"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__equipment_model__model_type__mold
+#: model:ir.model.fields.selection,name:cmms_plus.selection__maintenance_equipment_category__type__mold
+msgid "Mold"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__product_product__jig_status_qc__ng
+msgid "NG"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_equipment_model__name
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_process__name
+msgid "Name"
+msgstr ""
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_machine_form
+msgid "No #"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__no_number
+msgid "No#"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__product_product__jig_status_qc__not_yet
+msgid "Not Yet"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__product_product__jig_status_qc__ok
+msgid "OK"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__operation_time
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Operation Time"
+msgstr "Thời gian vận hành"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__equip_owner_user_id
+msgid "Owner"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__lead_name_import
+msgid "Phu Trach Chinh Import"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__deputy_name_import
+msgid "Phu Trach Phu Import"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__position
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_product_product_search_view
+msgid "Position"
+msgstr "Vị trí"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree
+msgid "Print QRCode"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__process
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__process_id
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_product_product_search_view
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Process"
+msgstr "Công đoạn"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__process_name_import
+msgid "Process Name"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model,name:cmms_plus.model_product_template
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__jig_product_id
+#: model:ir.model.fields.selection,name:cmms_plus.selection__equipment_model__model_type__product
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_product_product_search_view
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Product Code"
+msgstr "Mã sản phẩm"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_product_product_kanban_custom
+msgid "Product Image"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__product_model_id
+#: model:ir.model.fields,field_description:cmms_plus.field_product_template__product_model_id
+msgid "Product Model"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__product_name
+msgid "Product Name"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__product_name_import
+msgid "Product Name Import"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model,name:cmms_plus.model_product_product
+msgid "Product Variant"
+msgstr "Biến thể sản phẩm"
+
+#. module: cmms_plus
+#: model:ir.actions.act_window,name:cmms_plus.action_product_product_kanban_custom
+msgid "Products (Kanban)"
+msgstr "Sản phẩm (Kanban)"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__jig_qc_status
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "QC Status"
+msgstr "Trạng thái QC"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__remaining_strokes
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__remaining_strokes
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_product_product_kanban_custom
+msgid "Remaining Strokes"
+msgstr "Số lần dập còn lại"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Remaining strokes"
+msgstr "Số lần dập còn lại"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_equipment_model__remark
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__remark
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_machine_form
+msgid "Remark"
+msgstr "Ghi chú"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__seller_responsible
+msgid "Responsible Person​"
+msgstr "Người chịu trách nhiệm"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "Result QC"
+msgstr "Kết quả QC"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__rev
+msgid "Rev"
+msgstr "Phiên bản"
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__product_product__jig_used_in_location_id_2__sh
+msgid "S.H"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__product_product__jig_used_in_location_id_2__swh
+msgid "SW.H"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__product_product__status__scrap
+msgid "Scrap"
+msgstr "Phế liệu"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__asset_serial_number
+msgid "Serial Number"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__status
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__product_product__status__stock
+msgid "Stock"
+msgstr "Tồn kho"
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_product_product_search_view
+msgid "Supplier"
+msgstr "NCC"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__equip_technician_user_id
+msgid "Technician"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields.selection,name:cmms_plus.selection__equipment_model__model_type__tool
+msgid "Tool"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_jig_history__jig_type
+#: model:ir.model.fields,field_description:cmms_plus.field_maintenance_equipment_category__type
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_equipment_view_tree
+#: model_terms:ir.ui.view,arch_db:cmms_plus.cmms_plus_product_product_search_view
+msgid "Type"
+msgstr "Loại"
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__asset_price
+msgid "Unit Price"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__equip_used_in_location_id
+msgid "Used in Location"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__vender_import
+msgid "Vender Import"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model.fields,field_description:cmms_plus.field_product_product__equip_partner_id
+msgid "Vendor"
+msgstr ""
+
+#. module: cmms_plus
+#: model:res.groups,name:cmms_plus.group_cmms_plus_approver
+#: model:res.groups,name:cmms_plus.group_cmms_plus_manager
+#: model:res.groups,name:cmms_plus.group_cmms_plus_user
+msgid "Yes"
+msgstr ""
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "check 1"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model,name:cmms_plus.model_equipment_model
+msgid "equipment.model"
+msgstr ""
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_search
+msgid "jig Code"
+msgstr ""
+
+#. module: cmms_plus
+#: model_terms:ir.ui.view,arch_db:cmms_plus.view_jig_history_tree
+msgid "jig Status"
+msgstr "Trạng thái Jig"
+
+#. module: cmms_plus
+#: model:ir.model,name:cmms_plus.model_jig_history
+msgid "jig.history"
+msgstr ""
+
+#. module: cmms_plus
+#: model:ir.model,name:cmms_plus.model_jig_process
+msgid "jig.process"
+msgstr ""

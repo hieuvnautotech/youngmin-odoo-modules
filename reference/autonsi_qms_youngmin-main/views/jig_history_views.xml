@@ -1,0 +1,8 @@
+<odoo>
+
+    <record id="cmms_plus.action_jig_history" model="ir.actions.act_window">
+        <field name="domain">[('history_id', '!=', False)]</field>
+    </record>
+
+   
+</odoo>

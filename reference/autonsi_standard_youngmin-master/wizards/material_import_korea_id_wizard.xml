@@ -1,0 +1,27 @@
+<odoo>
+    <record id="view_material_import_korea_id_form" model="ir.ui.view">
+        <field name="name">material.import.korea.id.wizard.form</field>
+        <field name="model">material.import.korea.id.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import BOM" create="false" edit="false">
+                <group>
+                    <field name="file" filename="filename" widget="binary" string="Upload File"/>
+                    <field name="filename" invisible="1"/>
+                </group>
+                <footer>
+                    <button name="action_import_file" string="Confirm" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="material_import_korea_id_action" model="ir.actions.act_window">
+        <field name="name">Update ID &amp; Qty</field>
+        <field name="res_model">material.import.korea.id.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="view_material_import_korea_id_form"/>
+    </record>
+
+
+</odoo>

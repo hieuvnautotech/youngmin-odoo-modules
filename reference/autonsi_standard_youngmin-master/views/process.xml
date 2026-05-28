@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree(list) View -->
+    <record id="autonsi_standard_process_tree" model="ir.ui.view">
+        <field name="name">Process List</field>
+        <field name="model">standard.process</field>
+        <field name="arch" type="xml">
+            <tree create="0">
+                <field name="sequence" widget="handle"/>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="remark"/>
+                <field name="location_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                <field name="create_uid"/>
+                <field name="create_date"/>
+                <field name="write_uid"/>
+                <field name="write_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="autonsi_standard_process_form" model="ir.ui.view">
+        <field name="name">Process Form</field>
+        <field name="model">standard.process</field>
+        <field name="arch" type="xml">
+            <form duplicate="0" create="0">
+                <sheet>
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="remark"/>
+                        <field name="location_ids" widget="many2many_tags" options="{'no_create': True}" readonly="1"/>
+                        <field name="is_need_jig" widget="boolean_toggle"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_process_action' model='ir.actions.act_window'>
+        <field name="name">Process</field>
+        <field name="res_model">standard.process</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="rule_fg_wms_user_viewer" model="ir.rule">
+            <field name="name">FG WMS User + Viewer</field>
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="groups" eval="[(4, ref('autonsi_access_right_management.group_fg_wms_user')), (4, ref('autonsi_access_right_management.group_fg_wms_viewer'))]"/>
+            <field name="domain_force">
+                [
+                    '|',
+                    ('operation_type','!=','fg_shipping'),
+                    '&amp;',
+                        ('operation_type','=','fg_shipping'),
+                        ('state','in',['assigned','done'])
+                ]
+            </field>
+        </record>
+        <record id="rule_fg_wms_manager" model="ir.rule">
+            <field name="name">FG WMS Manager</field>
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="groups" eval="[(4, ref('autonsi_access_right_management.group_fg_wms_manager'))]"/>
+            <field name="domain_force">
+                [
+                    '|',
+                    ('operation_type','!=','fg_shipping'),
+                    ('operation_type','=','fg_shipping')
+                ]
+            </field>
+        </record>
+
+    </data>
+</odoo>

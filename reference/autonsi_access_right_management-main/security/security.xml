@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_fg_wms_viewer" model="res.groups">
+            <field name="name">Viewer</field>
+            <field name="category_id" ref="autonsi_access_right_management.module_category_fg_wms"/>
+            <field name="implied_ids" eval="[(4, ref('stock.group_stock_manager'))]"/>
+        </record>
+        
+        <record id="group_fg_wms_user" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="autonsi_access_right_management.module_category_fg_wms"/>
+            <field name="implied_ids" eval="[(4, ref('group_fg_wms_viewer'))]"/>
+        </record>
+        <record id="group_fg_wms_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="autonsi_access_right_management.module_category_fg_wms"/>
+            <field name="implied_ids" eval="[(4, ref('group_fg_wms_user'))]"/>
+        </record>
+
+
+        
+    </data>
+</odoo>

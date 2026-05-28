@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_model_test_parent,access_model_test_parent,model_test_parent,base.group_user,1,1,1,1
+access_model_test_line,access_model_test_line,model_test_line,base.group_user,1,1,1,1
+access_model_test_tag,access_model_test_tag,model_test_tag,base.group_user,1,1,1,1
+access_model_test_category,access_model_test_category,model_test_category,base.group_user,1,1,1,1

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<!--	Tree View -->
+	<record id="view_mes_qc_form_hold_tree" model="ir.ui.view">
+		<field name="name">mes.qc_form.hold.tree</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<tree create="0" editable="bottom">
+                <header>
+                    <button name="open_form_create_log_release" type="object" string="Release" class="btn btn-primary" display="always"/>
+                </header>
+                <field name="type_material" string="Material Category" readonly="1"/>
+                <field name="material_code" readonly="1"/>
+                <field name="material_name" readonly="1"/>
+				<field name="form_type" string="QC Type" readonly="1"/>
+                <field name="lot_id" string="Lot" readonly="1"/>
+<!--				<field name="ok_location_check_type" column_invisible="1"/>-->
+				<field name="ng_location" string="From" readonly="1"/>
+                <field name="ok_location" string="To" domain="[('check_type','in',['m_stock','m_stock_2'])]"/>
+                <field name="qty" readonly="1"/>
+                <field name="qty_uom" readonly="1"/>
+                <field name="result" string="Final Result" readonly="1"/>
+                <field name="staff_name" string="QC Staff" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+			</tree>
+		</field>
+	</record>
+
+    <record id="view_mes_qc_form_release_tree" model="ir.ui.view">
+		<field name="name">mes.qc_form.release.tree</field>
+		<field name="model">mes.qc_form.history</field>
+		<field name="arch" type="xml">
+			<tree create="0" editable="bottom">
+                <header>
+                    <button name="open_form_create_log_hold" type="object" string="Hold" class="btn btn-primary" display="always"/>
+                </header>
+                <field name="type_material" string="Material Category" readonly="1"/>
+                <field name="material_code" readonly="1"/>
+                <field name="material_name" readonly="1"/>
+                <field name="form_type" string="QC Type" readonly="1"/>
+                <field name="lot_id" string="Lot" readonly="1"/>
+<!--				<field name="ng_location_check_type" column_invisible="1"/>-->
+                <field name="ok_location" string="From" readonly="1"/>
+                <field name="ng_location" string="To" domain="[('check_type','in',['m_ng','m_ng_2'])]"/>
+                <field name="qty" readonly="1"/>
+                <field name="qty_uom" readonly="1"/>
+                <field name="result" string="Final Result" readonly="1"/>
+                <field name="staff_name" string="QC Staff" readonly="1"/>
+                <field name="check_date" readonly="1"/>
+			</tree>
+		</field>
+	</record>
+
+    	<!--	Action -->
+	<record id="action_mes_qc_form_hold_material" model="ir.actions.act_window">
+		<field name="name">Holding Material List</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree</field>
+        <field name="view_id" ref="view_mes_qc_form_hold_tree"/>
+		<field name="domain">[('item_group','=','material'), ('status','=','hold')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+    <record id="action_mes_qc_form_hold_semi" model="ir.actions.act_window">
+		<field name="name">Holding Semi List</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree</field>
+        <field name="view_id" ref="view_mes_qc_form_hold_tree"/>
+		<field name="domain">[('item_group','=','semi'),('status','=','hold')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+    <record id="action_mes_qc_form_hold_fg" model="ir.actions.act_window">
+		<field name="name">Holding FG List</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree</field>
+        <field name="view_id" ref="view_mes_qc_form_hold_tree"/>
+		<field name="domain">[('item_group','=','fg'),('status','=','hold')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+    <record id="action_mes_qc_form_release_material" model="ir.actions.act_window">
+		<field name="name">Release Material List</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree</field>
+        <field name="view_id" ref="view_mes_qc_form_release_tree"/>
+		<field name="domain">[('item_group','=','material'),('status','=','release')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+    <record id="action_mes_qc_form_release_semi" model="ir.actions.act_window">
+		<field name="name">Release Semi List</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree</field>
+        <field name="view_id" ref="view_mes_qc_form_release_tree"/>
+		<field name="domain">[('item_group','=','semi'),('status','=','release')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+    <record id="action_mes_qc_form_release_fg" model="ir.actions.act_window">
+		<field name="name">Release FG List</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">mes.qc_form.history</field>
+		<field name="view_mode">tree</field>
+        <field name="view_id" ref="view_mes_qc_form_release_tree"/>
+		<field name="domain">[('item_group','=','fg'),('status','=','release')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create your first Result!
+			</p>
+		</field>
+	</record>
+
+
+
+
+
+    <menuitem sequence="1" id="menu_mes_qc_form_hold_material" name="Holding Material" parent="autonsi_qms.menu_mes_qc_form_hold_release" action="action_mes_qc_form_hold_material"/>
+    <menuitem sequence="2" id="menu_mes_qc_form_release_material" name="Release Material" parent="autonsi_qms.menu_mes_qc_form_hold_release" action="action_mes_qc_form_release_material"/>
+
+</odoo>

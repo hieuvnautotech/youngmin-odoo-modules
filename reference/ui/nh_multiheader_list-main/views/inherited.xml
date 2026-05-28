@@ -1,0 +1,15 @@
+<odoo>
+
+
+<record id="account.action_move_out_invoice_type" model="ir.actions.act_window">
+    <field name="context">{
+        'show_first': true,    
+        'multiheader': [
+                {'position': '0,1', 'label': '-', 'backgroundColor': '#e0f7fa'},
+                {'position': '2,3', 'label': 'gjhgjggj'},
+                
+        ] }</field>
+</record>
+
+
+</odoo>

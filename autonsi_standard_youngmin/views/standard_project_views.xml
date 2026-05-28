@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_standard_project_tree" model="ir.ui.view">
+        <field name="name">standard.project.tree</field>
+        <field name="model">standard.project</field>
+        <field name="arch" type="xml">
+            <tree string="Projects">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="project_status"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_standard_project_form" model="ir.ui.view">
+        <field name="name">standard.project.form</field>
+        <field name="model">standard.project</field>
+        <field name="arch" type="xml">
+            <form string="Project">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="alias"/>
+                    </group>
+                    <notebook>
+                        <page string="Information">
+                            <group>
+                                <field name="project_start"/>
+                                <field name="project_end"/>
+                                <field name="project_period"/>
+                                <field name="project_status"/>
+                                <field name="developer_charger"/>
+                                <field name="development_status"/>
+                                <field name="check_drawing_consistency"/>
+                                <field name="image" widget="image"/>
+                                <field name="remark"/>
+                            </group>
+                        </page>
+                        <page string="Process Lines">
+                            <field name="process_line_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence"/>
+                                    <field name="name"/>
+                                    <field name="process_id"/>
+                                    <field name="workcenter_id"/>
+                                    <field name="duration"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_standard_project_search" model="ir.ui.view">
+        <field name="name">standard.project.search</field>
+        <field name="model">standard.project</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="project_status"/>
+            </search>
+        </field>
+    </record>
+</odoo>

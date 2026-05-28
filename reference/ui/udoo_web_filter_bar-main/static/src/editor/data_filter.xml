@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="uweb.TreeEditor.connector.children">
+        <t t-foreach="node.children" t-as="child" t-key="child.type + '_' + child_index">
+            <div class="o_tree_editor_node" t-att-class="{ 'ps-4': addPadding }">
+                <t t-call="uweb.TreeEditor.{{ child.type }}">
+                    <t t-set="parent" t-value="node" />
+                    <t t-set="node" t-value="child" />
+                </t>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="uweb.TreeEditor.connector">
+        <div class="o_tree_editor_row d-flex align-items-center">
+            <div class="o_tree_editor_connector d-flex flex-grow-1">
+                <t t-call="web.TreeEditor.connector.dropdown" />
+                <span>of:</span>
+            </div>
+            <t t-if="!props.readonly">
+                <t t-call="web.TreeEditor.controls" />
+            </t>
+        </div>
+        <t t-call="web.TreeEditor.connector.children">
+            <t t-set="addPadding" t-value="true" />
+        </t>
+    </t>
+
+    <t t-name="uweb.TreeEditor.condition">
+        <div class="o_tree_editor_row d-flex align-items-center">
+            <t t-if="props.readonly">
+                <t t-call="web.TreeEditor.condition:readonly" />
+            </t>
+            <t t-else="">
+                <t t-call="uweb.TreeEditor.condition:editable" />
+                <t t-call="web.TreeEditor.controls" />
+            </t>
+        </div>
+    </t>
+
+    <t t-name="uweb.TreeEditor.condition:editable">
+        <div class="o_tree_editor_condition d-flex align-items-end gap-2 me-auto">
+            <t t-call="web.TreeEditor.Editor">
+                <t t-set="_classes" t-value="'flex-fill'" />
+                <t t-set="info" t-value="props.getOperatorEditorInfo(node)" />
+                <t t-set="value" t-value="[node.operator, node.negate]" />
+                <t t-set="update" t-value="(operator, negate) => this.updateLeafOperator(node, operator, negate)" />
+            </t>
+            <t t-call="web.TreeEditor.Editor">
+                <t t-set="_classes" t-value="'ps-1 overflow-hidden'" />
+                <t t-set="info" t-value="getValueEditorInfo(node)" />
+                <t t-set="value" t-value="node.value" />
+                <t t-set="update" t-value="(value) => this.updateLeafValue(node, value)" />
+            </t>
+        </div>
+    </t>
+
+    <t t-name="uweb.TreeEditor.complex_condition">
+        <div class="o_tree_editor_row d-flex align-items-center">
+            <div class="o_tree_editor_complex_condition flex-grow-1">
+                <input class="o_input w-100"
+                    t-att-value="node.value"
+                    t-att-readonly="props.readonly or !isDebugMode"
+                    t-on-change="(ev) => this.updateComplexCondition(node, ev.target.value)" />
+            </div>
+            <t t-call="web.TreeEditor.controls" />
+        </div>
+    </t>
+
+    <t t-name="uweb.DataFilterTreeEditor" t-inherit="web.TreeEditor" t-inherit-mode="primary">
+        <xpath expr="//t[contains(@t-call,'web.TreeEditor.connector.children')]" position="replace">
+            <t t-if="node.children.length" t-call="uweb.TreeEditor.connector.children" />
+        </xpath>
+    </t>
+
+    <t t-name="uweb.DataFilter" t-inherit="web.DomainSelector" t-inherit-mode="primary">
+        <xpath expr="//CheckBox[@value='includeArchived']" position="attributes">
+            <attribute name="className" add="' ms-4'" separator="+"/>
+        </xpath>
+    </t>
+
+    <t t-name="uweb.DataFilterPopOver">
+        <div class="rolkit" style="max-height: 50vh">
+            <DataFilter t-props="domainSelectorProps" />
+        </div>
+        <footer class="d-flex bg-100 p-3 gap-2">
+            <button class="btn lh-1 btn-danger" t-on-click="clear">Clear</button>
+            <button class="btn lh-1 btn-light" t-on-click="reset">Reset</button>
+            <button class="btn lh-1 btn-light ms-auto" t-on-click="props.close">Close</button>
+            <button class="btn lh-1 btn-primary" t-on-click="apply">Apply</button>
+        </footer>
+    </t>
+
+</templates>

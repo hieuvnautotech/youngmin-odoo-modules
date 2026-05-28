@@ -1,0 +1,96 @@
+<odoo>
+     <record id="view_jig_history_search" model="ir.ui.view">
+        <field name="name">view_jig_history_search</field>
+        <field name="model">jig.history</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="jig_code" string="jig Code" />
+                <separator/>
+                <searchpanel>
+                    
+                     <field name="jig_type"  />
+                     
+                    <field name="operation_time"  />
+                </searchpanel> 
+            </search>
+        </field>
+    </record>
+
+    <record id="view_jig_history_tree" model="ir.ui.view">
+        <field name="name">jig.history.tree</field>
+        <field name="model">jig.history</field>
+        <field name="arch" type="xml">
+            <tree string="Jig History" create="0" decoration-warning="remaining_strokes &lt;= 1000"  decoration-danger="remaining_strokes &lt;= 0" >
+
+                <header>
+
+                          <button name="action_check_1"
+                        string="check 1"
+                        type="object"
+                        class="btn-primary"
+                        icon="fa-vial"/>
+
+                </header>
+
+                <field name="jig_code" string="Jig Code"/>
+                <field name="mo" string="MO"/>
+                <field name="product_name" string="Product Code"/>
+                <field name="factory_name" string="Factory"/>
+                <field name="process" string="Process"/>
+               
+                <field name="die_lifetime" string="Die lifetime" widget="integer"/>
+                <field name="current_stroke_count" string="Current jig count" widget="integer"/>
+                <field name="remaining_strokes" string="Remaining strokes" widget="integer"/>
+                <field name="accumulated" string="Accumulated" widget="integer"/>
+                <field name="operation_time" string="Operation Time" widget="datetime"/>
+
+                <!-- Nút QC -->
+                <button name="action_result_qc"
+                        string="Result QC"
+                        type="object"
+                        class="btn-primary"
+                        icon="fa-vial"/>
+            </tree>
+        </field>
+    </record>
+
+
+     <record id="view_jig_history_form" model="ir.ui.view">
+        <field name="name">jig.history.form</field>
+        <field name="model">jig.history</field>
+        <field name="arch" type="xml">
+            <form string="Jig History">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="jig_code"/>
+                            <field name="mo"/>
+                            <field name="product_name"/>
+                            <field name="factory_name"/>
+                            <field name="process"/>
+                        </group>
+
+                        <group>
+                             <field name="die_lifetime"/>
+                            <field name="current_stroke_count"/>
+                            <field name="accumulated"/>
+                            <field name="remaining_strokes"/>
+                            <field name="operation_time"/>
+                        </group>
+                    </group>
+                   
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_jig_history" model="ir.actions.act_window">
+        <field name="name">Jig History</field>
+        <field name="res_model">jig.history</field>
+        <field name="view_mode">tree,form</field>
+       
+    </record>
+
+   
+</odoo>

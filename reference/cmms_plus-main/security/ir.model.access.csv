@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_equipment_model,equipment_model,model_equipment_model,base.group_user,1,1,1,1
+access_jig_process,jig_process,model_jig_process,base.group_user,1,1,1,1
+access_jig_history,jig_history,model_jig_history,base.group_user,1,1,1,1

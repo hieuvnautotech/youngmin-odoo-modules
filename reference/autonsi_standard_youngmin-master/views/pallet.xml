@@ -1,0 +1,42 @@
+<odoo>
+    <record id="autonsi_standard_pallet_tree" model="ir.ui.view">
+        <field name="name">Pallet</field>
+        <field name="model">standard.pallet</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description" string="Description"/>
+                <field name="remark" string="Remark"/>
+                <field name="create_uid" string="Created By"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_uid" string="Last Updated By"/>
+                <field name="write_date" string="Last Updated On"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record model="ir.ui.view" id="autonsi_standard_pallet_form">
+        <field name="name">Pallet</field>
+        <field name="model">standard.pallet</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="description" string="Description"/>
+                        <field name="remark" string="Remark"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_pallet_action' model='ir.actions.act_window'>
+        <field name="name">Pallet</field>
+        <field name="res_model">standard.pallet</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="autonsi_standard_pallet_tree"/>
+    </record>
+
+</odoo>

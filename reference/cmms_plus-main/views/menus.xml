@@ -1,0 +1,47 @@
+<odoo>
+    <data>
+
+        <menuitem id="menu_cmms_plus_root"
+            name="CMMS"
+            sequence="10"
+            groups="cmms_plus.group_cmms_plus_manager"
+            web_icon="cmms_plus,static/description/icon.png"/> 
+
+
+
+
+                  <!-- <menuitem
+                        id="menu_display_equipment_category"
+                        name="Jig Category"
+                        parent="menu_cmms_plus_configuration_root"
+                        action="action_cmms_plus_equipment_category"
+                        sequence="2"/>    -->
+
+                      <!-- <menuitem id="menu_display_equipment_model"
+                        name="Models"
+                        parent="menu_cmms_plus_configuration_root"
+                        action="action_equipment_model"
+                        sequence="20"/> -->
+
+                        
+
+                      <menuitem id="menu_display_equipment_product"
+                        name="Assets"
+                        parent="menu_cmms_plus_root"
+                        action="action_product_product_kanban_custom"
+                        sequence="20"/>
+
+
+                        <menuitem id="menu_display_jig_history"
+                            name="Jig History"
+                            parent="menu_cmms_plus_root"
+                            action="action_jig_history"
+                            sequence="20"/>
+
+
+                        
+
+
+    </data>
+
+</odoo>

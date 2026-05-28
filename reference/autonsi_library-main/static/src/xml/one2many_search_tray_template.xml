@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="one2many_search_tray.One2ManySearchTray" t-inherit-mode="primary" t-inherit="web.X2ManyField">
+		<xpath expr="//div[@class='o_x2m_control_panel d-empty-none mb-4']" position="before">
+			<div class="one2many_search_tray_container">
+				<input 
+                type="text" 
+                class="form-control oe_search_tray_value searchInput" 
+                placeholder="Search..."
+                t-on-keyup="onKeyUp"
+                style="margin-bottom:10px;height:30px;"
+				/>
+			</div>
+		</xpath>
+    </t>
+</templates>

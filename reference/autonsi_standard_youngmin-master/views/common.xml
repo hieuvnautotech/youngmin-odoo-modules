@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree(list) View -->
+    <record id="autonsi_standard_common_tree" model="ir.ui.view">
+        <field name="name">Common List</field>
+        <field name="model">standard.common</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="name" string="Common #"/>
+                <field name="description"/>
+                <field name="remark"/>
+                <field name="create_uid"/>
+                <field name="create_date"/>
+                <field name="write_uid"/>
+                <field name="write_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="autonsi_standard_common_form" model="ir.ui.view">
+        <field name="name">Common Form</field>
+        <field name="model">standard.common</field>
+        <field name="arch" type="xml">
+            <form duplicate="0">
+                <sheet>
+                    <group>
+                        <field name="name" string="Common #"/>
+                        <field name="description"/>
+                        <field name="remark"/>
+                        <field name="is_packing" invisible="1"/>
+                    </group>
+                    <notebook>
+                        <page string='Detail'>
+                            <field name="detail" context="{'is_packing': is_packing}">
+                                <tree editable="bottom">
+                                    <field name="name" string="Name"/>
+                                    <field name="code" string="Code" readonly="context.get('is_packing')"/>
+                                    <field name="description" column_invisible="context.get('is_packing')"/>
+                                    <field name="remark" column_invisible="context.get('is_packing')"/>
+                                    <field name="small_packing" column_invisible="not context.get('is_packing')"/>
+                                    <field name="big_packing" column_invisible="not context.get('is_packing')"/>
+                                    <field name="pallet_packing" column_invisible="not context.get('is_packing')"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_common_action' model='ir.actions.act_window'>
+        <field name="name">Common</field>
+        <field name="res_model">standard.common</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="autonsi_standard_common_detail_tree" model="ir.ui.view">
+        <field name="name">Common Detail List</field>
+        <field name="model">standard.common.detail</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="master" string="Common Master#"/>
+                <field name="code" string="Code"/>
+                <field name="name" string="Name"/>
+                <field name="description"/>
+                <field name="remark"/>
+                <field name="create_uid"/>
+                <field name="create_date"/>
+                <field name="write_uid"/>
+                <field name="write_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_common_detail_action' model='ir.actions.act_window'>
+        <field name="name">Common Detail</field>
+        <field name="res_model">standard.common.detail</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{'group_by': 'master'}</field>
+        <field name="view_id" ref="autonsi_standard_common_detail_tree"/>
+    </record>
+</odoo>

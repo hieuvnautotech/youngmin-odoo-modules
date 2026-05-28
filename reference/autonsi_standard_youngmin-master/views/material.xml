@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="autonsi_standard_material_tree" model="ir.ui.view">
+        <field name="name">Material List</field>
+        <field name="model">product.product</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="priority" widget="priority" optional="show" nolabel="1"/>
+                <field name="name" />
+                <field name="image_128" widget="image" class="standard-product-tree-image" options="{'image_preview': 'image_128'}" string="Image"/>
+                <field name="product_type"/>
+                <field name="remark" string="Remark"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_material_action' model='ir.actions.act_window'>
+        <field name="name">Material</field>
+        <field name="res_model">product.product</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="autonsi_standard_material_tree"/>
+        <field name="domain">[('product_type', 'in', ['material', 'semi product']), ('product_sub_type', '=', 'manual')]</field>
+        <field name="context">{'default_product_type': 'material','default_product_type_label': 'material'}</field>
+    </record>
+</odoo>

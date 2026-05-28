@@ -1,0 +1,49 @@
+.d-ufover {
+
+    &:hover,
+    .o_column_sortable:hover & {
+        display: flex !important;
+    }
+
+    &:hover {
+        color: map-get($o-theme-text-colors, 'dodger');
+        opacity: 100 !important;
+    }
+}
+
+.d-udrop-caret:after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    display: inline-block;
+    transform: rotate(270deg);
+    transition: .25s ease-in-out;
+    position: absolute;
+    right: 14px;
+}
+
+.u_filter_bar {
+    .form-control {
+        &.focus {
+            border-color: $input-focus-border-color;
+        }
+
+        .o_input {
+            border: 0;
+            width: 100%;
+            min-width: 0px;
+        }
+
+        select {
+            background: none;
+        }
+
+        .o_dropdown_button:after {
+            content: none !important;
+        }
+    }
+}
+
+.u_sw_filter_bar:not(.active, :hover, [disabled]) {
+    background-color: $o-gray-100;
+    border-color: $o-gray-100;
+}

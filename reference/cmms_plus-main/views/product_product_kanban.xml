@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="cmms_plus_product_product_search_view" model="ir.ui.view">
+        <field name="name">cmms_plus_product_product_search_view</field>
+        <field name="model">product.product</field>
+          <field name="priority" eval="1000"/>
+        <field name="arch" type="xml">
+            <search string="Assets Search">
+                <field name="name" string="Code or Name" filter_domain="['|', '|', '|', ('asset_code', 'ilike', self), ('name', 'ilike', self), ('machine_name', 'ilike', self),('machine_code', 'ilike', self)]"/>
+               
+                <field name="equip_category_id" string="Type" />
+                
+                 <field name="jig_product_id" string="Product" />
+                
+                  <field name="process_id" string="Process" />
+                  
+                   <field name="position" string="Position" />
+                   
+                     <field name="equip_partner_id" string="Supplier" />
+                   
+                   
+                   
+                  
+                  
+                
+                
+                
+                
+            </search>
+        </field>
+    </record>
+
+    <!-- Kanban view cho product.product -->
+    <record id="view_product_product_kanban_custom" model="ir.ui.view">
+        <field name="name">product.product.kanban.custom</field>
+        <field name="model">product.product</field>
+        <field name="priority" eval="1000"/>
+        <field name="arch" type="xml">
+            <kanban js_class="cmms_kanban" create="0">
+                <!-- ensure fields are available in record -->
+                <field name="image_1920"/>
+                <field name="name"/>
+                <field name="no_number"/>
+                <field name="product_tmpl_id"/>
+                <field name="is_machine" />
+                <field name="is_jig" />
+
+                <templates>
+                    <t t-name="kanban-box">
+                  
+                         <div class="oe_kanban_details d-flex flex-column justify-content-between jstr-kanban-card"
+                     
+                         t-att-style="'background-color:' + (
+                                record.jig_status_qc.raw_value == 'ng' and '#F91470;' or 
+                                (record.jig_status_qc.raw_value == 'ok' and '#ACD094;' or 'white;')
+                            )">
+
+                         
+                                <div class="jstr-kanban-body">
+                                              <div class="o_kanban_record_title">
+                                                    <strong class="jstr-overalyed"
+                                                     t-att-style="'color:' + (record.jig_status_qc.raw_value == 'ng' and 'white;' or 'black;')"
+                                                    >
+                                                        <field name="name"/>
+                                                        <field name="no_number" />
+                                                         
+                                                    </strong>
+                                                    
+
+                                                    <strong class="jstr-status-qc"
+                                                        t-att-style="'float:right; font-size:14px; ' + (
+                                                            record.jig_status_qc.raw_value == 'not_yet' and 'color:#627292;' or 
+                                                            (record.jig_status_qc.raw_value == 'ok' and 'color:green;' or 'color:white;')
+                                                        )">
+                                                        <field name="jig_status_qc"/>
+                                                    </strong>
+                                            </div>
+                                   
+
+                                    <div  class="jstr-kanban-main-details jstr-hide-mobile">
+                                         <div class="col-4"   >
+
+                                                <div style="position: absolute; top: 18px;left:15px;">
+                                                        <img t-att-src="kanban_image('product.product', 'image_1920', record.id.value)"
+                                                        class="img-fluid rounded"
+                                                        style="max-width: 111px; height: 111px;"
+                                                        alt="Product Image"/>
+
+                                                </div>
+                                        </div>
+
+                                        <div t-if="record.is_machine.raw_value"  class="col-3 jstr-kanban-cmms-4" >
+                                            
+                                                         <span class="fw-bold title" 
+                                                         > Process </span>
+                                                            <br />
+                                                         
+                                                          <div   t-att-style="'margin-top:5px;background: #0C7282;color: white; width: 70%;' 
+                                                        ">
+
+                                                         
+                                                                <field name="process_id" class="ms-1"/>
+                                                         </div>   
+                                                        
+                                        </div>
+
+
+                                        <div t-if="record.is_jig.raw_value"  class="col-3 jstr-kanban-cmms-1" >
+                                            
+                                                         <span class="fw-bold title" 
+                                                         t-att-style="'color:' + (record.jig_status_qc.raw_value == 'ng' and 'white;' or 'black;')"
+                                                         > Accumulated </span>
+                                                            <br />
+                                                         
+                                                          <div   t-att-style="'margin-top:5px;background: #0C7282;color: white; width: 70%;' 
+                                                        ">
+
+                                                         
+                                                                <field name="jig_accumulated" class="ms-1"/>
+                                                         </div>   
+                                                        
+                                        </div>
+                                        <div  t-if="record.is_jig.raw_value" class="col-3 jstr-kanban-cmms-2" >
+                                              
+                                                        <span class="fw-bold title"
+                                                        t-att-style="'color:' + (record.jig_status_qc.raw_value == 'ng' and 'white;' or 'black;')"
+                                                        > Die Lifetime  </span>
+                                                            <br />
+                                                        <div   t-att-style="'margin-top:5px;' +  ( 
+                                                            record.jig_status_qc.raw_value != 'ng' and 'color:black;' or 'color:white;'
+                                                           )
+                                                        ">
+                                                                 <field name="die_lifetime" class="ms-1"/>
+                                                        </div>
+                                        </div>
+
+                                        <div  t-if="record.is_jig.raw_value" class="col-3 jstr-kanban-cmms-3" >
+                                             
+                                                        <span class="fw-bold title" 
+                                                         t-att-style="'color:' + (record.jig_status_qc.raw_value == 'ng' and 'white;' or 'black;')"
+                                                         > Remaining Strokes  </span>
+                                                            <br />
+                                                             <div    t-att-style="'margin-top:5px;background: #0C7282;color: white; width: 70%;'
+                                                        ">
+                                                                     <field name="remaining_strokes" class="ms-1"/>
+                                                             </div>
+
+                                        </div>
+
+                                    </div>
+                                  
+                                </div>
+                              
+                            </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="cmms_plus_equipment_view_machine_form" model="ir.ui.view">
+        <field name="name">cmms_plus_equipment_view_machine_form</field>
+        <field name="model">product.product</field>
+        <field name="priority" eval="1001"/>
+
+        <field name="arch" type="xml">
+            <form string="Machine" create="0">
+                 
+                <sheet>
+                        <div class="photo_warper">
+                                <h6 class="text-muted">Machine Info</h6>
+
+
+                                <field name="image_1920" widget='image' class='oe_edit_only cmms-box-shahow-image-equip' style="margin-left:5px;" 
+                                    options='{"preview_image": "image_1920", "size": [92, 92]}'/>
+
+                                
+                        </div>
+                    <group>
+                          <group>
+                                <field name="is_machine" invisible="1"/>
+
+                                <field name="machine_code"  string="Machine Code" required="1"  />
+                                 <field name="machine_name" string="Machine Name" required="1" />
+                                  
+                                 <field name="no_number" string="No #"  />
+                                   <field name="process_name" string="Description"  />
+                                  <field name="remark" string="Remark"  />
+
+                           </group>
+
+                           <group>
+                              <field name="process_id"  />
+
+                                <field name="line_id" domain="[('process_id','=',process_id)]"  />
+
+
+                              
+                                <field name="date_of_manufacture" required="1" />
+                                <field name="date_of_entry" />
+                                <field name="amount" />
+
+
+
+                           </group>
+                    </group>
+                     <separator string="Management Person in Charge​"/>
+                     <group>
+
+                            <group>
+                                    <field name="lead_id" />
+
+                            </group>
+
+
+                             <group>
+
+                                     <field name="deputy_id" />
+                            </group>
+
+                     </group>
+
+                     <separator string="Manufacturing Company​​"/>
+                             <group>
+
+                                                
+                                        <group>
+                                    
+
+                                                <field name="company_name" />
+                                                <field name="seller_responsible" />
+                                                <field name="seller_contact" />
+
+
+                                        </group>
+                                        <group>
+
+                                            
+                                        </group>
+
+
+
+                                  
+                            </group>
+
+                </sheet>
+              
+            </form>
+        </field>
+    </record>
+
+
+    <record id="cmms_plus_equipment_view_form" model="ir.ui.view">
+        <field name="name">cmms_plus_equipment_view_form</field>
+        <field name="model">product.product</field>
+        <field name="priority" eval="1000"/>
+
+        <field name="arch" type="xml">
+            <form string="Jig" create="0">
+                 
+                <sheet>
+
+                 
+                        <div class="photo_warper">
+                                <h6 class="text-muted">Jig Info</h6>
+
+
+                                <field name="image_1920" widget='image' class='oe_edit_only cmms-box-shahow-image-equip' style="margin-left:5px;" 
+                                    options='{"preview_image": "image_1920", "size": [92, 92]}'/>
+
+                             
+                        </div>
+                         <group>
+                          <group>
+                                <field name="is_jig" invisible="1"/>
+                                    
+                                    <field name="equip_category_id" string="Type"  /> 
+
+                                    <field name="name" string="Jig Name" required="1" />
+                                    <field name="asset_code"  string="Jig Code" readonly="1"  />
+
+                                    <field name="equip_partner_id" 
+                                        
+                                        string="Supplier"   />
+
+
+                                    <field name="jig_product_id"  />
+
+                                    <field name="process_id"  />
+
+                                    <field name="jig_used_in_location_id_2" string="Location" />
+
+                                     <field name="position" />
+
+                                    <field name="jig_accumulated" />
+
+                           </group>
+
+                           <group>
+
+                                    <field name="die_lifetime" />
+
+                                    <field name="remaining_strokes" />
+                                    <field name="rev" />
+                                    <field name="remark" />
+
+                                    <field name="status" />
+                                     <field name="jig_status_qc" />
+                                    
+                                    <field name="create_date" />
+                           </group>
+                    </group>
+                </sheet>
+                <!-- <div class="oe_chatter">
+                    <field name="message_follower_ids"/> 
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div> -->
+            </form>
+        </field>
+    </record>
+
+
+     <!-- Tree View -->
+    <record id="cmms_plus_equipment_view_tree" model="ir.ui.view">
+        <field name="name">cmms_plus_equipment_view_tree</field>
+        <field name="model">product.product</field>
+        <field name="priority" eval="1005"/>
+        <field name="arch" type="xml">
+            <tree string="Jig Tree">
+                <header>
+                        <button name="action_print_qr_code"
+                                                string="Print QRCode"
+                                                type="object"
+                                                 icon="fa-qrcode"
+                                                class="btn-primary"/>
+
+                </header>
+                <field name="equip_category_id" string="Type"   /> 
+                                    <field name="asset_code" string="Jig Code"/>
+                                <field name="name"  string="Jig Name"  />
+
+                                    <field name="equip_partner_id" 
+                                        string="Supplier"   />
+
+
+                                    <field name="jig_product_id"  />
+                                    <field name="process_id"  />
+                                    <field name="jig_used_in_location_id" />
+
+                                    <field name="position" />
+                                    <field name="jig_accumulated" />
+                                    <field name="die_lifetime" />
+
+                                    <field name="remaining_strokes" />
+                                    <field name="rev" />
+                                    <field name="remark" />
+                                    <field name="status" string="Jig Status" />
+                                      <field name="jig_status_qc" string="QC Status" widget="badge" decoration-warning="jig_status_qc == 'not_yet'"  decoration-success="jig_status_qc == 'ok'" decoration-danger="jig_status_qc == 'ng'"  />
+                                     
+                                      <button name="action_check_jig"
+                                                string="Check"
+                                                type="object"
+                                                icon="fa-check"
+                                                
+                                                class="btn-primary"/>
+
+
+                                     <field name="create_date" />
+                                      <field name="write_date" />
+
+
+            </tree>
+        </field>
+    </record>
+
+
+     <!-- Tree View Machine -->
+    <record id="cmms_plus_equipment_view_tree_machine" model="ir.ui.view">
+        <field name="name">cmms_plus_equipment_view_tree_machine</field>
+        <field name="model">product.product</field>
+        <field name="priority" eval="1006"/>
+        <field name="arch" type="xml">
+            <tree string="Machine Tree" >
+               
+                    <field name="machine_code" 
+                        string="Machine Code"   />
+
+                    <field name="machine_name"  />
+                    <field name="process_name" string="Description"  />
+                    <field name="process_id"  />
+
+                     <field name="line_id"  />
+
+
+                    
+                    <field name="date_of_manufacture" />
+
+                     <field name="date_of_entry" />
+
+                     <field name="amount" />
+
+                     <field name="lead_id" />
+                      <field name="deputy_id" />
+
+                      <field name="company_name" />
+                      <field name="seller_contact" />
+                      <field name="create_date" />
+
+                                    
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action mở product.product list machine -->
+    <!-- <record id="action_product_product_machine_list" model="ir.actions.act_window">
+        <field name="name">Machine List</field>
+        <field name="res_model">product.product</field>
+        <field name="domain">[('is_machine','=',True)]</field>
+         <field name="view_mode">tree,form</field>
+         <field name="view_ids" eval="[
+
+             (5, 0, 0), (0, 0, {'view_mode': 'tree', 'view_id': ref('cmms_plus_equipment_view_tree_machine')}) ,
+             (5, 0, 0), (0, 0, {'view_mode': 'form', 'view_id': ref('cmms_plus_equipment_view_machine_form')})
+
+            ]" />
+
+
+    </record> -->
+
+
+    <!-- Action mở product.product theo kanban -->
+    <record id="action_product_product_kanban_custom" model="ir.actions.act_window">
+        <field name="name">Products (Kanban)</field>
+        <field name="res_model">product.product</field>
+        <field name="domain">['|',('is_jig','=',True),('is_machine','=',True)]</field> 
+        <field name="context">{'cmms_quick_form':True}</field> 
+
+         <field name="search_view_id" ref="cmms_plus_product_product_search_view"/>
+      
+         <field name="view_mode">kanban,tree,form</field>
+         <field name="view_ids" eval="[
+          
+            (5, 0, 0), (0, 0, {'view_mode': 'kanban', 'view_id': ref('view_product_product_kanban_custom')}) ,
+             (5, 0, 0), (0, 0, {'view_mode': 'tree', 'view_id': ref('cmms_plus_equipment_view_tree')}) ,
+             (5, 0, 0), (0, 0, {'view_mode': 'form', 'view_id': ref('cmms_plus_equipment_view_form')})
+
+            ]" />
+
+
+    </record>
+
+
+</odoo>

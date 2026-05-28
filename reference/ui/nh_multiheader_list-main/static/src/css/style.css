@@ -1,0 +1,59 @@
+.o_group_second_header {
+    text-align: center;
+
+}
+
+.o_group_second_header_2 {
+    width: 30px !important;
+}
+
+.o_group_second_header:first-child {
+    border-bottom: unset !important;
+}
+
+.o_group_header:last-child {
+    border-right: none;
+    /* Loại bỏ đường kẻ ở header cuối cùng */
+}
+
+.second_header_action {
+    background-color: transparent !important;
+    min-width: 30px !important;
+    position: sticky !important;
+    right: 0px;
+}
+
+
+.o_list_view table {
+    width: auto !important;
+    /* override */
+    min-width: 100%;
+}
+
+.o_list_view_multiheader {
+    table-layout: fixed;
+}
+
+.multi-header thead th {
+    box-shadow: none !important;
+
+
+}
+
+
+.multi-header_2 thead th {
+    box-shadow: none !important;
+}
+
+.no-border-top {
+    border-top-width: 0 !important;
+}
+
+
+
+/* .rainbow-text {
+    background-image: linear-gradient(90deg, red,  green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+} */

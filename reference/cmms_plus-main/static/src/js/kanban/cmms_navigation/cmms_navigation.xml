@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="cmms.CMMSNavigation" owl="1">
+        <div class="jstr-navigation-panel jstr-hide-mobile jstr-hide-tablet">
+            <div class="jstr-panel-content">
+                <div class="jstr-panel-header">
+                    <!-- <div class="jstr-d-flex">
+                        <div>
+                            Sort by
+                        </div>
+                        <div class="jstr-sort-div">
+                            <select class="jstr-sort-option" t-on-change="(event) => this._onApplySorting(event)">
+                                <t t-foreach="state.sortings" t-as="sort_option" t-key="sort_option.key">
+                                    <option t-att-value="sort_option.key" t-att-selected="sort_option.key == this.kanbanOrder"><span t-esc="sort_option.name"/></option>
+                                </t>
+                            </select>
+                        </div>
+                        <div>
+                            <i class="fa fa-exchange jstr-functional-button jstr-functional-button-clear" t-on-click.prevent="() => this._onApplyReverseSorting()"></i>
+                        </div>
+                    </div>
+                    <div class="pt8">
+                        <span class="jstr-functional-button" t-on-click.prevent="() => this._onSelectAll()">
+                            Select all found
+                        </span>
+                    </div> -->
+                </div>
+                <CMMSJsTreeContainer t-props="getJsTreeProps('tree_models')"/>
+               
+
+            </div>
+        </div>
+
+         <CMMSFormviewContainer t-props="getFormViewProps()" />
+
+    </t>
+
+</templates>

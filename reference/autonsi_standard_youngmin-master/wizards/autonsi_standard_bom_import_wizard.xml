@@ -1,0 +1,30 @@
+<odoo>
+    <record id="view_autonsi_standard_bom_import_form" model="ir.ui.view">
+        <field name="name">autonsi.standard.bom.import.form</field>
+        <field name="model">autonsi.standard.bom.import.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import BOM" create="false" edit="false">
+                <group>
+                    <field name="file" filename="filename" widget="binary" string="Upload File"/>
+                    <field name="filename" invisible="1"/>
+                    <field name="product_category_id" options="{'no_open': True, 'no_create': True}" />
+                    <field name="is_vision_inspection"/>
+                    <field name="is_double_inspection_and_packing" />
+                </group>
+                <footer>
+                    <button name="action_import_bom" string="Create BOM" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="autonsi_standard_open_bom_import_action" model="ir.actions.act_window">
+        <field name="name">Import BOM</field>
+        <field name="res_model">autonsi.standard.bom.import.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="view_autonsi_standard_bom_import_form"/>
+    </record>
+
+
+</odoo>

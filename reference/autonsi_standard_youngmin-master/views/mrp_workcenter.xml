@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mrp_workcenter_view_inherit_process" model="ir.ui.view">
+        <field name="name">mrp.workcenter.form.inherit.process</field>
+        <field name="model">mrp.workcenter</field>
+        <field name="inherit_id" ref="mrp.mrp_workcenter_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='resource_calendar_id']" position="after">
+                <field name="process_id" options="{'no_create': True}"/>
+                <field name="factory" options="{'no_create': True}"/>
+            </xpath>
+            <xpath expr="//field[@name='alternative_workcenter_ids']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='resource_calendar_id']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//notebook" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="mrp_workcenter_tree_view_inherit_process" model="ir.ui.view">
+        <field name="name">mrp.workcenter.tree.inherit.process</field>
+        <field name="model">mrp.workcenter</field>
+        <field name="inherit_id" ref="mrp.mrp_workcenter_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='code']" position="after">
+                <field name="process_id" options="{'no_create': True}"/>
+                <field name="factory" options="{'no_create': True}"/>
+            </xpath>
+            <xpath expr="//field[@name='alternative_workcenter_ids']" position="attributes">
+                <attribute name="column_invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='costs_hour']" position="attributes">
+                <attribute name="column_invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='default_capacity']" position="attributes">
+                <attribute name="column_invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='time_efficiency']" position="attributes">
+                <attribute name="column_invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='oee_target']" position="attributes">
+                <attribute name="column_invisible">True</attribute>
+            </xpath>
+
+
+
+
+        </field>
+    </record>
+</odoo>

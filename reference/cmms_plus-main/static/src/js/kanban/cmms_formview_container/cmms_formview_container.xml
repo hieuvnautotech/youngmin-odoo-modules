@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="cmms.CMMSFormviewContainer" owl="1">
+        <t t-if="state.showForm">
+            <div class=" w-100 position-relative">
+                 <button type="button"
+                        id="cmms_close_form"
+                        style="z-index: 9999;"
+                        class="btn btn-light btn-sm position-absolute top-0 start-0 m-2 d-flex align-items-center"
+                        t-on-click="form_hidden"
+                         >
+                    <i class="fa fa-arrow-left me-1"></i>
+                    Back
+                </button>
+                
+                <View  t-if="yy.formProps" t-props="yy.formProps"  t-key="yy.formProps.resId"  />
+
+            </div>
+        </t>
+    </t>
+
+</templates>
+

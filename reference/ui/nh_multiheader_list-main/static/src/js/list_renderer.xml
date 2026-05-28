@@ -1,0 +1,28 @@
+<templates xml:space="preserve">
+    <t t-inherit="web.ListRenderer" t-inherit-mode="extension">
+        <xpath expr="//thead/tr[1]" position="attributes">
+            <attribute name="class">o_origin_thead</attribute>
+        </xpath>
+        <xpath expr="//thead/tr[1]" position="before">
+            <t t-if="has_multi_header">
+                    <!-- Render tất cả levels từ cao xuống thấp -->
+                <t t-foreach="getAllHeaderLevels()" t-as="levelData" t-key="levelData.level">
+                    <tr t-att-class="'header-level-' + levelData.level + ' multiheader'">
+                        <th t-foreach="levelData.headers" 
+                            t-as="header" 
+                            t-key="header_index"
+                            t-att-data-header-label="header.label"
+                            t-att-data-level="header.level"
+                            t-att-colspan="header.colspan"
+                            t-att-class="header.class"
+                            t-att-style="header.header_style"
+                            t-att-merge="header.is_merge"
+                            t-att-index="header.index">
+                            <t t-esc="header.label" />
+                        </th>
+                    </tr>
+                </t>
+            </t>
+        </xpath>
+    </t>
+</templates>

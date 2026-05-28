@@ -1,0 +1,70 @@
+<odoo>
+    <!-- Tree(list) View -->
+
+    <record id="autonsi_standard_partner_tree" model="ir.ui.view">
+        <field name="name">Partner</field>
+        <field name="model">res.partner</field>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="code" string="Code"/>
+                <field name="name" string="Name"/>
+                <field name="alias" string="Alias"/>
+                <field name="business_reg_number" string="Business Reg. Number" />
+                <field name="business_category" string="Business Category"/>
+                <field name="business_type" string="Business Type"/>
+                <field name="country_id" string="Country"/>
+                <field name="street" string="Address"/>
+                <field name="representative_name" string="Representative Name"/>
+                <field name="phone" string="Phone"/>
+                <field name="fax" string="Fax"/>
+                <field name="email" string="Email"/>
+                <field name="create_date" string="Created On"/>
+                <field name="write_date" string="Last Updated On"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record model="ir.ui.view" id="autonsi_standard_partner_form_inherit">
+        <field name="name">res.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_type']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='vat']" position="attributes">
+                <attribute name="string">Tax</attribute>
+            </xpath>
+            <xpath expr="//div[hasclass('oe_chatter')]" position="replace">
+                <div style="display: none;"></div>
+            </xpath>
+
+            
+            <xpath expr="//div[@name='button_box']" position="replace">
+                <div name="button_box" class="d-none"></div>
+            </xpath>
+
+
+        </field>
+    </record>
+
+    <record id='autonsi_standard_buyer_action' model='ir.actions.act_window'>
+        <field name="name">Buyer</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="autonsi_standard_partner_tree"/>
+        <field name="domain">[('customer_rank', '>', '0')]</field>
+        <field name="context">{'default_customer_rank': '1', 'default_company_type': 'company'}</field>
+    </record>
+
+    <record id='autonsi_standard_supplier_action' model='ir.actions.act_window'>
+        <field name="name">Supplier</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="autonsi_standard_partner_tree"/>
+        <field name="domain">[('supplier_rank', '>', '0')]</field>
+        <field name="context">{'default_supplier_rank': '1', 'default_company_type': 'company'}</field>
+    </record>
+</odoo>

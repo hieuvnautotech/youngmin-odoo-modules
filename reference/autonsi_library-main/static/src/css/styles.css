@@ -1,0 +1,11 @@
+#sidebar_panel {
+  z-index: 1000 !important;
+}
+
+/* html .o_web_client > .o_action_manager > .o_action .o_content {
+    overflow-x: hidden !important;
+} */
+   
+/* .o_list_view {
+    overflow-x: hidden !important;
+} */

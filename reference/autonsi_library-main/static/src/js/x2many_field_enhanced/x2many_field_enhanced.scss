@@ -1,0 +1,88 @@
+// #sidebar_panel {
+//   z-index: 1000 !important;
+// }
+// .o_list_grouped_tbody .o_group_header .o_group_name {
+//   padding: 8px 12px;
+//   border-top: 2px solid #dee2e6;
+//   vertical-align: middle;
+//   text-align: left;  /* Đảm bảo label align left */
+// }
+
+// .o_list_grouped_tbody .o_group_header:hover .o_group_name {
+//   background-color: #e9ecef;  /* Hover chỉ trên label cell */
+// }
+
+// /* Aggregates giữ nguyên */
+// .o_list_grouped_tbody .o_group_header .o_group_aggregate {
+//   text-align: right;
+//   font-weight: normal;
+//   padding: 8px 12px;
+//   border-top: 2px solid #dee2e6;
+//   vertical-align: middle;
+// }
+// /* Grouped List Styles */
+// .o_list_grouped_tbody .o_group_header {
+//   background-color: #f8f9fa;
+//   cursor: pointer;
+//   user-select: none;
+// }
+
+// .o_list_grouped_tbody .o_group_header:hover {
+//   background-color: #e9ecef;
+// }
+
+// .o_list_grouped_tbody .o_group_header th,
+// .o_list_grouped_tbody .o_group_header td {
+//   padding: 8px 12px;
+//   border-top: 2px solid #dee2e6;
+//   vertical-align: middle;
+// }
+
+// .o_list_grouped_tbody .o_group_header .o_group_aggregate {
+//   text-align: right;
+//   font-weight: normal;
+//   padding: 8px 12px;
+//   border-top: 2px solid #dee2e6;
+//   vertical-align: middle;
+// }
+
+// .o_list_grouped_tbody .o_group_header:hover .o_group_aggregate {
+//   background-color: transparent;  /* Giữ hover chỉ trên label */
+// }
+
+// .o_list_grouped_tbody .o_group_total {
+//   background-color: #f1f3f5;
+//   border-bottom: 1px solid #dee2e6;
+// }
+
+// .o_list_grouped_tbody .o_group_total td {
+//   padding: 6px 12px;
+//   font-size: 0.9em;
+// }
+
+// .o_group_controls {
+//   padding: 4px 0;
+// }
+
+// .o_group_controls a {
+//   color: #0d6efd;
+//   text-decoration: none;
+//   font-size: 0.875rem;
+// }
+
+// .o_group_controls a:hover {
+//   text-decoration: underline;
+// }
+
+// /* Optional: smooth transition for group expand/collapse */
+// .o_list_grouped_tbody .o_group_header i.fa {
+//   transition: transform 0.2s ease;
+// }
+
+// /* html .o_web_client > .o_action_manager > .o_action .o_content {
+//     overflow-x: hidden !important;
+// } */
+   
+// /* .o_list_view {
+//     overflow-x: hidden !important;
+// } */

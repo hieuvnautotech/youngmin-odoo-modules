@@ -1,0 +1,68 @@
+<odoo>
+    <record id="autonsi_standard_jig_tree" model="ir.ui.view">
+        <field name="name">Jig</field>
+        <field name="model">standard.jig</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="type"/>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="supplier"/>
+                <field name="product_id"/>
+                <field name="process_id"/>
+                <field name="location_id"/>
+                <field name="accumulated"/>
+                <field name="die_lifetime"/>
+                <field name="remaining_strokes"/>
+                <field name="remark"/>
+                <field name="REV"/>
+                <field name="status"/>
+                <field name="qc_status"/>
+
+                <field name="create_date" string="Created On"/>
+                <field name="write_date" string="Last Updated On"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record model="ir.ui.view" id="autonsi_standard_jig_form">
+        <field name="name">Jig</field>
+        <field name="model">standard.jig</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="type"/>
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="supplier"/>
+                            <field name="product_id"/>
+                            <field name="process_id"/>
+                            <field name="location_id"/>
+                        </group>
+                        <group>
+                            <field name="accumulated"/>
+                            <field name="die_lifetime"/>
+                            <field name="remaining_strokes"/>
+                            <field name="REV"/>
+                            <field name="remark"/>
+                            <field name="create_date" string="Created On"/>
+                            <field name="write_date" string="Last Updated On"/>
+                        </group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_jig_action' model='ir.actions.act_window'>
+        <field name="name">Jig</field>
+        <field name="res_model">standard.jig</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="autonsi_standard_jig_tree"/>
+    </record>
+
+</odoo>

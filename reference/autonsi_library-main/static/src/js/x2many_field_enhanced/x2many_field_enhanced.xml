@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- Main Template - Kế thừa từ X2ManyField -->
+    <t t-name="autonsi_library.X2ManyEnhanced" t-inherit="web.X2ManyField" t-inherit-mode="primary">
+        <!-- Override renderer section -->
+        <xpath expr="//ListRenderer" position="replace">
+            <!-- Sử dụng X2ManyGroupedListRenderer nếu có grouping -->
+            <X2ManyGroupedListRenderer t-if="props.viewMode === 'list' and shouldUseGroupedRenderer" t-props="groupedRendererProps" />
+            <!-- Ngược lại dùng ListRenderer thông thường -->
+            <ListRenderer t-elif="props.viewMode === 'list'" t-props="this.rendererProps" />
+        </xpath>
+    </t>
+
+    <!-- Grouped List Renderer Template -->
+    <t t-name="autonsi_library.X2ManyGroupedListRenderer" t-inherit="web.ListRenderer" t-inherit-mode="primary">
+        <!-- Override tbody để render grouped records -->
+        <xpath expr="//tbody[@class='ui-sortable']" position="replace">
+            <tbody class="ui-sortable o_list_grouped_tbody">
+                <t t-if="groupedRecords">
+                    <t t-foreach="groupedRecords" t-as="group" t-key="group.key">
+                        <!-- Group Header Row -->
+                        <tr class="o_group_header" t-att-class="{ 
+                            'o_group_has_content': group.count > 0,
+                            'o_group_open': isGroupExpanded(group.key),
+                        }" t-on-click="(ev) => this.toggleGroup(group.key)">
+
+                            <!-- Group name cell -->
+                            <th class="o_group_name fs-6 fw-bold cursor-pointer" t-on-keydown="(ev) => this.onCellKeydown(ev, null, null)" tabindex="-1">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <i class="fa fa-fw me-2" t-att-class="isGroupExpanded(group.key) ? 'fa-caret-down' : 'fa-caret-right'"/>
+                                    <span class="o_group_label" t-esc="group.display"/>
+                                    <span class="text-muted ms-2">(<t t-esc="group.count"/>)</span>
+                                </div>
+                            </th>
+
+                            <!-- Aggregate cells -->
+                            <t t-set="groupAggregates" t-value="getGroupAggregates(group)"/>
+                            <t t-foreach="state.columns" t-as="column" t-key="column.id">
+                                <th t-if="column.type === 'field' and groupAggregates[column.name] !== undefined" t-att-class="getColumnClass(column) + ' o_group_aggregate text-center'" t-att-style="column.style">
+                                    <t t-set="field" t-value="props.list.fields[column.name]"/>
+                                    <span class="text-muted">
+                                        <t t-if="field.type === 'monetary'">
+                                            <t t-esc="groupAggregates[column.name].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})"/>
+                                        </t>
+                                        <t t-elif="field.type === 'float'">
+                                            <t t-esc="groupAggregates[column.name].toLocaleString(undefined, {minimumFractionDigits: 2})"/>
+                                        </t>
+                                        <t t-else="">
+                                            <t t-esc="groupAggregates[column.name]"/>
+                                        </t>
+                                    </span>
+                                </th>
+
+                                <th t-else="" class="o_group_name fs-6 fw-bold cursor-pointer" tabindex="-1"></th>
+                            </t>
+                        </tr>
+
+                        <!-- Group Records -->
+                        <t t-if="isGroupExpanded(group.key)">
+                            <t t-foreach="group.records" t-as="record" t-key="record.id">
+                                <t t-call="web.ListRenderer.RecordRow">
+                                    <t t-set="group" t-value="null"/>
+                                    <t t-set="_canSelectRecord" t-value="canSelectRecord"/>
+                                </t>
+                            </t>
+                            
+                            <!-- ADD A LINE BUTTON -->
+                            <tr t-if="canCreate and props.editable">
+                                <td t-if="hasSelectors"/>
+                                <td
+                                    t-att-colspan="hasSelectors ? nbCols - 1 : nbCols"
+                                    class="o_field_x2many_list_row_add"
+                                >
+                                    <a href="#"
+                                        role="button"
+                                        t-att-tabindex="editedRecord ? '-1' : '0'"
+                                        t-on-click.stop.prevent="() => this.addInGroupByKey(group.key)"
+                                        t-on-keydown="(ev) => this.onCellKeydown(ev)"
+                                    >
+                                        Add a line
+                                    </a>
+                                </td>
+                            </tr>
+                        </t>
+                    </t>
+                </t>
+
+                <!-- Fallback -->
+                <t t-else="">
+                    <t t-call="{{ constructor.rowsTemplate }}">
+                        <t t-set="list" t-value="props.list"/>
+                    </t>
+                </t>
+            </tbody>
+        </xpath>
+
+        <!-- Thêm control để expand/collapse all -->
+        <xpath expr="//table" position="before">
+            <div t-if="groupedRecords and groupedRecords.length > 0" class="d-flex align-items-center gap-2 mb-2">
+                <span role="button" t-attf-class="btn d-flex align-items-center gap-2 px-3 py-1 toggle-group-btn {{ state.allGroupsExpanded ? 'btn-secondary' : 'btn-primary' }}" data-hotkey="m" t-attf-data-tooltip="{{ state.allGroupsExpanded ? 'Collapse All Groups' : 'Expand All Groups' }}" t-on-click="toggleAllGroups" style="transition: all 0.3s ease; border-radius: 6px; font-size: 0.875rem;">
+
+                    <!-- Icon Expand (khi collapsed) -->
+                    <svg t-if="!state.allGroupsExpanded"
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-stack">
+                        <path d="M4 10c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2"/>
+                        <path d="M10 16c-1.1 0-2-.9-2-2v-4c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2"/>
+                        <rect width="8" height="8" x="14" y="14" rx="2"/>
+                    </svg>
+
+                    <!-- Icon Collapse (khi expanded) -->
+                    <svg t-if="state.allGroupsExpanded"
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers">
+                        <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
+                        <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
+                        <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/>
+                    </svg>
+                </span>
+            </div>
+        </xpath>
+    </t>
+</templates>

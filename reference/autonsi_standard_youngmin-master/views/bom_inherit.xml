@@ -1,0 +1,171 @@
+<odoo>
+    <record id="autonsi_standard_bom_inherit_tree" model="ir.ui.view">
+        <field name="name">mrp.bom.tree.inherit</field>
+        <field name="model">mrp.bom</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree>
+                <header>
+                    <button string="Import BOM" name="%(autonsi_standard_open_bom_import_action)d"
+                        type="action" class="btn btn-primary" display="always" />
+                </header>
+                <field name="project_code" />
+                <field name="product_tmpl_id" string="Product Code" />
+                <field name="default_name" />
+
+                <field name="name" />
+                <field name="bom_version" />
+
+                <field name="description" />
+                <field name="state" widget="badge" decoration-success="state == 'confirmed'"
+                    decoration-info="state == 'draft'" decoration-primary="state == 'confirmed'"
+                    decoration-danger="state == 'confirmed'" />
+                <field name="create_date" string="Created On" />
+                <field name="write_date" string="Last Updated On" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="autonsi_standard_bom_inherit_search_panel" model="ir.ui.view">
+        <field name="name">mrp.bom.search.panel</field>
+        <field name="model">mrp.bom</field>
+        <field name="priority">15</field>
+        <field name="arch" type="xml">
+            <search position="inside">
+                <field name="name" string="BOM Name" />
+                <field name="product_tmpl_id" string="Product Code" />
+                <field name="default_name" string="Product Name" />
+                <field name="project_id" string="Project" />
+                <field name="bom_version" string="BOM Version" />
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="autonsi_standard_bom_inherit_form">
+        <field name="name">mrp.bom.form.inherit</field>
+        <field name="model">mrp.bom</field>
+        <field name="inherit_id" ref="mrp.mrp_bom_form_view" />
+        <field name="priority">17</field>
+        <field name="arch" type="xml">
+
+            <xpath expr="//group" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <button string="Confirm" class="btn btn-primary" invisible="state != 'draft'"
+                    type="object" name="action_confirm" display="always" />
+            </xpath>
+
+            <xpath expr="//notebook" position="before">
+                <group>
+                    <group>
+                        <field name="product_tmpl_id" string="Product Code" />
+                        <field name="default_name" />
+                        <field name="product_qty" />
+                        <field name="project_code" />
+                        <field name="name" />
+                        <field name="bom_version" readonly="1" />
+                    </group>
+                    <group>
+                        <!--                        <field name="bom_type"/>-->
+                        <field name="description" />
+                        <field name="create_uid" string="Created By" />
+                        <field name="create_date" string="Created On" />
+                        <field name="write_uid" string="Last Updated By" />
+                        <field name="write_date" string="Last Updated On" />
+                        <field name="file_imported" filename="filename_imported" widget="binary"
+                            readonly="1" />
+                        <field name="filename_imported" invisible="1" />
+                        <field name="product_type" string="Item Group" invisible="1" />
+                    </group>
+                </group>
+            </xpath>
+
+            <!--            process-->
+            <xpath
+                expr="//notebook//page[@name='process']//field[@name='process_ids']//tree//field[@name='create_uid']"
+                position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//notebook//page[@name='process']//field[@name='process_ids']//tree//field[@name='create_date']"
+                position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//notebook//page[@name='process']//field[@name='process_ids']//tree//field[@name='material_ids']"
+                position="before">
+                <field name="target_product_id" widget="many2one" />
+                <field name="target_image" filename="target_image_name" />
+                <field name="target_image_name" column_invisible="1" />
+            </xpath>
+
+            <!--            bom_line-->
+            <xpath
+                expr="//notebook//page[@name='components']//field[@name='bom_line_ids']//tree//field[@name='attachments_count']"
+                position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//notebook//page[@name='components']//field[@name='bom_line_ids']//tree//button[@name='action_see_attachments']"
+                position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+
+            <xpath
+                expr="//notebook//page[@name='components']//field[@name='bom_line_ids']//tree//field[@name='product_id']"
+                position="attributes">
+                <attribute name="string">Product</attribute>
+            </xpath>
+
+            <xpath
+                expr="//notebook//page[@name='components']//field[@name='bom_line_ids']//tree//field[@name='product_id']"
+                position="before">
+                <field name="product_type" string="Item Group" />
+            </xpath>
+
+            <xpath
+                expr="//notebook//page[@name='components']//field[@name='bom_line_ids']//tree//field[@name='product_id']"
+                position="after">
+                <field name="process_id" />
+                <field name="source_location_id" />
+                <field name="destination_location_id" />
+                <field name="qty_no_loss" string="Net Qty" />
+                <field name="loss" widget="percentage" />
+                <field name="product_qty" />
+            </xpath>
+            <xpath expr="//notebook//page[@name='components']" position="attributes">
+                <attribute name="invisible">product_type == 'fg product'</attribute>
+            </xpath>
+            <xpath expr="//notebook//page[@name='components']" position="after">
+                <page string="Components" name="Materials" invisible="product_type != 'fg product'">
+                    <field name="bom_process_material_ids" readonly="0">
+                        <tree editable="bottom" create="0" delete="0">
+                            <field name="product_type" string="Item Group" />
+                            <field name="name" string="Product" />
+                            <field name="bomprocess_id" string="Process" readonly="1" domain="[('bom_id','=',parent)]" />
+                            <field name="source_location_id" />
+                            <field name="destination_location_id" />
+                            <field name="quantity" string="Net Qty" />
+                            <field name="loss_percent" />
+                            <field name="required_qty" />
+                            <field name="unit" string="UoM" readonly="1" />
+                            <button name="unlink" type="object" icon="fa-trash" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+
+
+        </field>
+    </record>
+
+
+    <record id="autonsi_standard_bom_inherit_action" model="ir.actions.act_window">
+        <field name="name">BOM &amp; Routing</field>
+        <field name="res_model">mrp.bom</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="autonsi_standard_bom_inherit_tree" />
+        <field name="domain">[('fg_bom_is', '=', True)]</field>
+    </record>
+</odoo>

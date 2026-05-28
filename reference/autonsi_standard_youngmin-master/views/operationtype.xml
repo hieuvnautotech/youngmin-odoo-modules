@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Operation type -->
+    <record id="autonsi_standard_stock_picking_type_tree" model="ir.ui.view">
+        <field name="name">picking type List</field>
+        <field name="model">stock.picking.type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" string="Name"/>
+                <field name="operation_type"/>
+                <field name="default_location_src_id"/>
+                <field name="default_location_dest_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="autonsi_standard_stock_picking_type_form" model="ir.ui.view">
+        <field name="name">picking type Form</field>
+        <field name="model">stock.picking.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" string="Name"/>
+                        <field name="code"/>
+                        <field name="operation_type" />
+                        <field name="sequence_code" placeholder="Short name"/>
+                        <field name="company_id" invisible="1" />
+                        <field name="warehouse_id" invisible="1" />
+                    </group>
+                    <group string="Locations" groups="stock.group_stock_multi_locations">
+                        <field name="default_location_src_id" />
+                        <field name="default_location_dest_id" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='autonsi_standard_operation_type_action' model='ir.actions.act_window'>
+        <field name="name">Operation Type</field>
+        <field name="res_model">stock.picking.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+                (0,0,{'sequence': 1, 'view_mode':'tree', 'view_id': ref('autonsi_standard_stock_picking_type_tree')}),
+                (0,0,{'sequence': 2, 'view_mode':'form', 'view_id': ref('autonsi_standard_stock_picking_type_form')}),
+            ]" />
+    </record>
+</odoo>

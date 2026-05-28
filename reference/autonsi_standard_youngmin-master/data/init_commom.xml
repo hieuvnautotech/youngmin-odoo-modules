@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- <record id="common_record_product_category" model="standard.common">
+            <field name="name">Product Category</field>
+        </record>
+        <record id="common_detail_product_category_swh" model="standard.common.detail">
+            <field name="name">SW.H</field>
+            <field name="description">Streering Wheel Heater</field>
+            <field name="master" ref="common_record_product_category"/>
+        </record>
+        <record id="common_detail_product_category_arh" model="standard.common.detail">
+            <field name="name">AR.H</field>
+            <field name="description">Armrest Heater</field>
+            <field name="master" ref="common_record_product_category"/>
+        </record>
+        <record id="common_detail_product_category_hm" model="standard.common.detail">
+            <field name="name">S.H</field>
+            <field name="description">Heating Mat</field>
+            <field name="master" ref="common_record_product_category"/>
+        </record>
+        <record id="common_record_material_category" model="standard.common">
+            <field name="name">Material Category</field>
+        </record> -->
+
+
+        <record id="common_record_product_packing" model="standard.common">
+            <field name="name">Product Packing</field>
+            <field name="is_packing">1</field>
+        </record>
+        <record id="common_record_product_packing_type_1" model="standard.common.detail">
+            <field name="name">Type 1: Small Packing > Pallet Packing</field>
+            <field name="code">type_1</field>
+            <field name="master" ref="common_record_product_packing"/>
+            <field name="small_packing">1</field>
+            <field name="big_packing">0</field>
+            <field name="pallet_packing">1</field>
+        </record>
+        <record id="common_record_product_packing_type_2" model="standard.common.detail">
+            <field name="name">Type 2: Big Packing > Pallet Packing</field>
+            <field name="code">type_2</field>
+            <field name="master" ref="common_record_product_packing"/>
+            <field name="small_packing">0</field>
+            <field name="big_packing">1</field>
+            <field name="pallet_packing">1</field>
+        </record>
+        <record id="common_record_product_packing_type_3" model="standard.common.detail">
+            <field name="name">Type 3: Small Packing > Big Packing > Pallet Packing</field>
+            <field name="code">type_3</field>
+            <field name="master" ref="common_record_product_packing"/>
+            <field name="small_packing">1</field>
+            <field name="big_packing">1</field>
+            <field name="pallet_packing">1</field>
+        </record>
+
+
+        <record id="common_record_shipping_country" model="standard.common">
+            <field name="name">Shipping Country</field>
+        </record>
+        <record id="common_detail_shipping_country_incheon" model="standard.common.detail">
+            <field name="name">INCHEON</field>
+            <field name="code">incheon</field>
+            <field name="master" ref="common_record_shipping_country"/>
+        </record>
+        <record id="common_detail_shipping_country_busan" model="standard.common.detail">
+            <field name="name">BUSAN</field>
+            <field name="code">busan</field>
+            <field name="master" ref="common_record_shipping_country"/>
+        </record>
+        <record id="common_detail_shipping_country_china" model="standard.common.detail">
+            <field name="name">CHINA</field>
+            <field name="code">china</field>
+            <field name="master" ref="common_record_shipping_country"/>
+        </record>
+        <record id="common_detail_shipping_country_slovakia" model="standard.common.detail">
+            <field name="name">SLOVAKIA</field>
+            <field name="code">slovakia</field>
+            <field name="master" ref="common_record_shipping_country"/>
+        </record>
+    </data>
+</odoo>

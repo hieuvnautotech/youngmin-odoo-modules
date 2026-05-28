@@ -1,0 +1,245 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* autonsi_access_right_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-27 11:32+0000\n"
+"PO-Revision-Date: 2026-01-27 11:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__x_user_category__admin
+msgid "Admin"
+msgstr ""
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__cmms_rights
+msgid "CMMS Rights"
+msgstr "Quyền CMMS"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__calendar_rights
+msgid "Calendar Rights"
+msgstr "Quyền Calendar"
+
+#. module: autonsi_access_right_management
+#: model_terms:ir.ui.view,arch_db:autonsi_access_right_management.view_user_tree
+msgid "Change Password"
+msgstr "Đổi mật khẩu"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__discuss_rights
+msgid "Discuss Rights"
+msgstr "Quyền Discuss"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__document_rights
+msgid "Document Rights"
+msgstr "Quyền Document"
+
+#. module: autonsi_access_right_management
+#: model_terms:ir.ui.view,arch_db:autonsi_access_right_management.view_user_form
+msgid "Email Address"
+msgstr "Email đăng nhập"
+
+#. module: autonsi_access_right_management
+#: model:ir.module.category,name:autonsi_access_right_management.module_category_fg_wms
+msgid "FG-WMS"
+msgstr ""
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__fg_wms_rights
+msgid "FG-WMS Rights"
+msgstr "Quyền FG-WMS"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__hide_menu_ids
+#: model_terms:ir.ui.view,arch_db:autonsi_access_right_management.view_user_form
+msgid "Hide Menu"
+msgstr "Ẩn menu"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__m_wms_rights
+msgid "M-WMS Rights"
+msgstr "Quyền M-WMS"
+
+#. module: autonsi_access_right_management
+#: model:ir.model,name:autonsi_access_right_management.model_mes_qc_form
+msgid "MES QC Form"
+msgstr ""
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__mms_rights
+msgid "MMS Rights"
+msgstr "Quyền MMS"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__mms_shop_floor_rights
+msgid "MMS Shop Floor Rights"
+msgstr "Quyền MMS Shop Floor"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__mps_rights
+msgid "MPS Rights"
+msgstr "Quyền MPS"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__fg_wms_rights__manager
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__m_wms_rights__manager
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__mms_shop_floor_rights__manager
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__pms_shop_floor_rights__manager
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__qms_rights__manager
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__user_mng_rights__manager
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__wip_wms_rights__manager
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__x_user_category__manager
+#: model:res.groups,name:autonsi_access_right_management.group_fg_wms_manager
+msgid "Manager"
+msgstr "Người quản lý"
+
+#. module: autonsi_access_right_management
+#: model:ir.model,name:autonsi_access_right_management.model_ir_ui_menu
+msgid "Menu"
+msgstr ""
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__pms_rights
+msgid "PMS Rights"
+msgstr "Quyền PMS"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__pms_shop_floor_rights
+msgid "PMS Shop Floor Rights"
+msgstr "Quyền PMS Shop Floor"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__position
+msgid "Position"
+msgstr "Vị trí"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__purchase_rights
+msgid "Purchase Rights"
+msgstr "Quyền Purchase"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__qms_rights
+msgid "QMS Rights"
+msgstr "Quyền QMS"
+
+#. module: autonsi_access_right_management
+#: model_terms:ir.ui.view,arch_db:autonsi_access_right_management.view_user_form
+#: model_terms:ir.ui.view,arch_db:autonsi_access_right_management.view_user_tree
+msgid "Reg Date"
+msgstr "Ngày ĐK"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__sales_rights
+msgid "Sales Rights"
+msgstr "Quyền Sales"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__standard_rights
+msgid "Standard Rights"
+msgstr "Quyền Standard"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__team
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__team_id
+msgid "Team"
+msgstr "Đội ngũ kinh doanh"
+
+#. module: autonsi_access_right_management
+#: model_terms:ir.ui.view,arch_db:autonsi_access_right_management.view_user_form
+#: model_terms:ir.ui.view,arch_db:autonsi_access_right_management.view_user_tree
+msgid "Update Date"
+msgstr "Ngày cập nhật"
+
+#. module: autonsi_access_right_management
+#: model:ir.actions.server,name:autonsi_access_right_management.action_action_apply_menu_default
+msgid "Update Menu Default Sidebar"
+msgstr ""
+
+#. module: autonsi_access_right_management
+#: model:ir.actions.server,name:autonsi_access_right_management.action_assign_combination_groups
+msgid "Update User Type and Hide Menu"
+msgstr ""
+
+#. module: autonsi_access_right_management
+#: model:ir.model,name:autonsi_access_right_management.model_res_users
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__calendar_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__cmms_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__discuss_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__document_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__fg_wms_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__m_wms_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__mms_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__mms_shop_floor_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__mps_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__pms_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__pms_shop_floor_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__purchase_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__qms_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__sales_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__standard_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__user_mng_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__wip_wms_rights__user
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__x_user_category__user
+#: model:res.groups,name:autonsi_access_right_management.group_fg_wms_user
+#: model_terms:ir.ui.view,arch_db:autonsi_access_right_management.view_user_form
+msgid "User"
+msgstr "Người dùng"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__x_user_category
+msgid "User Category"
+msgstr "Loại người dùng"
+
+#. module: autonsi_access_right_management
+#: model:ir.ui.menu,name:autonsi_access_right_management.menu_user_management_root
+msgid "User Management"
+msgstr "Quản lý tài khoản"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__user_mng_rights
+msgid "User Mng Rights"
+msgstr "Quyền quản lý người dùng"
+
+#. module: autonsi_access_right_management
+#: model:ir.actions.act_window,name:autonsi_access_right_management.action_user_management
+#: model:ir.ui.menu,name:autonsi_access_right_management.menu_user_management_users
+#: model_terms:ir.ui.view,arch_db:autonsi_access_right_management.view_user_tree
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__calendar_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__cmms_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__discuss_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__document_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__fg_wms_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__m_wms_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__mms_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__mps_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__pms_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__purchase_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__qms_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__sales_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__standard_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__user_mng_rights__viewer
+#: model:ir.model.fields.selection,name:autonsi_access_right_management.selection__res_users__wip_wms_rights__viewer
+#: model:res.groups,name:autonsi_access_right_management.group_fg_wms_viewer
+msgid "Viewer"
+msgstr "Người xem"
+
+#. module: autonsi_access_right_management
+#: model:ir.model.fields,field_description:autonsi_access_right_management.field_res_users__wip_wms_rights
+msgid "WIP-WMS Rights"
+msgstr "Quyền WIP-WMS"

@@ -1,0 +1,1812 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* autonsi_qms_youngmin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 03:44+0000\n"
+"PO-Revision-Date: 2026-02-10 03:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "01"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "200M"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "2102"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "56185K2500"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Apply"
+msgstr "적용"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_stock_move_line
+msgid "Barcode Event Mixin"
+msgstr "품목 이동 (재고 이동 상세)"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "Black Fabric – 1"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__category_id
+msgid "Category"
+msgstr "품목 분류"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#, python-format
+msgid "Category Material"
+msgstr "자재 분류"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__check_date
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__check_date
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "Check Date"
+msgstr "검사일"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Close"
+msgstr "닫기"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#, python-format
+msgid "Confirm"
+msgstr "확정"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#, python-format
+msgid "Confirm Staff:"
+msgstr "확정자"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#, python-format
+msgid "Create Date"
+msgstr "등록일"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_history_iqc
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_history_item_qc
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_history_oqc
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_history_pallet_qc
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_history_pqc
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_history_re_use_fg
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_history_re_use_material
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_history_re_use_semi
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_hold_fg
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_hold_material
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_hold_semi
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_release_fg
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_release_material
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_form_release_semi
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_log_fg
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_log_material
+#: model_terms:ir.actions.act_window,help:autonsi_qms_youngmin.action_mes_qc_log_semi
+msgid "Create your first Result!"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__create_uid
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__create_uid
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__create_uid
+msgid "Created by"
+msgstr "등록자"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__create_date
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__create_date
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__create_date
+msgid "Created on"
+msgstr "등록일"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mrp_production__pqc_cut_form_id
+msgid "Cut Form"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Date:"
+msgstr "검사일 : "
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,help:autonsi_qms_youngmin.field_mes_qc_form_history__uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__defect_ratio
+msgid "Defect Ratio"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#, python-format
+msgid "Defect Ratio (%)"
+msgstr "불량률(%)"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__display_name
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__display_name
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Doc:"
+msgstr "참고문서 : "
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Download Excel"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "EA"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_picking_wizard_line
+msgid "Expire Input Line"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_log_fg
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__item_group__fg
+msgid "FG"
+msgstr "완제품"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "FG Code"
+msgstr "완제품번"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "FG Name"
+msgstr "완제품명"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "Failed"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__file_upload
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__file_upload
+msgid "File"
+msgstr "파일명"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__file_upload_name
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__file_upload_name
+msgid "File Name"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form__type_roll__final
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__type_roll__final
+#, python-format
+msgid "Final"
+msgstr "종"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_iqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_item_qc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pallet_qc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_fg_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_material_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_semi_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_hold_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_log_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_release_tree
+msgid "Final Result"
+msgstr "최종결과"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Final Result:"
+msgstr "최종결과"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__mes_qc_form_id
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_iqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_item_qc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_oqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pallet_qc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_fg_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_material_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_semi_tree_view
+msgid "Form Title"
+msgstr "검사 기준서 제목"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__form_type
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__form_type
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "Form Type"
+msgstr "검사 기준서 구분"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "Frequency"
+msgstr "검사횟수"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__ng_location
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_hold_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_release_tree
+msgid "From"
+msgstr "출고지"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "Group By"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD1
+msgid "HD1"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD10
+msgid "HD10"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD11
+msgid "HD11"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD12
+msgid "HD12"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD13
+msgid "HD13"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD14
+msgid "HD14"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD2
+msgid "HD2"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD3
+msgid "HD3"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD4
+msgid "HD4"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD5
+msgid "HD5"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD6
+msgid "HD6"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD7
+msgid "HD7"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD8
+msgid "HD8"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__HD9
+msgid "HD9"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__status__hide
+msgid "HIDE"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__status__hold
+msgid "HOLDING"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "Has Attachment"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_jig_history__history_id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__history_id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__history_id
+msgid "History"
+msgstr "검사기록"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_history_stock
+msgid "History Stock"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_release_tree
+msgid "Hold"
+msgstr "홀딩"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+msgid "Holding"
+msgstr "홀딩"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_hold_fg
+msgid "Holding FG List"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_form_hold_material
+msgid "Holding Material"
+msgstr "자재 홀딩"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_hold_material
+msgid "Holding Material List"
+msgstr "자재 홀딩 목록"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_hold_semi
+msgid "Holding Semi List"
+msgstr "반제품 홀딩 목록"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__id
+msgid "ID"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__form_type__iqc
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_form_history_iqc
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+msgid "IQC"
+msgstr "수입검사"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_stock_move_line__iqc_form_id
+msgid "IQC Form"
+msgstr "수입검사 기준서"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_history_iqc
+msgid "IQC History"
+msgstr "수입검사기록"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form__type_roll__mid
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__type_roll__mid
+#, python-format
+msgid "In-process"
+msgstr "중"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form__type_roll__first
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__type_roll__first
+#, python-format
+msgid "Initial"
+msgstr "초"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#, python-format
+msgid "Insp Qty Sampling"
+msgstr "샘플 검사 수량"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form__is_emb
+msgid "Is EMB Inspection"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__is_final_process
+msgid "Is Final Process"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__is_history
+msgid "Is History"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__is_resistance
+msgid "Is Resistance"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__item_group
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__item_group_re_use
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__item_group
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "Item Group"
+msgstr "계정구분"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__form_type__item_qc
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_form_history_item_qc
+msgid "Item QC"
+msgstr "생산 투입 검사"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mrp_material__item_qc_form_id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mrp_mo_material__item_qc_form_id
+msgid "Item QC Form"
+msgstr "생산 투입검사 기준서"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_history_item_qc
+msgid "Item QC History"
+msgstr "투입자재검사 기록"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mrp_workorder__jig_form_id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_product_product__jig_form_id
+msgid "JIG Form"
+msgstr "지그 검사 기준서"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__jig_id
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__form_type__jig
+msgid "Jig"
+msgstr "지그"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#, python-format
+msgid "Jig Code"
+msgstr "지그코드"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#, python-format
+msgid "Jig Name"
+msgstr "지그명"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#, python-format
+msgid "LOT"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__write_uid
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__write_uid
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__write_uid
+msgid "Last Updated by"
+msgstr "수정자"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__write_date
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__write_date
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__write_date
+msgid "Last Updated on"
+msgstr "수정일"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Life Day"
+msgstr "수명일"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#, python-format
+msgid "Line No"
+msgstr "생산라인"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_log_material
+msgid "Log Material"
+msgstr "자재 홀딩/해제 기록"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_iqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_item_qc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_fg_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_material_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_semi_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_hold_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_log_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_release_tree
+#, python-format
+msgid "Lot"
+msgstr "LOT 번호"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__lot_id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__lot_id
+msgid "Lot ID"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__item_group__material
+msgid "MATERIAL"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_mes_qc_form
+msgid "MES QC Form"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pqc_tree_view
+msgid "MO"
+msgstr "공정 작업지시서 번호"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__mrp_material_id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__mrp_mo_material_id
+msgid "MRP Material"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__mrp_production_id
+msgid "MRP Production"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__mrp_workorder_id
+msgid "MRP Workorder"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_mrp_mo
+msgid "Manufacturing Order"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__pmo_id
+msgid "Master Production Order"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_log_material
+msgid "Material"
+msgstr "자재"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_iqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_item_qc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_material_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_hold_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_log_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_release_tree
+msgid "Material Category"
+msgstr "자재 분류"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__material_code
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__material_code
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+#, python-format
+msgid "Material Code"
+msgstr "자재품번"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__material_name
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__material_name
+#, python-format
+msgid "Material Name"
+msgstr "자재품명"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "Method"
+msgstr "검사방법"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/controller/qms_qc_print.py:0
+#, python-format
+msgid "Missing state"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "NG"
+msgstr "불량"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__lot_ng_id
+msgid "NG Lot"
+msgstr "불량품 LOT 번호"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_oqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pqc_tree_view
+msgid "NG Qty"
+msgstr "불량수량"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__name
+msgid "Name"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__ng_qty
+msgid "Ng Quantity"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mrp_pmo.py:0
+#, python-format
+msgid "No Manufacturing Orders selected for PQC Pass."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form_log.py:0
+#, python-format
+msgid "No available quantity to hold for this lot."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "OK"
+msgstr "양품"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__lot_ok_id
+msgid "OK Lot"
+msgstr "양품 LOT 번호"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_oqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pqc_tree_view
+msgid "OK Qty"
+msgstr "양품수량"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__form_type__oqc
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_form_history_oqc
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+msgid "OQC"
+msgstr "완제품 검사"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mrp_mo__oqc_form_id
+msgid "OQC Form"
+msgstr "완제품 검사 기준서"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_history_oqc
+msgid "OQC History"
+msgstr "완제품 검사기록"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__ok_qty
+msgid "Ok Quantity"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__overall_result
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__log_result
+msgid "Overall Result"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "P001 - A"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "PAD LEA"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pqc_tree_view
+msgid "PMO"
+msgstr "공정 작업지시서 번호"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_iqc_tree_view
+msgid "PO"
+msgstr "발주서 번호"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__form_type__pqc
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_form_history_pqc
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+msgid "PQC"
+msgstr "초중종 검사"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_history_pqc
+msgid "PQC History"
+msgstr "초중종 검사기록"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_picking_wizard_line__pallet_qc_form_id
+msgid "Pallet Form"
+msgstr "완제품 출하검사 기준서"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__pallet_no
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pallet_qc_tree_view
+#, python-format
+msgid "Pallet No"
+msgstr "팔레트 번호"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__form_type__pallet_qc
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_form_history_pallet_qc
+msgid "Pallet QC"
+msgstr "완제품 출하검사"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_history_pallet_qc
+msgid "Pallet QC History"
+msgstr "완제품 출하검사"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "Passed"
+msgstr "통과"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__picking_wizard_id
+msgid "Picking Line"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form_log.py:0
+#, python-format
+msgid "Please select a history before creating this form."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mrp_mo.py:0
+#, python-format
+msgid "Please select exactly one record."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_history_form
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_tree
+msgid "Preview"
+msgstr "미리보기"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_form
+msgid "Preview Form"
+msgstr "미리보기"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__process
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__process_id
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pqc_tree_view
+#, python-format
+msgid "Process"
+msgstr "적용 공정"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__product_id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__product_name
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+msgid "Product"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_oqc_tree_view
+#, python-format
+msgid "Product Code"
+msgstr "품번"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_oqc_tree_view
+msgid "Product Name"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_product_product
+msgid "Product Variant"
+msgstr "품목 세부선택"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#, python-format
+msgid "Product name"
+msgstr "품명"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_mrp_production
+msgid "Production Order"
+msgstr "생산 주문"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__project_code
+msgid "Project"
+msgstr "차종코드"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#, python-format
+msgid "Project Code"
+msgstr "차종코드"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "QC Code"
+msgstr "검사내용"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "QC Form Log"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+msgid "QC History"
+msgstr "검사 기록"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_history_form
+msgid "QC List"
+msgstr "검사기준목록"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_iqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_item_qc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_oqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pallet_qc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pqc_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_fg_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_material_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_re_use_semi_tree_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_hold_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_release_tree
+msgid "QC Staff"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_multi_re_use_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "QC Staff:"
+msgstr "검사자 : "
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#, python-format
+msgid "QC Three-Stage inspection:"
+msgstr "초중종 구분"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_hold_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_release_tree
+msgid "QC Type"
+msgstr "검사유형"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "QMS IQC"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "QMS ITEM QC"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "QMS JIG"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "QMS PQC"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "QMS Pallet QC"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "QMS RE-USE"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_qms_report
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_qms_report
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_qms_report
+msgid "QMS Report"
+msgstr "품질기록 보고서"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__qty
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__qty
+msgid "Qty"
+msgstr "수량"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pallet_qc_dialog.xml:0
+#, python-format
+msgid "Qty & UoM"
+msgstr "수량 & 재고관리단위"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Qty & Uom"
+msgstr "수량 & 재고관리단위"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__qty_sampling
+msgid "Quantity Sampling"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_stock_quant
+msgid "Quants"
+msgstr "수량"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__mes_qc_form_question_id
+msgid "Question"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__question_ids
+msgid "Questions"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__status__release
+msgid "RELEASE"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#, python-format
+msgid "REV"
+msgstr "수정번호"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_history_stock__re_use_history
+msgid "Re Use History"
+msgstr "재사용 검사기록"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_history_re_use_fg
+msgid "Re-Use FG History"
+msgstr "완제품 재사용 검사기록"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_form_history_re_use_fg
+msgid "Re-Use FG QC"
+msgstr "완제품 재사용 검사"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_stock_quant__re_use_form_id
+msgid "Re-Use Form"
+msgstr "재사용 검사 기준서"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_history_re_use_material
+msgid "Re-Use Material History"
+msgstr "자재 재사용 검사기록"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_form_history_re_use_material
+msgid "Re-Use Material QC"
+msgstr "자재 재사용 검사"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_history_re_use_semi
+msgid "Re-Use Semi History"
+msgstr "반제품 재사용 검사"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_form_history_re_use_semi
+msgid "Re-Use Semi QC"
+msgstr "반제품 재사용 검사"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__form_type__re_use
+msgid "Re-Use for Expired"
+msgstr "재사용 품질검사"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__reason
+msgid "Reason"
+msgstr "사유"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_iqc_tree_view
+msgid "Receiving Order"
+msgstr "입고 지시서 번호"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,help:autonsi_qms_youngmin.field_mes_qc_form_history__po_name
+msgid "Reference of the document"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_hold_tree
+msgid "Release"
+msgstr "해제"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_release_fg
+msgid "Release FG List"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.ui.menu,name:autonsi_qms_youngmin.menu_mes_qc_form_release_material
+msgid "Release Material"
+msgstr "자재 해제"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_release_material
+msgid "Release Material List"
+msgstr "자재 해제 목록"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_form_release_semi
+msgid "Release Semi List"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Remaining Day"
+msgstr "잔여 수명일"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__remark
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__remark
+#, python-format
+msgid "Remark"
+msgstr "비고"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__result
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__result
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__result
+#, python-format
+msgid "Result"
+msgstr "결과"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__rev_no
+#, python-format
+msgid "Rev No"
+msgstr "수정번호"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields.selection,name:autonsi_qms_youngmin.selection__mes_qc_form_history__item_group__semi
+msgid "SEMI"
+msgstr "반제품"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#, python-format
+msgid "Save"
+msgstr "저장"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.actions.act_window,name:autonsi_qms_youngmin.action_mes_qc_log_semi
+msgid "Semi"
+msgstr "반제품"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Semi Code"
+msgstr "반제품번"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_re_use_dialog.xml:0
+#, python-format
+msgid "Semi Name"
+msgstr "반제품명"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_pqc_tree_view
+msgid "Semi Product"
+msgstr "반제품번"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#, python-format
+msgid "Semi Product Code"
+msgstr "반제품번"
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#, python-format
+msgid "Semi Product Name"
+msgstr "반제품명"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__po_name
+msgid "Source Document"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_item_qc_dialog.xml:0
+#, python-format
+msgid "Spec"
+msgstr "스펙"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__confirm_staff_id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__staff_id
+msgid "Staff"
+msgstr "검사자"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__confirm_staff_name
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__staff_name
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__staff_name
+msgid "Staff name"
+msgstr "검사자"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__status
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__status
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "Status"
+msgstr "상태"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_stock_move
+msgid "Stock Move"
+msgstr "재고 이동"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__stock_quant_id
+msgid "Stock Quant"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_iqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_jig_dialog.xml:0
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__supplier
+#, python-format
+msgid "Supplier"
+msgstr "공급사명"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "T08/6958/UJ2A/200"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,help:autonsi_qms_youngmin.field_mes_qc_form_history__picking_id
+msgid "The stock operation where the packing has been made"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/stock_move_line.py:0
+#: code:addons/autonsi_qms_youngmin/models/stock_move_line.py:0
+#, python-format
+msgid "There is no confirmed QC form of type 'iqc'."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mrp_material.py:0
+#, python-format
+msgid "There is no confirmed QC form of type 'item_qc'."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mrp_workorder.py:0
+#, python-format
+msgid "There is no confirmed QC form of type 'jig check'."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/picking_wizard_line.py:0
+#: code:addons/autonsi_qms_youngmin/models/product_product.py:0
+#, python-format
+msgid "There is no confirmed QC form of type 'jig new check'."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mrp_mo.py:0
+#, python-format
+msgid "There is no confirmed QC form of type 'oqc_process'."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mrp_pmo.py:0
+#, python-format
+msgid "There is no confirmed QC form of type 'pqc fabric cutting'."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mrp_production.py:0
+#, python-format
+msgid "There is no confirmed QC form of type 'process'."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/stock_quant.py:0
+#, python-format
+msgid "There is no confirmed QC form of type 're-use'."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "This Month"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form_history.py:0
+#, python-format
+msgid "This lot has already been scrapped."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form_history.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form_history.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form_history.py:0
+#, python-format
+msgid "This lot has already been used (quantity changed)."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_history_form
+msgid "Title"
+msgstr "검사 기준서 제목"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__ok_location
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_hold_tree
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.view_mes_qc_form_release_tree
+msgid "To"
+msgstr "입고지"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_search_view
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_log_search_view
+msgid "Today"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_stock_picking
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__picking_id
+msgid "Transfer"
+msgstr "전송"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form__type_roll
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__type_roll
+msgid "Type"
+msgstr "구분"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__type_material
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__type_material
+msgid "Type Material"
+msgstr "자재 구분"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__uom_id
+msgid "UOM"
+msgstr "단위"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__unit
+msgid "Unit"
+msgstr "단위"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "UoM"
+msgstr "단위"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__qty_uom
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__qty_uom
+msgid "Uom"
+msgstr "단위"
+
+#. module: autonsi_qms_youngmin
+#: model_terms:ir.ui.view,arch_db:autonsi_qms_youngmin.mes_qc_form_history_iqc_tree_view
+msgid "Upload"
+msgstr "업로드"
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "VF33"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_mrp_workorder
+msgid "Work Order"
+msgstr "작업 지시"
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__X1
+msgid "X1"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__X2
+msgid "X2"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__X3
+msgid "X3"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__X4
+msgid "X4"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history_line__X5
+msgid "X5"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "YM Korea"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form_history.py:0
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form_history.py:0
+#, python-format
+msgid "You cannot create a release log when NG/OK location is already set."
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#, python-format
+msgid "final"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#, python-format
+msgid "first"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_jig_history
+msgid "jig.history"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_mes_qc_form_history
+msgid "mes.qc_form.history"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_mes_qc_form_history_line
+msgid "mes.qc_form.history.line"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_mes_qc_form_log
+msgid "mes.qc_form.log"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-javascript
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_oqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#: code:addons/autonsi_qms_youngmin/static/src/xml/qms_question_pqc_dialog.xml:0
+#, python-format
+msgid "mid"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_mrp_material
+msgid "mrp.material"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_mrp_mo_material
+msgid "mrp.mo.material"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model,name:autonsi_qms_youngmin.model_mrp_pmo
+msgid "mrp.pmo"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_history__stock_move_line_id
+#: model:ir.model.fields,field_description:autonsi_qms_youngmin.field_mes_qc_form_log__stock_move_line_id
+msgid "stock_move_line_id"
+msgstr ""
+
+#. module: autonsi_qms_youngmin
+#. odoo-python
+#: code:addons/autonsi_qms_youngmin/models/mes_qc_form.py:0
+#, python-format
+msgid "xxx"
+msgstr ""

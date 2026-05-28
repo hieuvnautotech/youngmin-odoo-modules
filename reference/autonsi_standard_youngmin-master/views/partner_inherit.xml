@@ -1,0 +1,52 @@
+<odoo>
+    <!-- Form View -->
+    <record model="ir.ui.view" id="autonsi_standard_youngmin_partner_form_inherit">
+        <field name="name">res.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="priority">15</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_title mb24']/h1" position="replace">
+                <h1 class="o_row align-items-center">
+                    <label for="code" string="Code" class="text-break" />
+                    <field name="code" options="{'line_breaks': False}" widget="text" class="text-break" default_focus="1"/>
+                </h1>
+            </xpath>
+
+            <xpath expr="//group" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//div[@class='oe_title mb24']" position="after">
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="alias" />
+                        <field name="description"/>
+                        <field name="business_reg_number"/>
+                        <field name="business_category"/>
+                        <field name="business_type"/>
+                        <field name="country_id"/>
+
+                    </group>
+                    <group>
+                        <field name="street" string="Address"/>
+                        <field name="representative_name" string="Representative Name"/>
+                        <field name="phone" string="Phone"/>
+                        <field name="fax" string="Fax"/>
+                        <field name="email" string="Email"/>
+                        <field name="website" string="Website"/>
+                        <field name="create_date" string="Created On"/>
+                        <field name="write_date" string="Last Updated On"/>
+
+                    </group>
+
+                </group>
+            </xpath>
+            <xpath expr="//notebook" position="attributes">
+                <attribute name="invisible">1</attribute>-->
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree(list) View -->
+    <record id="autonsi_standard_package_tree_inherit" model="ir.ui.view">
+        <field name="name">stock.quant.package.tree</field>
+        <field name="model">stock.quant.package</field>
+        <field name="inherit_id" ref="stock.view_quant_package_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='display_name']" position="before">
+                <field name="sequence" widget="handle"/>
+            </xpath>
+            <xpath expr="//field[@name='package_type_id']" position="attributes">
+                <attribute name="string">Package Type</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="autonsi_standard_package_form_inherit" model="ir.ui.view">
+        <field name="name">stock.quant.package.form</field>
+        <field name="model">stock.quant.package</field>
+        <field name="inherit_id" ref="stock.view_quant_package_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('oe_title')]//label" position="replace">
+                <label for="name" string="Name"/>
+            </xpath>
+            <xpath expr="//field[@name='package_type_id']" position="attributes">
+                <attribute name="string">Package Type</attribute>
+            </xpath>
+            <!--            <xpath expr="//field[@name='package_type_id']" position="after">-->
+            <!--                <field name="remark"/>-->
+            <!--            </xpath>-->
+        </field>
+    </record>
+
+    <record id='autonsi_standard_package_action' model='ir.actions.act_window'>
+        <field name="name">Package</field>
+        <field name="res_model">stock.quant.package</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
